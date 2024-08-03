@@ -64,6 +64,8 @@ params:
     filename: sitemap.xml
     priority: 0.5
 
+disablePathToLower: true
+
 outputs:
   home:
     - HTML
@@ -103,5 +105,3 @@ markup:
     guessSyntax: true
     # lineNos: true
     style: monokai
-
-disablePathToLower: true
