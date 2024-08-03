@@ -2,6 +2,18 @@
     Logseq-Hugo-Template
 </h1>
 
+## commands
+
+```shell
+hugo server --buildDrafts
+```
+
+```shell
+git remote remove origin
+git remote add origin https://github.com/jacegem/log
+```
+
+
 <p align="center">
     <a href="https://github.com/CharlesChiuGit/Logseq-Hugo-Template/stargazers">
     <img
@@ -148,7 +160,7 @@ params:
 
   #Google Analytics 4 optional
   env: #production
-  GoogleAnalytics: "G-00000XXXXX" 
+  GoogleAnalytics: 'G-00000XXXXX'
   sitemap:
     changefreq: daily
     filename: sitemap.xml

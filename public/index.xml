@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Logseq Publish Pages</title>
+    <link>http://localhost:1313/log/</link>
+    <description>Recent content on Logseq Publish Pages</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>public</title>
+      <link>http://localhost:1313/log/pages/public/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/log/pages/public/</guid>
+      <description>public page</description>
+    </item>
+    <item>
+      <title>카이젠 저니</title>
+      <link>http://localhost:1313/log/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/log/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/</guid>
+      <description>당신은 무엇을 하는 사람인가?
+3장 혼자 시작하는 회고
+4장 혼자 시작하는 태스크 가시화
+5장 내일을 내 편으로 만들다
+6장 경계를 넘나들다
+8장 둘이서 경계를 넘다
+10장 완료 기준을 팀에서 결정하다
+15장 팀과 제품 책임자의 경계
+16장 팀과 리더의 경계
+17장 팀과 새로운 멤버의 경계
+가치와 원칙 그리고 프로세스
+다섯 가지 가치
+경계 넘기
+자신부터 시작하기
+피드백
+리프레이밍
+끌어들이기, 함께하기
+다섯 가지 분류에 따른 27가지 원칙
+사고
+Why에서 시작하라
+나는 누구인가</description>
+    </item>
+  </channel>
+</rss>

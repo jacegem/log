@@ -1,34 +1,35 @@
-baseURL: https://githubuser.github.io
+baseURL: https://jacegem.github.io/log
 languageCode: en-us
-title: Linus Torvalds
-theme: "PaperMod"
+title: Logseq Publish Pages
+theme: 'PaperMod'
 
 params:
   homeInfoParams:
-    Title: Sup bruh 😎
-    Content: This is something shows in your homepage.
+    Title: Logseq Publish Pages 😎
+    Content: “Talk is cheap. Show me the code.”
 
   socialIcons: # optional
-    - name: "github"
-      url: "https://github.com/XXX"
+    - name: 'github'
+      url: 'https://github.com/jacegem'
+
     # - name: "youtube"
     #   url: "https://www.youtube.com/channel/XXX"
-    - name: "twitter"
-      url: "https://twitter.com/XXX"
+    # - name: 'twitter'
+    # url: 'https://twitter.com/XXX'
     # - name: "kofi"
     #   url: "https://buymeacoffee.com/XXX"
     # - name: "rss"
     #   url: "https://XXX.github.io/index.xml"
   ShowReadingTime: true
-  author: "Linus Torvalds"
-  contact: "LinusT@example.com"
+  author: 'Jace'
+  contact: 'jacegem@gmail.com'
   feedlinks: true
-  copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
+  copyright: '<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->'
   mobileMenu: true
 
   #Google Analytics 4 optional
   env: #production
-  GoogleAnalytics: "G-00000XXXXX"
+  GoogleAnalytics: 'G-00000XXXXX'
   sitemap:
     changefreq: daily
     filename: sitemap.xml
