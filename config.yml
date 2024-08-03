@@ -1,5 +1,5 @@
-baseURL: https://jacegem.github.io/log
-languageCode: en-us
+baseURL: https://blog.moro.kr
+languageCode: ko-kr
 title: LPP
 theme: 'PaperMod'
 

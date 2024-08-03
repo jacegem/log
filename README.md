@@ -13,6 +13,9 @@ git remote remove origin
 git remote add origin https://github.com/jacegem/log
 ```
 
+## ref
+
+- https://github.com/CharlesChiuGit/blog
 
 <p align="center">
     <a href="https://github.com/CharlesChiuGit/Logseq-Hugo-Template/stargazers">
