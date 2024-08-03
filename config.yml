@@ -58,7 +58,7 @@ params:
 
   #Google Analytics 4 optional
   env: #production
-  GoogleAnalytics: 'G-00000XXXXX'
+  GoogleAnalytics: 'G-V52SMVT933'
   sitemap:
     changefreq: daily
     filename: sitemap.xml
