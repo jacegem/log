@@ -23,7 +23,9 @@ UPPERCASE!
 
 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 
-![](https://i.imgur.com/golowgw.png?align=center)
+![getBlocksInPage](getblocksinpage)
+
+![caption](https://i.imgur.com/golowgw.png?align=center)
 
 
 
