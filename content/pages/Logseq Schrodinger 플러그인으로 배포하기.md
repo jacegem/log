@@ -3,7 +3,7 @@ title: Logseq Schrodinger 플러그인으로 배포하기
 tags:
 categories:
 date: 2024-08-03
-lastMod: 2024-08-03
+lastMod: 2024-08-04
 ---
 
 
@@ -43,5 +43,11 @@ git -C $LOGSEQ_HUGO push
 unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한다.
 
 
+
+
+
+## 참고
+
+hugo/disablePathToLower
 
 
