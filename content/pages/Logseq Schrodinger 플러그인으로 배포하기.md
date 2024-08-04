@@ -15,6 +15,10 @@ lastMod: 2024-08-04
 ---
 
 
+
+
+
+
 ## 플러그인 설치
 
 https://github.com/sawhney17/logseq-schrodinger 설치
@@ -43,9 +47,9 @@ categories:: app, logseq,
 
 ## 다운로드
 
-export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
+`export-public-pages-to-hugo` 버튼을 눌러서 다운로드 받는다.
 
-![caption](/assets/golowgw.png#center)
+![export](/assets/golowgw.png#center)
 
 
 
