@@ -40,7 +40,7 @@ logseq에서 문서를 작성한다.
 ```typescript
 public:: true
 tags:: logseq, public, plugin, ditto, sed, git
-categories:: [[app]], [[logseq]],
+categories:: app, logseq,
 ```
 
 
@@ -73,7 +73,7 @@ categories:: [[app]], [[logseq]],
 
 저장소 경로를 설정하고 (`$LOGSEQ_HUGO`)
 
-[[publicExport.zip]] 파일 압축 해제 후 커밋 & 푸시를 한다.
+publicExport.zip 파일 압축 해제 후 커밋 & 푸시를 한다.
 
 ```shell
 ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/content
@@ -85,7 +85,7 @@ git -C $LOGSEQ_HUGO push
 
 
 
-{{< logseq/orgQUOTE >}}- [[unzip]] 사용시 [[Illegal byte sequence]] 에러가 발생하여 [[ditto]]를 사용한다.
+{{< logseq/orgQUOTE >}}- unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한다.
 - 외부 이미지 링크 사용시 남아있는 https://i.imgur.com 을 제거한다.
 {{< / logseq/orgQUOTE >}}
 
