@@ -25,7 +25,7 @@ export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 
 ![getBlocksInPage](getblocksinpage)
 
-![caption](https://i.imgur.com/golowgw.png){:height 90, :width 500, :align center}
+![caption](/assets/golowgw.png)
 
 local image
 
@@ -56,7 +56,7 @@ unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한�
 
 외부 이미지 링크 사용시 남아있는 https://i.imgur.com 을 제거한다.
 
-`{:width 100}`  속성을 제거한다.
+``  속성을 제거한다.
 
 
 

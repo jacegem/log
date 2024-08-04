@@ -175,8 +175,7 @@ UPPERCASE!
 다운로드 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 local image
 배포 publicExport.zip 파일 압축 해제 후 커밋 &amp; 푸시를 한다.
-ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/content git -C $LOGSEQ_HUGO add . git -C $LOGSEQ_HUGO commit -m &#39;publicExport&#39; git -C $LOGSEQ_HUGO push unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한다.
-참고 hugo/disablePathToLower</p>
+ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/content git -C $LOGSEQ_HUGO add . git -C $LOGSEQ_HUGO commit -m &#39;publicExport&#39; git -C $LOGSEQ_HUGO push sed -ri &#39;&#39; &#39;s/\(https:\/\/i.imgur.com/\(\/assets/g&#39; $LOGSEQ_HUGO/content/pages/*.md sed -ri &#39;&#39; &#39;s/\{\:.*\}//g&#39; $LOGSEQ_HUGO/content/pages/*.md unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한다....</p>
   </div>
   <footer class="entry-footer"><span title='2024-08-03 00:00:00 +0000 UTC'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer>
   <a class="entry-link" aria-label="post link to Logseq Schrodinger 플러그인으로 배포하기" href="http://localhost:1313/pages/logseq-schrodinger-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%9C%BC%EB%A1%9C-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/"></a>
@@ -189,8 +188,7 @@ ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/
   </header>
   <div class="entry-content">
     <p>public page
-Logseq Schrodinger 플러그인으로 배포하기
-assets awk ‘{sub(/2019/,2020); print}’ test.txt ![caption]/assets//i.imgur.com/golowgw.png) i ![caption]/assets/golowgw.png) ![caption]/assets/golowgw.png) parentheses sed -ri ’’ ’s/(https://i.imgur.com/(/assets/g’ $LOGSEQ_HUGO/content/pages/*.md</p>
+Logseq Schrodinger 플러그인으로 배포하기</p>
   </div>
   <footer class="entry-footer"><span title='2023-09-20 00:00:00 +0000 UTC'>September 20, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer>
   <a class="entry-link" aria-label="post link to public" href="http://localhost:1313/pages/public/"></a>
