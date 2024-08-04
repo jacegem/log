@@ -71,6 +71,8 @@ categories:: app, logseq,
 
 
 
+저장소 경로를 설정하고 (`$LOGSEQ_HUGO`)
+
 publicExport.zip 파일 압축 해제 후 커밋 & 푸시를 한다.
 
 ```shell
