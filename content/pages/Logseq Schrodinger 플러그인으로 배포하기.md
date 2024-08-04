@@ -85,9 +85,8 @@ git -C $LOGSEQ_HUGO push
 
 
 
-unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한다.
-
-외부 이미지 링크 사용시 남아있는 https://i.imgur.com 을 제거한다.
+> unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한다.
+> 외부 이미지 링크 사용시 남아있는 https://i.imgur.com 을 제거한다.
 
 
 
