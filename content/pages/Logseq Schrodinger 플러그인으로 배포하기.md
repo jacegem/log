@@ -43,11 +43,11 @@ publicExport.zip 파일 압축 해제 후 커밋 & 푸시를 한다.
 
 ```shell
 ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/content
+sed -ri '' 's/\(https:\/\/i.imgur.com/\(\/assets/g' $LOGSEQ_HUGO/content/pages/*.md
+sed -ri '' 's/\{\:.*\}//g' $LOGSEQ_HUGO/content/pages/*.md
 git -C $LOGSEQ_HUGO add .
 git -C $LOGSEQ_HUGO commit -m 'publicExport'
 git -C $LOGSEQ_HUGO push
-sed -ri '' 's/\(https:\/\/i.imgur.com/\(\/assets/g' $LOGSEQ_HUGO/content/pages/*.md
-sed -ri '' 's/\{\:.*\}//g' $LOGSEQ_HUGO/content/pages/*.md
 ```
 
 
