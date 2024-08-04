@@ -57,6 +57,20 @@ categories:: app, logseq,
 
 ## 배포
 
+다운받은 `publicExport.zip` 압축을 풀면 아래 처럼 나온다.
+
+```
+.
+├── assets
+│   └── golowgw.png#center
+└── pages
+    ├── Logseq Schrodinger 플러그인으로 배포하기.md
+    ├── public.md
+    └── 카이젠 저니.md
+```
+
+
+
 publicExport.zip 파일 압축 해제 후 커밋 & 푸시를 한다.
 
 ```shell
