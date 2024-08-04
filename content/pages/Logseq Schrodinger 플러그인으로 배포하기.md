@@ -11,7 +11,7 @@ lastMod: 2024-08-04
 
 [public]({{< ref "/pages/public" >}})
 
-
+UPPERCASE!
 
 ## 문서 작성
 
@@ -23,7 +23,7 @@ lastMod: 2024-08-04
 
 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 
-![](https://i.imgur.com/golowgw.png)
+![](https://i.imgur.com/golowgw.png?align=center)
 
 
 
