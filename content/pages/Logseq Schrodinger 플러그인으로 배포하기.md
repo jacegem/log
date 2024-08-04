@@ -46,13 +46,17 @@ ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/
 git -C $LOGSEQ_HUGO add .
 git -C $LOGSEQ_HUGO commit -m 'publicExport'
 git -C $LOGSEQ_HUGO push
+sed -ri '' 's/\(https:\/\/i.imgur.com/\(\/assets/g' $LOGSEQ_HUGO/content/pages/*.md
+sed -ri '' 's/\{\:.*\}//g' $LOGSEQ_HUGO/content/pages/*.md
 ```
 
 
 
 unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한다.
 
+외부 이미지 링크 사용시 남아있는 https://i.imgur.com 을 제거한다.
 
+`{:width 100}`  속성을 제거한다.
 
 
 
