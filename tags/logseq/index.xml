@@ -4,7 +4,7 @@ https://github.com/CharlesChiuGit/Logseq-Hugo-Template 템플릿 사용해서 �
 문서 속성에 public:: true 를 추가한다
 필요에 따라 tags::, categories:: 를 추가한다.
 예시)
-public:: true tags:: logseq, public, plugin, ditto, sed, git categories:: [[app]], [[logseq]], 다운로드 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
+public:: true tags:: logseq, public, plugin, ditto, sed, git categories:: app, logseq, 다운로드 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 배포 다운받은 publicExport.zip 압축을 풀면 아래 처럼 나온다.
 . ├── assets │ └── golowgw.png#center └── pages ├── Logseq Schrodinger 플러그인으로 배포하기.md ├── public.md └── 카이젠 저니.</description></item><item><title>제목 변경?</title><link>https://blog.moro.kr/pages/%EC%A0%9C%EB%AA%A9-%EB%B3%80%EA%B2%BD/</link><pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EC%A0%9C%EB%AA%A9-%EB%B3%80%EA%B2%BD/</guid><description>플러그인 설치 https://github.com/sawhney17/logseq-schrodinger 설치
 https://github.com/CharlesChiuGit/Logseq-Hugo-Template 템플릿 사용해서 저장소 생성
@@ -12,6 +12,6 @@ https://github.com/CharlesChiuGit/Logseq-Hugo-Template 템플릿 사용해서 �
 문서 속성에 public:: true 를 추가한다
 필요에 따라 tags::, categories:: 를 추가한다.
 예시)
-public:: true tags:: logseq, public, plugin, ditto, sed, git categories:: [[app]], [[logseq]], 다운로드 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
+public:: true tags:: logseq, public, plugin, ditto, sed, git categories:: app, logseq, 다운로드 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 배포 다운받은 publicExport.zip 압축을 풀면 아래 처럼 나온다.
 . ├── assets │ └── golowgw.png#center └── pages ├── Logseq Schrodinger 플러그인으로 배포하기.md ├── public.md └── 카이젠 저니.</description></item></channel></rss>
