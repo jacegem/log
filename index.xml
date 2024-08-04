@@ -5,8 +5,8 @@ https://github.com/CharlesChiuGit/Logseq-Hugo-Template 템플릿 사용해서 �
 필요에 따라 tags::, categories:: 를 추가한다.
 예시)
 public:: true tags:: logseq, public, plugin, ditto, sed, git categories:: app, logseq, 다운로드 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
-배포 publicExport.zip 파일 압축 해제 후 커밋 &amp;amp; 푸시를 한다.
-ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/content sed -ri &amp;#39;&amp;#39; &amp;#39;s/\(https:\/\/i.imgur.com/\(\/assets/g&amp;#39; $LOGSEQ_HUGO/content/pages/*.md git -C $LOGSEQ_HUGO add .</description></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>public page
+배포 다운받은 publicExport.zip 압축을 풀면 아래 처럼 나온다.
+. ├── assets │ └── golowgw.png#center └── pages ├── Logseq Schrodinger 플러그인으로 배포하기.md ├── public.md └── 카이젠 저니.</description></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>public page
 Logseq Schrodinger 플러그인으로 배포하기</description></item><item><title>카이젠 저니</title><link>https://blog.moro.kr/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/</guid><description>당신은 무엇을 하는 사람인가?
 3장 혼자 시작하는 회고
 4장 혼자 시작하는 태스크 가시화
