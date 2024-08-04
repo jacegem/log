@@ -44,7 +44,7 @@ publicExport.zip 파일 압축 해제 후 커밋 & 푸시를 한다.
 ```shell
 ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/content
 sed -ri '' 's/\(https:\/\/i.imgur.com/\(\/assets/g' $LOGSEQ_HUGO/content/pages/*.md
-sed -ri '' 's/\{\:.*\}//g' $LOGSEQ_HUGO/content/pages/*.md
+sed -ri '' 's/\)\{\:.*\}/\)/g' $LOGSEQ_HUGO/content/pages/*.md
 git -C $LOGSEQ_HUGO add .
 git -C $LOGSEQ_HUGO commit -m 'publicExport'
 git -C $LOGSEQ_HUGO push
@@ -56,7 +56,7 @@ unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한�
 
 외부 이미지 링크 사용시 남아있는 https://i.imgur.com 을 제거한다.
 
-``  속성을 제거한다.
+이미지 속성 `` 을 제거한다.
 
 
 

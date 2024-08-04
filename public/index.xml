@@ -19,7 +19,7 @@ UPPERCASE!
 다운로드 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 local image
 배포 publicExport.zip 파일 압축 해제 후 커밋 &amp;amp; 푸시를 한다.
-ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/content git -C $LOGSEQ_HUGO add . git -C $LOGSEQ_HUGO commit -m &amp;#39;publicExport&amp;#39; git -C $LOGSEQ_HUGO push sed -ri &amp;#39;&amp;#39; &amp;#39;s/\(https:\/\/i.imgur.com/\(\/assets/g&amp;#39; $LOGSEQ_HUGO/content/pages/*.md sed -ri &amp;#39;&amp;#39; &amp;#39;s/\{\:.*\}//g&amp;#39; $LOGSEQ_HUGO/content/pages/*.md unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한다.</description>
+ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/content sed -ri &amp;#39;&amp;#39; &amp;#39;s/\(https:\/\/i.imgur.com/\(\/assets/g&amp;#39; $LOGSEQ_HUGO/content/pages/*.md sed -ri &amp;#39;&amp;#39; &amp;#39;s/\{\:.*\}//g&amp;#39; $LOGSEQ_HUGO/content/pages/*.md git -C $LOGSEQ_HUGO add . git -C $LOGSEQ_HUGO commit -m &amp;#39;publicExport&amp;#39; git -C $LOGSEQ_HUGO push unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한다.</description>
     </item>
     <item>
       <title>public</title>
