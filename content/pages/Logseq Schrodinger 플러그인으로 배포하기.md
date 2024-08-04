@@ -19,6 +19,8 @@ lastMod: 2024-08-04
 
 
 
+
+
 ## 플러그인 설치
 
 https://github.com/sawhney17/logseq-schrodinger 설치
