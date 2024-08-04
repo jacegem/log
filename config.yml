@@ -5,7 +5,7 @@ theme: 'PaperMod'
 
 params:
   homeInfoParams:
-    Title: Logseq Publish Pages 😎
+    Title: Logseq Public Pages 😎
     Content: “Talk is cheap. Show me the code.”
 
   socialIcons: # optional

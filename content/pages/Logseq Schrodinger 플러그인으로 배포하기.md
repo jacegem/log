@@ -15,21 +15,21 @@ lastMod: 2024-08-04
 ---
 
 
-
-
-
-
-
-
 ## 플러그인 설치
 
-[public]({{< ref "/pages/public" >}})
+https://github.com/sawhney17/logseq-schrodinger 설치
 
-UPPERCASE!
+템플릿 사용해서 저장소 생성
+
+
 
 ## 문서 작성
 
-속성을 추가한다. `public:: true`
+logseq에서 문서를 작성한다.
+
+문서 속성에 `public:: true` 를 추가한다
+
+필요에 따라 tags::, categories:: 를 추가한다.
 
 
 
@@ -38,8 +38,6 @@ UPPERCASE!
 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 
 ![caption](/assets/golowgw.png#center)
-
-
 
 
 
