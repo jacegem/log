@@ -19,7 +19,7 @@ lastMod: 2024-08-04
 
 https://github.com/sawhney17/logseq-schrodinger 설치
 
-템플릿 사용해서 저장소 생성
+https://github.com/CharlesChiuGit/Logseq-Hugo-Template 템플릿 사용해서 저장소 생성
 
 
 
@@ -29,7 +29,15 @@ logseq에서 문서를 작성한다.
 
 문서 속성에 `public:: true` 를 추가한다
 
-필요에 따라 tags::, categories:: 를 추가한다.
+필요에 따라 `tags::`, `categories::` 를 추가한다.
+
+예시)
+
+```typescript
+public:: true
+tags:: logseq, public, plugin, ditto, sed, git
+categories:: app, logseq,
+```
 
 
 
