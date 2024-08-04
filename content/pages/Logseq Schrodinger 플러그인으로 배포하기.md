@@ -25,7 +25,7 @@ export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 
 ![getBlocksInPage](getblocksinpage)
 
-![caption](https://i.imgur.com/golowgw.png?align=center)
+![caption](https://i.imgur.com/golowgw.png){:height 90, :width 500, :align center}
 
 
 
