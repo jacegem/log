@@ -1,7 +1,7 @@
 baseURL: https://blog.moro.kr
 languageCode: ko-kr
 title: LPP
-theme: 'PaperMod2'
+theme: 'PaperMod'
 
 params:
   homeInfoParams:
