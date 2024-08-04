@@ -27,6 +27,14 @@ export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 
 ![caption](https://i.imgur.com/golowgw.png){:height 90, :width 500, :align center}
 
+local image
+
+![스크린샷 2024-08-03 오후 11.02.24.png](/assets/스크린샷_2024-08-03_오후_11.02.24_1722733021855_0.png)
+
+
+
+
+
 
 
 ## 배포
