@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.131.0"><script src="/log/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=log/livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.131.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
@@ -10,18 +10,18 @@
 
 <meta name="description" content="">
 <meta name="author" content="Jace">
-<link rel="canonical" href="http://localhost:1313/log/">
-<link crossorigin="anonymous" href="/log/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/log/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/log/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/log/favicon.ico">
-<link rel="apple-touch-icon" href="http://localhost:1313/log/favicon.ico">
-<link rel="mask-icon" href="http://localhost:1313/log/favicon.ico">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/favicon.ico">
+<link rel="mask-icon" href="http://localhost:1313/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/log/index.xml">
-<link rel="alternate" type="application/json" href="http://localhost:1313/log/index.json">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/log/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
         #theme-toggle,
@@ -61,12 +61,12 @@
 </noscript>
     
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-00000XXXXX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V52SMVT933"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-- gtag('config', 'G-00000XXXXX');
+- gtag('config', 'G-V52SMVT933');
 </script>
 
     
@@ -99,8 +99,8 @@ gtag('js', new Date());
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/log/" accesskey="h" title="Portal (Alt + H)">
-                <img src="http://localhost:1313/log/unicorn72x72.png" alt="" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="Portal (Alt + H)">
+                <img src="http://localhost:1313/unicorn72x72.png" alt="" aria-label="logo"
                     height="35">Portal</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -127,22 +127,22 @@ gtag('js', new Date());
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/log/categories/" title="Categories">
+                <a href="http://localhost:1313/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/log/archives/" title="Archive">
+                <a href="http://localhost:1313/archives/" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/log/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/log/tags/" title="Tags">
+                <a href="http://localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
@@ -183,14 +183,32 @@ gtag('js', new Date());
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Logseq Schrodinger 플러그인으로 배포하기
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>플러그인 설치 public
+문서 작성 속성을 추가한다. public:: true
+다운로드 export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
+배포 publicExport.zip 파일 압축 해제 후 커밋 &amp; 푸시를 한다.
+ditto -V -x -k --sequesterRsrc --rsrc ~/Downloads/publicExport.zip $LOGSEQ_HUGO/content git -C $LOGSEQ_HUGO add . git -C $LOGSEQ_HUGO commit -m &#39;publicExport&#39; git -C $LOGSEQ_HUGO push unzip 사용시 Illegal byte sequence 에러가 발생하여 ditto를 사용한다.
+참고 hugo/disablePathToLower</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-03 00:00:00 +0000 UTC'>August 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer>
+  <a class="entry-link" aria-label="post link to Logseq Schrodinger 플러그인으로 배포하기" href="http://localhost:1313/pages/logseq-schrodinger-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EC%9C%BC%EB%A1%9C-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">public
     </h2>
   </header>
   <div class="entry-content">
-    <p>logseq public page</p>
+    <p>public page
+Logseq Schrodinger 플러그인으로 배포하기</p>
   </div>
   <footer class="entry-footer"><span title='2023-09-20 00:00:00 +0000 UTC'>September 20, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer>
-  <a class="entry-link" aria-label="post link to public" href="http://localhost:1313/log/pages/public/"></a>
+  <a class="entry-link" aria-label="post link to public" href="http://localhost:1313/pages/public/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -222,12 +240,13 @@ Why에서 시작하라
 나는 누구인가...</p>
   </div>
   <footer class="entry-footer"><span title='2023-09-20 00:00:00 +0000 UTC'>September 20, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer>
-  <a class="entry-link" aria-label="post link to 카이젠 저니" href="http://localhost:1313/log/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/"></a>
+  <a class="entry-link" aria-label="post link to 카이젠 저니" href="http://localhost:1313/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://localhost:1313/log/">LPP</a></span>
+        <span>&copy; 2024 <a href="http://localhost:1313/">LPP</a></span> · 
+
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

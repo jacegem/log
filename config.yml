@@ -1,7 +1,7 @@
 baseURL: https://blog.moro.kr
 languageCode: ko-kr
 title: LPP
-theme: 'PaperMod'
+theme: 'PaperMod2'
 
 params:
   homeInfoParams:
@@ -106,5 +106,5 @@ markup:
     # lineNos: true
     style: monokai
 
-disablePathToLower: true
-preserveTaxonomyNames: true
+build:
+  disablePathToLower: true
