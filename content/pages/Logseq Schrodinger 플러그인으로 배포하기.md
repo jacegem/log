@@ -1,10 +1,20 @@
 ---
-title: Logseq Schrodinger 플러그인으로 배포하기
 tags:
-categories:
+- logseq
+- public
+- plugin
+- ditto
+- sed
+- git
+categories: app, logseq,
+title: Logseq Schrodinger 플러그인으로 배포하기
 date: 2024-08-03
 lastMod: 2024-08-04
 ---
+
+
+
+
 
 
 ## 플러그인 설치
