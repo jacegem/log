@@ -25,7 +25,7 @@ export-public-pages-to-hugo 버튼을 눌러서 다운로드 받는다.
 
 ![getBlocksInPage](getblocksinpage)
 
-![caption](/assets/golowgw.png)
+![caption](/assets/golowgw.png#center)
 
 local image
 
