@@ -6,11 +6,15 @@ tags:
 - ditto
 - sed
 - git
-categories: app, logseq,
+categories:
+- app
+- logseq
 title: Logseq Schrodinger 플러그인으로 배포하기
 date: 2024-08-03
 lastMod: 2024-08-04
 ---
+
+
 
 
 
