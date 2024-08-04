@@ -34,7 +34,7 @@ params:
   # PaperMod page config
   ShowReadingTime: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  # ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
   disableScrollToTop: false
