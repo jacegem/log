@@ -19,7 +19,7 @@ vscode에서 Python: Run Selection/Line in Python Terminal 실행시에
 
 
 
-![](https://i.imgur.com/cqjmrx2.png)
+![](/assets/cqjmrx2.png)
 
 
 
