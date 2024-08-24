@@ -8,8 +8,8 @@ categories:
 - python
 - error
 title: python/IndentationError - expected an indented block
-date: 2024-08-05
-lastMod: 2024-08-05
+date: 2024-08-09
+lastMod: 2024-08-09
 ---
 
 
