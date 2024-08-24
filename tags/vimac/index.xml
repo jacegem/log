@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Vimac on LPP</title><link>https://blog.moro.kr/tags/vimac/</link><description>Recent content in Vimac on LPP</description><generator>Hugo -- 0.133.0</generator><language>ko-kr</language><lastBuildDate>Sat, 24 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/tags/vimac/index.xml" rel="self" type="application/rss+xml"/><item><title>shortcat 를 발견하기 까지</title><link>https://blog.moro.kr/pages/shortcat-%EB%A5%BC-%EB%B0%9C%EA%B2%AC%ED%95%98%EA%B8%B0-%EA%B9%8C%EC%A7%80/</link><pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/shortcat-%EB%A5%BC-%EB%B0%9C%EA%B2%AC%ED%95%98%EA%B8%B0-%EA%B9%8C%EC%A7%80/</guid><description>레딧에서 우연히 vscode 익스텐션 이야기를 봤다.
+https://www.reddit.com/r/vscode/comments/1ex57qy/i_moved_neovim_to_vscode_took_me_1_year_to_match/
+이렇게 vimium 처럼 사용하면 좋을 것 같아서, 비슷한 익스텐션을 찾아보았다.
+3년전 글에서 vimac 을 알게되었고, 이것이 homerow로 바뀌었다.
+This is similar to vimium but for all mac apps https://vimacapp.com/. I have seen it used to click around vscode
+Homerow를 사용하면 50번 마다 구매 팝업이 올라온다.
+그래서 또 비슷한 앱을 찾게 되었고, Shortcat 을 발견하였다.
+homerow homerow 에서 두가지 실행 방식이 있다.
+shorcut을 실행하면 아래처럼 나오고, 라벨에 적인 영문자를 눌르면, 해당 영역이 클릭된다.</description></item></channel></rss>
