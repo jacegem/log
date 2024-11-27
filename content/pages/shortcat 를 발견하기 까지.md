@@ -3,11 +3,16 @@ tags:
 - shortcat
 - vimac
 - homerow
-title: shortcat 를 발견하기 까지
+- public
 categories:
-date: 2024-08-24
-lastMod: 2024-08-24
+- macos
+- app
+title: shortcat 를 발견하기 까지
+date: 2024-09-18
+lastMod: 2024-09-18
 ---
+
+
 
 
 
