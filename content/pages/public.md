@@ -1,10 +1,12 @@
 ---
+date: 2024-11-28
 title: public
 tags:
 categories:
-date: 2024-09-18
 lastMod: 2024-11-28
 ---
+
+
 public page
 
 
