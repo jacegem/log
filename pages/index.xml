@@ -2,6 +2,13 @@
 &lt;p>Logseq Schrodinger 플러그인으로 배포하기&lt;/p>
 &lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">&lt;/p>
 &lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/q2wh4yp.png">&lt;/p>
+&lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="assets/screenshot_20241127_102110_karrot_1732714239937_0.png">&lt;/p></description></item><item><title>publish test</title><link>https://blog.moro.kr/pages/publish-test/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/publish-test/</guid><description>&lt;p>public page&lt;/p>
+&lt;p>Logseq Schrodinger 플러그인으로 배포하기&lt;/p>
+&lt;p>@@html: &lt;!-- raw HTML omitted -->@@&lt;/p>
+&lt;p>{{renderer excalidraw, excalidraw-2024-11-28-09-15-41}}&lt;/p>
+&lt;p>&lt;a href="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png&lt;/a>&lt;/p>
+&lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/q2wh4yp.png">&lt;/p>
 &lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="assets/screenshot_20241127_102110_karrot_1732714239937_0.png">&lt;/p></description></item><item><title>로그시크 이미지 변경</title><link>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</guid><description>&lt;p>마크다운 이미지 넣기&lt;/p>
 &lt;p>html 이미지 넣기&lt;/p>
 &lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="assets/screenshot_20241127_102110_karrot_1732714239937_0.png">&lt;/p></description></item><item><title>python/IndentationError - expected an indented block</title><link>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</link><pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</guid><description>&lt;p>vscode에서 Python: Run Selection/Line in Python Terminal 실행시에&lt;/p>
