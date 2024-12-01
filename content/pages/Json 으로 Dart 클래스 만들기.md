@@ -6,10 +6,14 @@ tags:
 - dart
 - clojure
 - class
-title: Json 으로 Dart 클래스 만들기
 categories:
+- clojure
+- json
+title: Json 으로 Dart 클래스 만들기
 lastMod: 2024-12-01
 ---
+
+
 
 
 
@@ -76,6 +80,8 @@ base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용
 
 
 여기에, 배열과 맵을 처리할 수 있도록 추가한다.
+
+배열인 경우에는 안에 있는 요소들을 하나로 합쳐서 새로운 클래스를 생성한다.
 
 ```clojure
 (defn class-field-map [acc m base-name part-name]
@@ -199,7 +205,6 @@ base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용
 (def edn (cheshire/parse-string json csk/->kebab-case-keyword))
 (->> (class-field-map {} edn "my" "base")
      (class-string-rows {}))
-
 
 ;=> ("" "class MyBase {" "String? name;" "String? needs;" "}")
 ```
