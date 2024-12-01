@@ -147,9 +147,9 @@ base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용
 여기까지 실행해 보면, 아래처럼 나오는 것을 볼 수 있다.
 
 ```clojure
-  (def json "{ \"name\": \"Cheshire\", \"needs\": \"a string\"}")
-  (def edn (cheshire/parse-string json csk/->kebab-case-keyword))
-  (class-field-map {} edn "my" "base")
+(def json "{ \"name\": \"Cheshire\", \"needs\": \"a string\"}")
+(def edn (cheshire/parse-string json csk/->kebab-case-keyword))
+(class-field-map {} edn "my" "base")
 
 ;=> {:my-base [{:type :string, :name :name} {:type :string, :name :needs}]}
 ```
@@ -252,9 +252,9 @@ base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용
         :nest-map    {:say {:to 2}}
         :nest-other  {:say {:to "bob"}}})
 
- (convert-to-class m {:base-name "basic"})
+(convert-to-class m {:base-name "basic"})
 
-=> "\nclass Basic {\nList<BasicListMap>? listMap;\ndouble? doubleType;\nString? stringType;\nbool? boolType;\nBasicNestMap? nestMap;\nint? intType;\nList<String>? listString;\nBasicNestOther? nestOther;\nList<bool>? listBool;\nList<int>? listInt;\nList<double>? listDouble;\n}\n\nclass BasicListMap {\nString? s;\nint? i;\nbool? b;\ndouble? d;\n}\n\nclass BasicNestMap {\nBasicSay? say;\n}\n\nclass BasicSay {\nint? to;\n}\n\nclass BasicNestOther {\nBasicSay1? say;\n}\n\nclass BasicSay1 {\nString? to;\n}"
+;=> "\nclass Basic {\nList<BasicListMap>? listMap;\ndouble? doubleType;\nString? stringType;\nbool? boolType;\nBasicNestMap? nestMap;\nint? intType;\nList<String>? listString;\nBasicNestOther? nestOther;\nList<bool>? listBool;\nList<int>? listInt;\nList<double>? listDouble;\n}\n\nclass BasicListMap {\nString? s;\nint? i;\nbool? b;\ndouble? d;\n}\n\nclass BasicNestMap {\nBasicSay? say;\n}\n\nclass BasicSay {\nint? to;\n}\n\nclass BasicNestOther {\nBasicSay1? say;\n}\n\nclass BasicSay1 {\nString? to;\n}"
 ```
 
 
