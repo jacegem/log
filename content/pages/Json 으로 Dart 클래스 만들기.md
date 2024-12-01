@@ -113,6 +113,11 @@ base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용
 클래스명이 중복되는 경우에는 뒤에 숫자를 붙여서 생성한다. 1부터 ~ 무한
 
 ```clojure
+(defn name-with-num [name num]
+  (if (= num 0)
+    name
+    (str name "-" num)))
+
 (defn unique-part-name [acc base-name part-name]
   (let [num (->> (range)
                  (map (fn [n]
@@ -236,16 +241,16 @@ base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용
 
 ```clojure
 (def m {:string-type "string"
-          :int-type    1
-          :bool-type   false
-          :double-type 0.2
-          :list-string ["l", "s"]
-          :list-int    [1 2]
-          :list-bool   [true false]
-          :list-double [2.1 0.5]
-          :list-map    [{:s "s"} {:i 1} {:b true} {:d 3.3}]
-          :nest-map    {:say {:to 2}}
-          :nest-other  {:say {:to "bob"}}})
+        :int-type    1
+        :bool-type   false
+        :double-type 0.2
+        :list-string ["l", "s"]
+        :list-int    [1 2]
+        :list-bool   [true false]
+        :list-double [2.1 0.5]
+        :list-map    [{:s "s"} {:i 1} {:b true} {:d 3.3}]
+        :nest-map    {:say {:to 2}}
+        :nest-other  {:say {:to "bob"}}})
 
  (convert-to-class m {:base-name "basic"})
 
