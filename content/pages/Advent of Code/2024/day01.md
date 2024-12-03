@@ -8,10 +8,13 @@ categories:
 - clojure
 - aoc
 - Advent of Code
+link: https://adventofcode.com/2024/day/1
 title: Advent of Code/2024/day01
 lastMod: 2024-12-03
 ---
-[Advent of Code]({{< ref "/pages/Advent of Code" >}})
+https://adventofcode.com/2024/day/1
+
+## [Advent of Code]({{< ref "/pages/Advent of Code" >}})
 
 
 

@@ -11,6 +11,16 @@ lastMod: 2024-12-03
 
 
 
-
+## 2024
 
 [Advent of Code/2024/day01]({{< ref "/pages/Advent of Code/2024/day01" >}})
+
+
+
+
+
+
+
+
+
+
