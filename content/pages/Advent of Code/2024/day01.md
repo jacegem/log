@@ -1,5 +1,7 @@
 ---
 tags:
+- clojure
+- Advent of Code
 - aoc
 - 2024
 - day01
@@ -44,7 +46,7 @@ https://adventofcode.com/2024/day/1
 
 각각의 거리를 더하면, 11 이 된다.
 
-`2 + 1 + 0 + 1 + 2 + 5` => 11
+`2 + 1 + 0 + 1 + 2 + 5` = 11
 
 
 
