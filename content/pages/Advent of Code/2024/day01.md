@@ -55,7 +55,7 @@ https://adventofcode.com/2024/day/1
   "https://adventofcode.com/2024/day/1
    --- Day 1: Historian Hysteria ---"
   (:require
-   [advent-of-code.core :refer [read-lines))
+   [advent-of-code.core :refer [read-lines]]))
 
 (def sample ["3 4"
              "4 3"
@@ -66,7 +66,7 @@ https://adventofcode.com/2024/day/1
 
 (defn sort-numbers [lines]
   (-> (reduce (fn [acc row]
-                (let left right] (map Long/parseLong (re-seq #"\d+" row))]
+                (let [[left right] (map Long/parseLong (re-seq #"\d+" row))]
                   (-> acc
                       (update :left conj left)
                       (update :right conj right))))
@@ -80,7 +80,7 @@ https://adventofcode.com/2024/day/1
   (let [numbers              (sort-numbers lines)
         {:keys [left right]} numbers]
     (->> (map vector left right)
-         (map (fn l r (abs (- l r))))
+         (map (fn [[l r]] (abs (- l r))))
          (apply +))))
 ```
 

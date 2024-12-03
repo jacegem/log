@@ -60,7 +60,7 @@ lastMod: 2024-12-01
 ```clojure
 (defn class-field-map-basic [acc m base-name part-name]
   (let [class-name (keyword (str base-name "-" part-name))]
-    (reduce (fn [acc [key val
+    (reduce (fn [acc [key val]]
               (let [type (cond
                            (string? val) :string
                            (int? val) :int
@@ -86,7 +86,7 @@ base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용
 ```clojure
 (defn class-field-map [acc m base-name part-name]
   (let [class-name (keyword (str base-name "-" part-name))]
-    (reduce (fn [acc [key val
+    (reduce (fn [acc [key val]]
               (cond
                 (vector? val)  (cond
                                  (map? (first val)) (let [merged (apply merge {} val)]
@@ -172,9 +172,9 @@ base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용
                            int        "int"
                            bool       "bool"
                            double     "double"}} m]
-  (mapcat (fn class-name fields
+  (mapcat (fn [[class-name fields]]
             (reduce into []
-                    (str annotation)
+                    [[(str annotation)
                       (str "class " (csk/->PascalCase (name class-name)) " {")]
                      (->> (mapv (fn [field]
                                   (when-let [field-type (:type field)]
@@ -192,7 +192,7 @@ base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용
                                       (str type postfix " " name ";"))))
                                 fields)
                           (remove nil?))
-                     [(str "}")))
+                     [(str "}")]]))
           m))
 ```
 

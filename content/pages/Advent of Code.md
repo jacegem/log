@@ -23,7 +23,7 @@ lastMod: 2024-12-03
 (ns advent-of-code.core
   (:require
    [clojure.java.io :as io]
-   [clojure.string :refer [split-lines trim-newline))
+   [clojure.string :refer [split-lines trim-newline]]))
 
 (defn read-file [path]
   (-> path

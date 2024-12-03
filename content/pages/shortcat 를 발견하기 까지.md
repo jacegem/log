@@ -21,17 +21,17 @@ lastMod: 2024-09-18
 
 
 
-레딧에서 우연히 vscode 익스텐션 이야기를 봤다.
+레딧에서 우연히 [[vscode]] 익스텐션 이야기를 봤다.
 
 https://www.reddit.com/r/vscode/comments/1ex57qy/i_moved_neovim_to_vscode_took_me_1_year_to_match/
 
 ![](/assets/xfsnylt.png)
 
-이렇게 vimium 처럼 사용하면 좋을 것 같아서, 비슷한 익스텐션을 찾아보았다.
+이렇게 [[vimium]] 처럼 사용하면 좋을 것 같아서, 비슷한 익스텐션을 찾아보았다.
 
 
 
-3년전 글에서 vimac 을 알게되었고, 이것이 homerow로 바뀌었다.
+3년전 글에서 [[vimac]] 을 알게되었고, 이것이 [[homerow]]로 바뀌었다.
 
 > This is similar to vimium but for all mac apps [https://vimacapp.com/](https://vimacapp.com/). I have seen it used to click around vscode
 
@@ -43,9 +43,9 @@ https://www.reddit.com/r/vscode/comments/1ex57qy/i_moved_neovim_to_vscode_took_m
 
 
 
-Homerow를 사용하면 50번 마다 구매 팝업이 올라온다.
+[[Homerow]]를 사용하면 50번 마다 구매 팝업이 올라온다.
 
-그래서 또 비슷한 앱을 찾게 되었고, Shortcat 을 발견하였다.
+그래서 또 비슷한 앱을 찾게 되었고, [[Shortcat]] 을 발견하였다.
 
 
 
