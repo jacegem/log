@@ -8,7 +8,9 @@ tags:
 - date
 - time
 - local
-categories: clojure, datetime
+categories:
+- clojure
+- datetime
 date: 2024-12-02
 title: clojure datetime
 lastMod: 2024-12-02
