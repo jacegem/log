@@ -11,13 +11,13 @@ categories:
 title: Advent of Code/2024/day01
 lastMod: 2024-12-03
 ---
-Advent of Code
+[Advent of Code]({{< ref "/pages/Advent of Code" >}})
 
 
 
 
 
-예시에서 왼쪽 목록과 오른쪽 목록을 각각 정렬하고, 순서대로 거리를 구하고 모두 합한다.
+왼쪽 목록과 오른쪽 목록을 각각 정렬하고, 순서대로 거리를 구하고 모두 합한다.
 
 ```shell
 3   4
