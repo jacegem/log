@@ -5,11 +5,7 @@
 &lt;!-- raw HTML omitted -->
 &lt;p>just iframe code&lt;/p>
 &lt;p>&lt;code>&amp;lt;iframe width=&amp;quot;560&amp;quot; height=&amp;quot;315&amp;quot; src=&amp;quot;https://www.youtube.com/embed/DCzfVeTxoiE?si=Qk6FE95gOG-K69Ku&amp;quot; title=&amp;quot;YouTube video player&amp;quot; frameborder=&amp;quot;0&amp;quot; allow=&amp;quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&amp;quot; referrerpolicy=&amp;quot;strict-origin-when-cross-origin&amp;quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/code>&lt;/p>
-&lt;p>embed-html&lt;/p>
+&lt;p>embed-iframe&lt;/p>
 &lt;p>@@html: &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->@@&lt;/p>
-&lt;p>logseq-video&lt;/p>
-&lt;p>{{video &lt;a href="https://www.youtube.com/watch?v=DCzfVeTxoiE%7D%7D">https://www.youtube.com/watch?v=DCzfVeTxoiE}}&lt;/a>&lt;/p>
-&lt;p>markdown&lt;/p>
-&lt;p>&lt;a href="https://www.youtube.com/watch?v=DCzfVeTxoiE">&lt;/a>&lt;/p>
-&lt;h2 id="lyrics">lyrics&lt;/h2>
-&lt;p>Get her name and get her number&lt;/p></description></item></channel></rss>
+&lt;p>embed-html&lt;/p>
+&lt;p>@@html: &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->@@&lt;/p></description></item></channel></rss>
