@@ -32,7 +32,7 @@ params:
   image: 'unicorn.ico'
 
   # PaperMod page config
-  ShowReadingTime: true
+  # ShowReadingTime: true
   ShowPostNavLinks: true
   # ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -49,7 +49,7 @@ params:
     favicon32x32: "favicon.ico"
     apple_touch_icon: "favicon.ico"
     safari_pinned_tab: "favicon.ico"
-  
+
 
   label:
     text: "Portal"
@@ -105,6 +105,9 @@ markup:
     guessSyntax: true
     # lineNos: true
     style: monokai
+  goldmark:
+    renderer:
+      unsafe: true
 
 build:
   disablePathToLower: true
