@@ -11,17 +11,13 @@ title: I don't Think That I Like Her
 date: 2025-01-03
 lastMod: 2025-01-06
 ---
+[english/song]({{< ref "/pages/english/song" >}})
 
 
 
+<html> <iframe width="560" height="315" src="https://www.youtube.com/embed/DCzfVeTxoiE?si=Qk6FE95gOG-K69Ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </html>
 
 
-
-
-
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DCzfVeTxoiE?si=Qk6FE95gOG-K69Ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
@@ -41,7 +37,7 @@ Then she starts sleepin' over the crib on weekends
 
 Like a real relationship, oh, no
 
-
+---
 
 그녀의 이름을 알고 번호도 알고
 
@@ -55,7 +51,7 @@ Like a real relationship, oh, no
 
 진짜 관계처럼
 
-
+---
 
 For me, the stars are alignin'
 
@@ -63,7 +59,7 @@ But for her, it's bad timin'
 
 So she just can't be mine
 
-
+---
 
 나한텐 좋은 순간처럼 보였지만
 
@@ -71,7 +67,7 @@ So she just can't be mine
 
 그래서 그녀를 내것으로 만들지 못했어
 
-
+---
 
 I don't think that I like her anymore
 
@@ -85,7 +81,7 @@ I don't think that I like her anymore
 
 They just wanna see me fall apart, apart (Oh-oh)
 
-
+---
 
 난 더 이상 그녀를 좋아하지 않는것 같아
 
@@ -99,7 +95,7 @@ They just wanna see me fall apart, apart (Oh-oh)
 
 그들은 내가 망하는 걸 보고 싶어해
 
-
+---
 
 So I hook up on a rebound
 
@@ -113,7 +109,7 @@ But I find out eventually I'm not her type
 
 Baby, that's the reason why, that
 
-
+---
 
 전여친을 잊으려 다른 여자들도 만나봤어
 
@@ -127,7 +123,7 @@ Baby, that's the reason why, that
 
 그래서 우리가 안 된 거였어
 
-
+---
 
 For me, the stars are alignin'
 
@@ -135,7 +131,7 @@ But for her, it's bad timin'
 
 So she just can't be mine
 
-
+---
 
 나한텐 좋은 순간처럼 보였지만
 
@@ -143,7 +139,7 @@ So she just can't be mine
 
 그래서 그녀를 내것으로 만들지 못했어
 
-
+---
 
 I don't think that I like her anymore (Yeah)
 
@@ -157,7 +153,7 @@ I don't think that I like her anymore (No)
 
 They just wanna see me fall apart, apart (Oh-oh)
 
-
+---
 
 난 더이상 그녀를 좋아하지 않는것 같아
 
@@ -171,7 +167,7 @@ They just wanna see me fall apart, apart (Oh-oh)
 
 모두 내가 망하는걸 보고싶어해
 
-
+---
 
 I'm tryin' not to be bitter
 
@@ -179,7 +175,7 @@ But damn it, I miss her
 
 'Cause she's one of a kind (One of a kind)
 
-
+---
 
 씁쓸하긴 한데, 노력 중이야
 
@@ -187,9 +183,7 @@ But damn it, I miss her
 
 그녀 같은 사람은 없으니까
 
-
-
-
+---
 
 For me, the stars are alignin’
 
@@ -197,7 +191,7 @@ But for her, it's bad timin’
 
 So she just can't be mine
 
-
+---
 
 나에겐 모든 게 완벽했지만
 
@@ -205,9 +199,7 @@ So she just can't be mine
 
 그래서 내 옆에 있을 수 없는 거야
 
-
-
-
+---
 
 I don't think that I like her anymore (Yeah)
 
@@ -221,6 +213,8 @@ I don't think that I like her anymore (No)
 
 They just wanna see me fall apart, apart (Oh-oh)
 
+---
+
 난 더이상 그녀를 좋아하지 않는것 같아
 
 다들 똑같거든
@@ -233,7 +227,7 @@ They just wanna see me fall apart, apart (Oh-oh)
 
 모두 내가 망하는걸 보고싶어해
 
-.
+---
 
 Then we fall, we fall, fall, fall apart now
 
@@ -243,7 +237,7 @@ I don't think that I like her anymore
 
 They just wanna see me fall apart, apart (Oh-oh)
 
-
+---
 
 우리 사인 지금 그렇게 끝이 났어
 
@@ -253,9 +247,7 @@ They just wanna see me fall apart, apart (Oh-oh)
 
 무너지는 내 모습이 보고 싶을 뿐
 
-**​**
-
-
+---
 
 
 
