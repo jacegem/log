@@ -13,7 +13,7 @@ categories:
 - datetime
 date: 2024-12-02
 title: clojure datetime
-lastMod: 2024-12-02
+lastMod: 2025-01-03
 ---
 
 

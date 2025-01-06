@@ -5,7 +5,7 @@ tags:
 - AOC
 title: Advent of Code
 categories:
-lastMod: 2024-12-03
+lastMod: 2025-01-03
 ---
 
 

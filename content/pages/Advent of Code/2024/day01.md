@@ -12,7 +12,7 @@ categories:
 - Advent of Code
 link: https://adventofcode.com/2024/day/1
 title: Advent of Code/2024/day01
-lastMod: 2024-12-03
+lastMod: 2025-01-03
 ---
 https://adventofcode.com/2024/day/1
 
@@ -66,7 +66,7 @@ https://adventofcode.com/2024/day/1
 
 (defn sort-numbers [lines]
   (-> (reduce (fn [acc row]
-                (let [[left right] (map Long/parseLong (re-seq #"\d+" row))]
+                (let [[left right] (map parse-long (re-seq #"\d+" row))]
                   (-> acc
                       (update :left conj left)
                       (update :right conj right))))
