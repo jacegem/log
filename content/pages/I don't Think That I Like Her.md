@@ -35,11 +35,11 @@ just iframe code
 
 
 
-brace-iframe
-
-{{<iframe width="560" height="315" src="https://www.youtube.com/embed/DCzfVeTxoiE?si=Qk6FE95gOG-K69Ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>}}
 
 
+embed-html
+
+@@html: <iframe width="560" height="315" src="https://www.youtube.com/embed/DCzfVeTxoiE?si=Qk6FE95gOG-K69Ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>@@
 
 
 
