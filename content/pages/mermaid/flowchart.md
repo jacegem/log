@@ -53,7 +53,7 @@ C-->D;
 
 mermaid mardown?
 
-```mermaid
+```mermaid {class="mermaid"}
 flowchart LR
     id
 ```
