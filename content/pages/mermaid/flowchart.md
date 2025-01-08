@@ -11,6 +11,12 @@ lastMod: 2025-01-08
 
 
 
+_markup/render 만 활성화
+
+
+
+
+
 
 
 
@@ -23,6 +29,10 @@ CUSTOMER ||--o{ ORDER : places
 ORDER ||--|{ LINE-ITEM : contains
 CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
+
+
+
+
 
 
 
