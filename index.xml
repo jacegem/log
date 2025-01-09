@@ -37,7 +37,7 @@ id
 &lt;p>서로의 공통점을 찾아가기 시작했어&lt;/p>
 &lt;p>차이점은 모두 무시한채&lt;/p>
 &lt;p>그녀의 부모님과 그녀의 오빠도 만나고&lt;/p></description></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>&lt;p>public page&lt;/p>
-&lt;div class="tip ">
+&lt;div class="tip " style="text-align: center;">
 center test&amp;hellip;. how to change bg?
 &lt;/div></description></item><item><title>public page</title><link>https://blog.moro.kr/pages/public-page/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-page/</guid><description>&lt;p>링크 테스트&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/public-test/">public test&lt;/a>&lt;/p></description></item><item><title>public test</title><link>https://blog.moro.kr/pages/public-test/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-test/</guid><description>&lt;p>public test 페이지&lt;/p></description></item><item><title>python/IndentationError - expected an indented block</title><link>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</guid><description>&lt;p>[[vscode]]에서 [[Python]]: Run Selection/Line in Python Terminal 실행시에&lt;/p>
