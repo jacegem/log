@@ -20,7 +20,6 @@
         {{- partialCached "header.html" . .Page -}}
         <main class="main">
             {{- block "main" . }}{{ end }}
-            {{ partial "backlinks.html" . }}
             {{ partial "disqus.html" . }}
         </main>
         {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
