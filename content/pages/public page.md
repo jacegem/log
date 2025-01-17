@@ -1,5 +1,7 @@
 ---
 original-name: 퍼블릭 페이지
+alias:
+- 퍼블릭 페이지 alias
 title: public page
 tags:
 categories:
