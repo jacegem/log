@@ -12,7 +12,7 @@ categories:
 - Advent of Code
 link: https://adventofcode.com/2024/day/1
 hugo-title: aoc 2024 by hugo
-
+title: Advent of Code/2024/day01
 lastMod: 2025-01-15
 ---
 

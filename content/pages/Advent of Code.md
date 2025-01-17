@@ -3,7 +3,7 @@ date: 2024-12-01
 tags:
 - Advent of Code
 - AOC
-
+title: Advent of Code
 categories:
 lastMod: 2025-01-03
 ---

@@ -1,10 +1,13 @@
 ---
-
+original-name: 퍼블릭 테스트
+title: public test
 tags:
 categories:
 date: 2025-01-03
-lastMod: 2025-01-03
+lastMod: 2025-01-17
 ---
+
+
 
 
 
