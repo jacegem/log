@@ -1,6 +1,6 @@
 ---
 hugo: 퍼블릭 페이지 테스트
-title: public page
+title: 퍼블릭 페이지 테스트
 tags:
 categories:
 date: 2025-01-03

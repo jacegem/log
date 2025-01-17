@@ -7,7 +7,7 @@ tags:
 categories:
 - python
 - error
-title: python/IndentationError - expected an indented block
+
 date: 2025-01-03
 lastMod: 2025-01-03
 ---

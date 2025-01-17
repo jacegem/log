@@ -1,5 +1,5 @@
 ---
-title: public
+
 tags:
 categories:
 date: 2025-01-03
