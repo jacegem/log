@@ -21,7 +21,7 @@
 </aside>
 {{ else }}
 <aside>
-  <h4>No notes link to this note</h4>
+  <!-- <h4>No notes link to this note</h4> -->
 </aside>
 {{ end }}
 
@@ -29,7 +29,7 @@
   {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 }}
   {{ with $related }}
   <h3>slightly related</h3>
-  <ul>
+  <ul style="padding-top: 1rem; padding-left: 2rem;">
     {{ range . }}
     <li class="capitalize"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{ end }}
