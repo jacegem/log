@@ -1,7 +1,14 @@
-{{ $re := $.File.BaseFileName }} {{ $backlinks := slice }} {{ range where
-.Site.RegularPages "Type" "page" }} {{ if and (findRE $re .RawContent) (not (eq
-$re .File.BaseFileName)) }} {{ $backlinks = $backlinks | append . }} {{ end }}
-{{ end }} {{ if gt (len $backlinks) 0 }}
+<!-- https://github.com/sawhney17/logseq-schrodinger -->
+{{ if $.File }}
+{{ $re := $.File.BaseFileName }}
+{{ $backlinks := slice }}
+{{ range where .Site.RegularPages "Type" "page" }}
+{{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }}
+{{ $backlinks = $backlinks | append . }}
+{{ end }}
+{{ end }}
+
+{{ if gt (len $backlinks) 0 }}
 <aside>
   <h3>Backlinks</h3>
   <div class="backlinks">
@@ -19,13 +26,14 @@ $re .File.BaseFileName)) }} {{ $backlinks = $backlinks | append . }} {{ end }}
 {{ end }}
 
 <aside class="related">
-  {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3
-  -}} {{ with $related -}}
+  {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 }}
+  {{ with $related }}
   <h3>slightly related</h3>
   <ul>
-    {{ range . -}}
+    {{ range . }}
     <li class="capitalize"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end -}}
+    {{ end }}
   </ul>
-  {{ end -}}
+  {{ end }}
 </aside>
+{{ end }}
