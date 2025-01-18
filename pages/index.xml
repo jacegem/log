@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pages on LPP</title><link>https://blog.moro.kr/pages/</link><description>Recent content in Pages on LPP</description><generator>Hugo -- 0.141.0</generator><language>ko-kr</language><lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>english/song</title><link>https://blog.moro.kr/pages/english/song/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/english/song/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/i-dont-think-that-i-like-her/">I don&amp;rsquo;t Think That I Like Her&lt;/a>&lt;/p></description></item><item><title>mermaid/flowchart</title><link>https://blog.moro.kr/pages/mermaid/flowchart/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/mermaid/flowchart/</guid><description>&lt;p>_markup/render 만 활성화&lt;/p>
-&lt;p>{{renderer code_diagram,mermaid}}&lt;/p>
 &lt;pre class="mermaid">erDiagram
 CUSTOMER ||--o{ ORDER : places
 ORDER ||--|{ LINE-ITEM : contains
@@ -10,7 +9,6 @@ CUSTOMER ||--o{ ORDER : places
 ORDER ||--|{ LINE-ITEM : contains
 CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 &lt;/pre>
-&lt;p>{{renderer code_diagram,mermaid}}&lt;/p>
 &lt;pre class="mermaid">graph TD;
 A--&amp;gt;B;
 A--&amp;gt;C;
@@ -26,45 +24,21 @@ id
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> id&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>I don't Think That I Like Her</title><link>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</link><pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/english/song/">english/song&lt;/a>&lt;/p>
 &lt;html> &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/DCzfVeTxoiE?si=Qk6FE95gOG-K69Ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>&lt;/iframe> &lt;/html>
 &lt;h2 id="lyrics">lyrics&lt;/h2>
-&lt;ul>
-&lt;li>
 &lt;p>Get her name and get her number&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Find out all of the things that we have in common&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Never all the differences, oh, yeah&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Meet her parents, meet her brother&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Then she starts sleepin&amp;rsquo; over the crib on weekends&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>Like a real relationship, oh, no&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;hr>
-&lt;/li>
-&lt;li>
 &lt;p>그녀의 이름을 알고 번호도 알고&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>서로의 공통점을 찾아가기 시작했어&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>차이점은 모두 무시한채&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>그녀의 부모님과 그녀의 오빠도 만나고&lt;/p></description></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>&lt;p>public page&lt;/p>
 &lt;div class="tip " style="text-align: center;">
 center test&amp;hellip;. how to change bg?
-&lt;/div></description></item><item><title>public page</title><link>https://blog.moro.kr/pages/public-page/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-page/</guid><description>&lt;p>링크 테스트&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://blog.moro.kr/pages/public-test/">public test&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>public test</title><link>https://blog.moro.kr/pages/public-test/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-test/</guid><description>&lt;p>public test 페이지&lt;/p>
+&lt;/div></description></item><item><title>public page</title><link>https://blog.moro.kr/pages/public-page/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-page/</guid><description>&lt;p>링크 테스트
+&lt;a href="https://blog.moro.kr/pages/public-test/">public test&lt;/a>&lt;/p></description></item><item><title>public test</title><link>https://blog.moro.kr/pages/public-test/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-test/</guid><description>&lt;p>public test 페이지&lt;/p>
 &lt;p>[[public-test]]&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/public-page/">public page&lt;/a>&lt;/p>
 &lt;p>embed page&lt;/p>
@@ -88,32 +62,14 @@ center test&amp;hellip;. how to change bg?
 &lt;p>17장 [[팀과 새로운 멤버의 경계]]&lt;/p>
 &lt;p>[[가치와 원칙 그리고 프로세스]]&lt;/p>
 &lt;p>[[다섯 가지 가치]]&lt;/p>
-&lt;ul>
-&lt;li>
 &lt;p>[[경계 넘기]]&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>[[자신부터 시작하기]]&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>[[피드백]]&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>[[리프레이밍]]&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>[[끌어들이기]], [[함께하기]]&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;p>다섯 가지 분류에 따른 27가지 원칙&lt;/p>
-&lt;ul>
-&lt;li>
 &lt;p>[[사고]]&lt;/p>
-&lt;ul>
-&lt;li>
 &lt;p>Why에서 시작하라&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>나는 누구인가&lt;/p></description></item><item><title>Advent of Code/2024/day01</title><link>https://blog.moro.kr/pages/advent-of-code/2024/day01/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/2024/day01/</guid><description>&lt;p>&lt;a href="https://adventofcode.com/2024/day/1">https://adventofcode.com/2024/day/1&lt;/a>&lt;/p>
 &lt;h2 id="advent-of-codehahahugoshortcode13s0hbhb">&lt;a href="https://blog.moro.kr/pages/advent-of-code/">Advent of Code&lt;/a>&lt;/h2>
 &lt;p>왼쪽 목록과 오른쪽 목록을 각각 정렬하고, 순서대로 거리를 구하고 모두 합한다.&lt;/p>
@@ -213,9 +169,7 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/zoned-date-time&lt;/span> &lt;span class="nv">m&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">ZoneId/of&lt;/span> &lt;span class="s">&amp;#34;Asia/Seoul&amp;#34;&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">m&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">data&lt;/span>&lt;span class="p">))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Advent of Code</title><link>https://blog.moro.kr/pages/advent-of-code/</link><pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/</guid><description>&lt;h2 id="2024">2024&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://blog.moro.kr/pages/advent-of-code/2024/day01/">Advent of Code/2024/day01&lt;/a>&lt;/li>
-&lt;/ul>
+&lt;p>&lt;a href="https://blog.moro.kr/pages/advent-of-code/2024/day01/">Advent of Code/2024/day01&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">advent-of-code.core&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.java.io&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">io&lt;/span>&lt;span class="p">]&lt;/span>
@@ -241,15 +195,11 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">cheshire.core&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">cheshire&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.string&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">string&lt;/span>&lt;span class="p">]))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;h2 id="edn-변환">edn 변환&lt;/h2>
-&lt;ul>
-&lt;li>먼저 edn 으로 변환한다. 키는 케밥 케이스 키워드로 변환한다.&lt;/li>
-&lt;/ul>
+&lt;p>먼저 edn 으로 변환한다. 키는 케밥 케이스 키워드로 변환한다.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="k">def &lt;/span>&lt;span class="nv">json&lt;/span> &lt;span class="s">&amp;#34;{ \&amp;#34;name\&amp;#34;: \&amp;#34;Cheshire\&amp;#34;, \&amp;#34;needs\&amp;#34;: \&amp;#34;a string\&amp;#34; }&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nf">cheshire/parse-string&lt;/span> &lt;span class="nv">json&lt;/span> &lt;span class="nv">csk/-&amp;gt;kebab-case-keyword&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;h2 id="클래스-맵으로-변환">클래스 맵으로 변환&lt;/h2>
-&lt;ul>
-&lt;li>아래와 같은 형태로 만든다.&lt;/li>
-&lt;/ul>
+&lt;p>아래와 같은 형태로 만든다.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>&lt;span class="ss">:클래스명1&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">필드들&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:클래스명2&lt;/span> &lt;span class="p">[{&lt;/span>&lt;span class="ss">:type&lt;/span> &lt;span class="nv">타입&lt;/span> &lt;span class="ss">:name&lt;/span> &lt;span class="nv">이름&lt;/span> &lt;span class="ss">:list&lt;/span> &lt;span class="nv">false&lt;/span>&lt;span class="p">}]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">...&lt;/span>&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
@@ -267,13 +217,26 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:name&lt;/span> &lt;span class="nv">key&lt;/span>&lt;span class="p">})))))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">assoc &lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">class-name&lt;/span> &lt;span class="p">[])&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">m&lt;/span>&lt;span class="p">)))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;ul>
-&lt;li>
 &lt;p>acc 에 모든 정보를 담는다.&lt;/p></description></item><item><title>publish test</title><link>https://blog.moro.kr/pages/publish-test/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/publish-test/</guid><description>&lt;p>public page&lt;/p>
 &lt;p>[[Logseq Schrodinger 플러그인으로 배포하기]]&lt;/p>
 &lt;p>@@html: &lt;img src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png" width=200>@@&lt;/p>
-&lt;p>{{renderer excalidraw, excalidraw-2024-11-28-09-15-41}}&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png&lt;/a>&lt;/p>
 &lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">&lt;/p>
 &lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/q2wh4yp.png">&lt;/p>
-&lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="assets/screenshot_20241127_102110_karrot_1732714239937_0.png">&lt;/p></description></item></channel></rss>
+&lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="assets/screenshot_20241127_102110_karrot_1732714239937_0.png">&lt;/p></description></item><item><title>logseq/publish</title><link>https://blog.moro.kr/pages/logseq/publish/</link><pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/logseq/publish/</guid><description>&lt;h1 id="로크시크-배포하기">로크시크 배포하기&lt;/h1>
+&lt;h2 id="그래프-내보내기">그래프 내보내기&lt;/h2>
+&lt;p>설정 버튼을 눌러서 &amp;gt; 그래프 내보내기 선택 &amp;gt; 공개 페이지 내보내기 선택&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/akhtapz.png">&lt;/p>
+&lt;p>내보내기 위치를 선택하면 다음 폴더들이 생성된다.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">├── 404.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── assets
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── your_assets.png
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── index.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── static
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── fonts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── icons
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── img
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── js&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="logseq-export-사용해서-배포하기">[[logseq-export 사용해서 배포하기]]&lt;/h2>
+&lt;h2 id="logseq-schrodinger-플러그인으로-배포하기">[[logseq schrodinger 플러그인으로 배포하기]]&lt;/h2></description></item></channel></rss>
