@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pages on LPP</title><link>https://blog.moro.kr/pages/</link><description>Recent content in Pages on LPP</description><generator>Hugo -- 0.141.0</generator><language>ko-kr</language><lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>english/song</title><link>https://blog.moro.kr/pages/english/song/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/english/song/</guid><description>&lt;p>&lt;a href="">I don&amp;rsquo;t Think That I Like Her&lt;/a>&lt;/p></description></item><item><title>mermaid/flowchart</title><link>https://blog.moro.kr/pages/mermaid/flowchart/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/mermaid/flowchart/</guid><description>&lt;p>_markup/render 만 활성화&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pages on LPP</title><link>https://blog.moro.kr/pages/</link><description>Recent content in Pages on LPP</description><generator>Hugo -- 0.141.0</generator><language>ko-kr</language><lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>english/song</title><link>https://blog.moro.kr/pages/english/song/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/english/song/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/i-dont-think-that-i-like-her/">I don&amp;rsquo;t Think That I Like Her&lt;/a>&lt;/p></description></item><item><title>mermaid/flowchart</title><link>https://blog.moro.kr/pages/mermaid/flowchart/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/mermaid/flowchart/</guid><description>&lt;p>_markup/render 만 활성화&lt;/p>
+&lt;p>{{renderer code_diagram,mermaid}}&lt;/p>
 &lt;pre class="mermaid">erDiagram
 CUSTOMER ||--o{ ORDER : places
 ORDER ||--|{ LINE-ITEM : contains
@@ -9,6 +10,7 @@ CUSTOMER ||--o{ ORDER : places
 ORDER ||--|{ LINE-ITEM : contains
 CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 &lt;/pre>
+&lt;p>{{renderer code_diagram,mermaid}}&lt;/p>
 &lt;pre class="mermaid">graph TD;
 A--&amp;gt;B;
 A--&amp;gt;C;
@@ -21,7 +23,7 @@ id
 &lt;/pre>
 &lt;p>shell?&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">flowchart LR
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> id&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>I don't Think That I Like Her</title><link>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</link><pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</guid><description>&lt;p>&lt;a href="">english/song&lt;/a>&lt;/p>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> id&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>I don't Think That I Like Her</title><link>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</link><pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/english/song/">english/song&lt;/a>&lt;/p>
 &lt;html> &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/DCzfVeTxoiE?si=Qk6FE95gOG-K69Ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>&lt;/iframe> &lt;/html>
 &lt;h2 id="lyrics">lyrics&lt;/h2>
 &lt;ul>
@@ -57,12 +59,14 @@ id
 &lt;/li>
 &lt;li>
 &lt;p>그녀의 부모님과 그녀의 오빠도 만나고&lt;/p></description></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>&lt;p>public page&lt;/p>
-&lt;p>center test&amp;hellip;. how to change bg?&lt;/p></description></item><item><title>public page</title><link>https://blog.moro.kr/pages/public-page/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-page/</guid><description>&lt;p>링크 테스트&lt;/p>
+&lt;div class="tip " style="text-align: center;">
+center test&amp;hellip;. how to change bg?
+&lt;/div></description></item><item><title>public page</title><link>https://blog.moro.kr/pages/public-page/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-page/</guid><description>&lt;p>링크 테스트&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">public test&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.moro.kr/pages/public-test/">public test&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>public test</title><link>https://blog.moro.kr/pages/public-test/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-test/</guid><description>&lt;p>public test 페이지&lt;/p>
 &lt;p>[[public-test]]&lt;/p>
-&lt;p>&lt;a href="">public page&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://blog.moro.kr/pages/public-page/">public page&lt;/a>&lt;/p>
 &lt;p>embed page&lt;/p>
 &lt;p>block embed&lt;/p>
 &lt;p>링크 테스트&lt;/p></description></item><item><title>python/IndentationError - expected an indented block</title><link>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</guid><description>&lt;p>[[vscode]]에서 [[Python]]: Run Selection/Line in Python Terminal 실행시에&lt;/p>
@@ -111,7 +115,7 @@ id
 &lt;/li>
 &lt;li>
 &lt;p>나는 누구인가&lt;/p></description></item><item><title>Advent of Code/2024/day01</title><link>https://blog.moro.kr/pages/advent-of-code/2024/day01/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/2024/day01/</guid><description>&lt;p>&lt;a href="https://adventofcode.com/2024/day/1">https://adventofcode.com/2024/day/1&lt;/a>&lt;/p>
-&lt;h2 id="advent-of-code">&lt;a href="">Advent of Code&lt;/a>&lt;/h2>
+&lt;h2 id="advent-of-codehahahugoshortcode13s0hbhb">&lt;a href="https://blog.moro.kr/pages/advent-of-code/">Advent of Code&lt;/a>&lt;/h2>
 &lt;p>왼쪽 목록과 오른쪽 목록을 각각 정렬하고, 순서대로 거리를 구하고 모두 합한다.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="m">3&lt;/span> &lt;span class="m">4&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">4&lt;/span> &lt;span class="m">3&lt;/span>
@@ -210,7 +214,7 @@ id
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">m&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">data&lt;/span>&lt;span class="p">))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Advent of Code</title><link>https://blog.moro.kr/pages/advent-of-code/</link><pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/</guid><description>&lt;h2 id="2024">2024&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="">Advent of Code/2024/day01&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.moro.kr/pages/advent-of-code/2024/day01/">Advent of Code/2024/day01&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">advent-of-code.core&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
@@ -268,6 +272,7 @@ id
 &lt;p>acc 에 모든 정보를 담는다.&lt;/p></description></item><item><title>publish test</title><link>https://blog.moro.kr/pages/publish-test/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/publish-test/</guid><description>&lt;p>public page&lt;/p>
 &lt;p>[[Logseq Schrodinger 플러그인으로 배포하기]]&lt;/p>
 &lt;p>@@html: &lt;img src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png" width=200>@@&lt;/p>
+&lt;p>{{renderer excalidraw, excalidraw-2024-11-28-09-15-41}}&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png&lt;/a>&lt;/p>
 &lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">&lt;/p>
 &lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/q2wh4yp.png">&lt;/p>
