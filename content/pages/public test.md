@@ -26,4 +26,9 @@ public test 페이지
 
 embed page
 
-{{embed [public page]({{< ref "/pages/public page" >}})}}
+
+
+block embed
+
+링크 테스트
+
