@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Clojure on LPP</title><link>https://blog.moro.kr/tags/clojure/</link><description>Recent content in Clojure on LPP</description><generator>Hugo -- 0.141.0</generator><language>ko-kr</language><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/tags/clojure/index.xml" rel="self" type="application/rss+xml"/><item><title>Advent of Code/2024/day01</title><link>https://blog.moro.kr/pages/advent-of-code/2024/day01/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/2024/day01/</guid><description>&lt;p>&lt;a href="https://adventofcode.com/2024/day/1">https://adventofcode.com/2024/day/1&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Clojure on LPP</title><link>https://blog.moro.kr/tags/clojure/</link><description>Recent content in Clojure on LPP</description><generator>Hugo -- 0.141.0</generator><language>ko-kr</language><lastBuildDate>Fri, 03 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/tags/clojure/index.xml" rel="self" type="application/rss+xml"/><item><title>Advent of Code/2024/day01</title><link>https://blog.moro.kr/pages/advent-of-code/2024/day01/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/2024/day01/</guid><description>&lt;p>&lt;a href="https://adventofcode.com/2024/day/1">https://adventofcode.com/2024/day/1&lt;/a>&lt;/p>
 &lt;h2 id="advent-of-codehahahugoshortcode13s0hbhb">&lt;a href="https://blog.moro.kr/pages/advent-of-code/">Advent of Code&lt;/a>&lt;/h2>
 &lt;p>왼쪽 목록과 오른쪽 목록을 각각 정렬하고, 순서대로 거리를 구하고 모두 합한다.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="m">3&lt;/span> &lt;span class="m">4&lt;/span>
@@ -103,11 +103,15 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">cheshire.core&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">cheshire&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.string&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">string&lt;/span>&lt;span class="p">]))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;h2 id="edn-변환">edn 변환&lt;/h2>
-&lt;p>먼저 edn 으로 변환한다. 키는 케밥 케이스 키워드로 변환한다.&lt;/p>
+&lt;ul>
+&lt;li>먼저 edn 으로 변환한다. 키는 케밥 케이스 키워드로 변환한다.&lt;/li>
+&lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="k">def &lt;/span>&lt;span class="nv">json&lt;/span> &lt;span class="s">&amp;#34;{ \&amp;#34;name\&amp;#34;: \&amp;#34;Cheshire\&amp;#34;, \&amp;#34;needs\&amp;#34;: \&amp;#34;a string\&amp;#34; }&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nf">cheshire/parse-string&lt;/span> &lt;span class="nv">json&lt;/span> &lt;span class="nv">csk/-&amp;gt;kebab-case-keyword&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;h2 id="클래스-맵으로-변환">클래스 맵으로 변환&lt;/h2>
-&lt;p>아래와 같은 형태로 만든다.&lt;/p>
+&lt;ul>
+&lt;li>아래와 같은 형태로 만든다.&lt;/li>
+&lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>&lt;span class="ss">:클래스명1&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">필드들&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:클래스명2&lt;/span> &lt;span class="p">[{&lt;/span>&lt;span class="ss">:type&lt;/span> &lt;span class="nv">타입&lt;/span> &lt;span class="ss">:name&lt;/span> &lt;span class="nv">이름&lt;/span> &lt;span class="ss">:list&lt;/span> &lt;span class="nv">false&lt;/span>&lt;span class="p">}]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">...&lt;/span>&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
@@ -125,4 +129,6 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:name&lt;/span> &lt;span class="nv">key&lt;/span>&lt;span class="p">})))))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">assoc &lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">class-name&lt;/span> &lt;span class="p">[])&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">m&lt;/span>&lt;span class="p">)))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;ul>
+&lt;li>
 &lt;p>acc 에 모든 정보를 담는다.&lt;/p></description></item></channel></rss>
