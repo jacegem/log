@@ -74,7 +74,8 @@ center test&amp;hellip;. how to change bg?
 &lt;p>[[public-test]]&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/public-page/">public page&lt;/a>&lt;/p>
 &lt;p>embed page&lt;/p>
-&lt;p>{{embed &lt;a href="https://blog.moro.kr/pages/public-page/">public page&lt;/a>}}&lt;/p></description></item><item><title>python/IndentationError - expected an indented block</title><link>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</guid><description>&lt;p>[[vscode]]에서 [[Python]]: Run Selection/Line in Python Terminal 실행시에&lt;/p>
+&lt;p>block embed&lt;/p>
+&lt;p>링크 테스트&lt;/p></description></item><item><title>python/IndentationError - expected an indented block</title><link>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</guid><description>&lt;p>[[vscode]]에서 [[Python]]: Run Selection/Line in Python Terminal 실행시에&lt;/p>
 &lt;p>&lt;code>python/IndentationError: expected an indented block&lt;/code> 에러가 발생하면&lt;/p>
 &lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/cqjmrx2.png">&lt;/p>
 &lt;p>&lt;code>Enable REPLSmart Send&lt;/code> 설정을 확인해서 활성화 해야 한다.&lt;/p></description></item><item><title>로그시크 이미지 변경</title><link>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</guid><description>&lt;p>마크다운 이미지 넣기&lt;/p>
