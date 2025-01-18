@@ -19,8 +19,10 @@
         " id="top">
         {{- partialCached "header.html" . .Page -}}
         <main class="main">
-            {{- block "main" . }}{{ end }}
-            {{ partial "backlinks.html" . }}
+            {{- block "main" . }}
+            {{ end }}
+
+            <code>{{ partial "backlinks.html" . }}</code>
             {{ partial "disqus.html" . }}
         </main>
         {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}

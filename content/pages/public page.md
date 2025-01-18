@@ -6,7 +6,7 @@ title: public page
 tags:
 categories:
 date: 2025-01-03
-lastMod: 2025-01-17
+lastMod: 2025-01-03
 ---
 
 
@@ -18,7 +18,7 @@ lastMod: 2025-01-17
 
 
 
-
+  + 
 
 
 
@@ -26,9 +26,9 @@ lastMod: 2025-01-17
 
 링크 테스트
 
-[public test]({{< ref "/pages/public test" >}})
+  + [public test]({{< ref "/pages/public test" >}})
 
-
+  + 
 
 
 

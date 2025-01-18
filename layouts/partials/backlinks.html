@@ -9,7 +9,7 @@
 {{ end }}
 
 {{ if gt (len $backlinks) 0 }}
-<aside>
+<aside style="margin-top: 2rem;">
   <h3>Backlinks</h3>
   <div class="backlinks">
     <ul>
@@ -25,7 +25,7 @@
 </aside>
 {{ end }}
 
-<aside class="related">
+<aside class="related" style="margin-top: 2rem; margin-bottom: 2rem">
   {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 }}
   {{ with $related }}
   <h3>slightly related</h3>

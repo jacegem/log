@@ -4,8 +4,8 @@ tags:
 - flowchart
 title: mermaid/flowchart
 categories:
-date: 2025-01-12
-lastMod: 2025-01-12
+date: 2025-01-18
+lastMod: 2025-01-18
 ---
 
 
