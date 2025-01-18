@@ -13,7 +13,7 @@ lastMod: 2025-01-03
 ---
 
 
-[english/song]()
+[english/song]({{< ref "/pages/english/song" >}})
 
 
 

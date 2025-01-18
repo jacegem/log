@@ -23,7 +23,7 @@ public page
 
 
 
-
+{{renderer excalidraw, excalidraw-2024-11-28-09-15-41}}
 
 
 

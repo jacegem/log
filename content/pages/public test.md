@@ -20,7 +20,7 @@ public test 페이지
 
 [[public-test]]
 
-[public page]()
+[public page]({{< ref "/pages/public page" >}})
 
 
 

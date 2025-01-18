@@ -19,7 +19,7 @@ lastMod: 2025-01-03
 
 https://adventofcode.com/2024/day/1
 
-## [Advent of Code]()
+## [Advent of Code]({{< ref "/pages/Advent of Code" >}})
 
 
 

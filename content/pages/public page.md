@@ -13,7 +13,7 @@ lastMod: 2025-01-18
 
 
 링크 테스트
-  + [public test]()
+  + [public test]({{< ref "/pages/public test" >}})
 
 
 

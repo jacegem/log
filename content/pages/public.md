@@ -9,8 +9,8 @@ public page
 
 
 
-center test.... how to change bg?
-
+{{< logseq/orgCENTER >}}center test.... how to change bg?
+{{< / logseq/orgCENTER >}}
 
 
 

@@ -21,6 +21,19 @@ _markup/render 만 활성화
 
 
 
+{{renderer code_diagram,mermaid}}
+
+```mermaid
+erDiagram
+CUSTOMER ||--o{ ORDER : places
+ORDER ||--|{ LINE-ITEM : contains
+CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+
+
+
+
+
 
 
 ```mermaid
@@ -36,20 +49,7 @@ CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 
 
 
-```mermaid
-erDiagram
-CUSTOMER ||--o{ ORDER : places
-ORDER ||--|{ LINE-ITEM : contains
-CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-```
-
-
-
-
-
-
-
-
+{{renderer code_diagram,mermaid}}
 
 ```mermaid
 graph TD;
