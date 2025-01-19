@@ -15,9 +15,21 @@ lastMod: 2025-01-19
 
 presentation ➡️ domain ➡️ data
 
-![](/assets/zyvgxcr.png)
 
 
+
+
+```mermaid
+stateDiagram-v2
+	direction LR
+	p: presentation
+    do: domain
+    d: data
+    p --> do
+    do --> p
+    do --> d
+    d --> do
+```
 
 
 
@@ -33,9 +45,36 @@ data 계층은, access, model 로 나눈다.
 
 간단한 흐름은 다음과 같다.
 
-![](/assets/kvojpop.png)
 
 
+```mermaid
+stateDiagram-v2
+	direction LR
+	state presentation {
+  		v: view
+    	c: controller
+    }
+    state domain {
+    	f: flow
+        r: repository
+    }
+    state data {
+    	a: access   
+    }
+    db: DB
+    
+    
+	v --> c
+    c --> v: state
+    c --> f
+    f --> c: entity
+    f --> r
+    r --> f: model
+    r --> a
+    a --> r: model
+    a --> db
+    db --> a
+```
 
 
 
