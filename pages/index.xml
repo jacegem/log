@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pages on LPP</title><link>https://blog.moro.kr/pages/</link><description>Recent content in Pages on LPP</description><generator>Hugo -- 0.141.0</generator><language>ko-kr</language><lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>Lewis Capaldi/Someone you loved</title><link>https://blog.moro.kr/pages/lewis-capaldi/someone-you-loved/</link><pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/lewis-capaldi/someone-you-loved/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/english/song/">english/song&lt;/a>&lt;/p>
+&lt;h1 id="someone-you-loved">Someone you loved&lt;/h1>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/bCuhuePlP8o?si=3LWHROVXOzQ567kq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>&lt;/iframe>
+&lt;p>I&amp;rsquo;m going under, and this time, I fear there&amp;rsquo;s no one to save me&lt;/p>
+&lt;p>나는 점점 무너지고 있어, 이번에는, 나를 구해줄 사람이 없어서 두려워&lt;/p>
+&lt;p>This all or nothing really got a way of driving me crazy&lt;/p>
+&lt;p>이 전부 아니면 전무인 상황이 정말 나를 미치게 만드는 방식이 있어 ➡️ 날 미치게 만들어.&lt;/p>
+&lt;p>I need somebody to heal, somebody to know&lt;/p></description></item><item><title>english/song</title><link>https://blog.moro.kr/pages/english/song/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/english/song/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/lewis-capaldi/someone-you-loved/">Lewis Capaldi/Someone you loved&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://blog.moro.kr/pages/charlie-puth/i-dont-think-that-i-like-her/">Charlie Puth/I don&amp;rsquo;t Think That I Like Her&lt;/a>&lt;/p></description></item><item><title>mermaid/flowchart</title><link>https://blog.moro.kr/pages/mermaid/flowchart/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/mermaid/flowchart/</guid><description>&lt;p>_markup/render 만 활성화&lt;/p>
+&lt;pre class="mermaid">erDiagram
+CUSTOMER ||--o{ ORDER : places
+ORDER ||--|{ LINE-ITEM : contains
+CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+&lt;/pre>
+&lt;pre class="mermaid">erDiagram
+CUSTOMER ||--o{ ORDER : places
+ORDER ||--|{ LINE-ITEM : contains
+CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+&lt;/pre>
+&lt;pre class="mermaid">graph TD;
+A--&amp;gt;B;
+A--&amp;gt;C;
+B--&amp;gt;D;
+C--&amp;gt;D;
+&lt;/pre>
+&lt;p>mermaid mardown?&lt;/p>
+&lt;pre class="mermaid">flowchart LR
+id
+&lt;/pre>
+&lt;p>shell?&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">flowchart LR
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> id&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Charlie Puth/I don't Think That I Like Her</title><link>https://blog.moro.kr/pages/charlie-puth/i-dont-think-that-i-like-her/</link><pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/charlie-puth/i-dont-think-that-i-like-her/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/english/song/">english/song&lt;/a>&lt;/p>
+&lt;h1 id="i-dont-think-that-i-like-her">I don&amp;rsquo;t Think That I Like Her&lt;/h1>
+&lt;html> &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/DCzfVeTxoiE?si=Qk6FE95gOG-K69Ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>&lt;/iframe> &lt;/html>
+&lt;h2 id="lyrics">lyrics&lt;/h2>
+&lt;p>Get her name and get her number&lt;/p>
+&lt;p>Find out all of the things that we have in common&lt;/p>
+&lt;p>Never all the differences, oh, yeah&lt;/p>
+&lt;p>Meet her parents, meet her brother&lt;/p>
+&lt;p>Then she starts sleepin&amp;rsquo; over the crib on weekends&lt;/p>
+&lt;p>Like a real relationship, oh, no&lt;/p>
+&lt;hr>
+&lt;p>그녀의 이름을 알고 번호도 알고&lt;/p>
+&lt;p>서로의 공통점을 찾아가기 시작했어&lt;/p></description></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>&lt;p>public page&lt;/p>
+&lt;div class="tip " style="text-align: center;">
+center test&amp;hellip;. how to change bg?
+&lt;/div></description></item><item><title>public page</title><link>https://blog.moro.kr/pages/public-page/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-page/</guid><description>&lt;p>링크 테스트
+&lt;a href="https://blog.moro.kr/pages/public-test/">public test&lt;/a>&lt;/p></description></item><item><title>public test</title><link>https://blog.moro.kr/pages/public-test/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-test/</guid><description>&lt;p>public test 페이지&lt;/p>
+&lt;p>[[public-test]]&lt;/p>
+&lt;p>&lt;a href="https://blog.moro.kr/pages/public-page/">public page&lt;/a>&lt;/p>
+&lt;p>embed page&lt;/p>
+&lt;p>block embed&lt;/p>
+&lt;p>링크 테스트&lt;/p></description></item><item><title>python/IndentationError - expected an indented block</title><link>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</guid><description>&lt;p>[[vscode]]에서 [[Python]]: Run Selection/Line in Python Terminal 실행시에&lt;/p>
+&lt;p>&lt;code>python/IndentationError: expected an indented block&lt;/code> 에러가 발생하면&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/cqjmrx2.png">&lt;/p>
+&lt;p>&lt;code>Enable REPLSmart Send&lt;/code> 설정을 확인해서 활성화 해야 한다.&lt;/p></description></item><item><title>로그시크 이미지 변경</title><link>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</guid><description>&lt;p>마크다운 이미지 넣기&lt;/p>
+&lt;p>html 이미지 넣기&lt;/p>
+&lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="assets/screenshot_20241127_102110_karrot_1732714239937_0.png">&lt;/p></description></item><item><title>카이젠 저니</title><link>https://blog.moro.kr/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/</guid><description>&lt;blockquote>
+&lt;p>당신은 무엇을 하는 사람인가?&lt;/p>
+&lt;/blockquote>
+&lt;p>3장 [[혼자 시작하는 회고]]&lt;/p>
+&lt;p>4장 [[혼자 시작하는 태스크 가시화]]&lt;/p>
+&lt;p>5장 [[내일을 내 편으로 만들다]]&lt;/p>
+&lt;p>6장 [[경계를 넘나들다]]&lt;/p>
+&lt;p>8장 [[둘이서 경계를 넘다]]&lt;/p>
+&lt;p>10장 [[완료 기준을 팀에서 결정하다]]&lt;/p>
+&lt;p>15장 [[팀과 제품 책임자의 경계]]&lt;/p>
+&lt;p>16장 [[팀과 리더의 경계]]&lt;/p>
+&lt;p>17장 [[팀과 새로운 멤버의 경계]]&lt;/p>
+&lt;p>[[가치와 원칙 그리고 프로세스]]&lt;/p>
+&lt;p>[[다섯 가지 가치]]&lt;/p>
+&lt;p>[[경계 넘기]]&lt;/p>
+&lt;p>[[자신부터 시작하기]]&lt;/p>
+&lt;p>[[피드백]]&lt;/p>
+&lt;p>[[리프레이밍]]&lt;/p>
+&lt;p>[[끌어들이기]], [[함께하기]]&lt;/p>
+&lt;p>다섯 가지 분류에 따른 27가지 원칙&lt;/p>
+&lt;p>[[사고]]&lt;/p>
+&lt;p>Why에서 시작하라&lt;/p>
+&lt;p>나는 누구인가&lt;/p></description></item><item><title>Advent of Code/2024/day01</title><link>https://blog.moro.kr/pages/advent-of-code/2024/day01/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/2024/day01/</guid><description>&lt;p>&lt;a href="https://adventofcode.com/2024/day/1">https://adventofcode.com/2024/day/1&lt;/a>&lt;/p>
+&lt;h2 id="advent-of-codehahahugoshortcode12s0hbhb">&lt;a href="https://blog.moro.kr/pages/advent-of-code/">Advent of Code&lt;/a>&lt;/h2>
+&lt;p>왼쪽 목록과 오른쪽 목록을 각각 정렬하고, 순서대로 거리를 구하고 모두 합한다.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="m">3&lt;/span> &lt;span class="m">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">4&lt;/span> &lt;span class="m">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">2&lt;/span> &lt;span class="m">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">1&lt;/span> &lt;span class="m">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">3&lt;/span> &lt;span class="m">9&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">3&lt;/span> &lt;span class="m">3&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>정렬하면, 이렇게 나오고,&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>&lt;span class="ss">:left&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span>,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:right&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="mi">4&lt;/span> &lt;span class="mi">5&lt;/span> &lt;span class="mi">9&lt;/span>&lt;span class="p">)}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>각각의 거리를 더하면, 11 이 된다.&lt;/p>
+&lt;p>&lt;code>2 + 1 + 0 + 1 + 2 + 5&lt;/code> = 11&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">advent-of-code.2024.day-01&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;https://adventofcode.com/2024/day/1
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s"> --- Day 1: Historian Hysteria ---&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">advent-of-code.core&lt;/span> &lt;span class="ss">:refer&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">read-lines&lt;/span>&lt;span class="p">]]))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="k">def &lt;/span>&lt;span class="nv">sample&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s">&amp;#34;3 4&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;4 3&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;2 5&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;1 3&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;3 9&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;3 3&amp;#34;&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">sort-numbers&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">lines&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">reduce &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">row&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[[&lt;/span>&lt;span class="nb">left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="nv">parse-long&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">re-seq &lt;/span>&lt;span class="o">#&lt;/span>&lt;span class="s">&amp;#34;\d+&amp;#34;&lt;/span> &lt;span class="nv">row&lt;/span>&lt;span class="p">))]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="nv">acc&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">update&lt;/span> &lt;span class="ss">:left&lt;/span> &lt;span class="nb">conj &lt;/span>&lt;span class="nv">left&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">update&lt;/span> &lt;span class="ss">:right&lt;/span> &lt;span class="nb">conj &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">))))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>&lt;span class="ss">:left&lt;/span> &lt;span class="p">[]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:right&lt;/span> &lt;span class="p">[]}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">lines&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">update&lt;/span> &lt;span class="ss">:left&lt;/span> &lt;span class="nv">sort&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">update&lt;/span> &lt;span class="ss">:right&lt;/span> &lt;span class="nv">sort&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">solve&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">lines&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">numbers&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">sort-numbers&lt;/span> &lt;span class="nv">lines&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>&lt;span class="ss">:keys&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">]}&lt;/span> &lt;span class="nv">numbers&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">-&amp;gt;&amp;gt;&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">map vector left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[[&lt;/span>&lt;span class="nv">l&lt;/span> &lt;span class="nv">r&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">abs&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">- &lt;/span>&lt;span class="nv">l&lt;/span> &lt;span class="nv">r&lt;/span>&lt;span class="p">))))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">apply &lt;/span>&lt;span class="nv">+&lt;/span>&lt;span class="p">))))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>clojure datetime</title><link>https://blog.moro.kr/pages/clojure-datetime/</link><pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/clojure-datetime/</guid><description>&lt;h2 id="ns">ns&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">user&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.walk&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">walk&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">java-time&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">jt&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:import&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">java.time&lt;/span> &lt;span class="nv">ZoneId&lt;/span>&lt;span class="p">]))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="instant">instant&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nf">jt/instant&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">;=&amp;gt; #object[java.time.Instant 0x43bf5e21 &amp;#34;2024-12-02T11:39:05.568272Z&amp;#34;]&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="epoch">epoch&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">jt/instant&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/to-millis-from-epoch&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">;=&amp;gt; 1733139595866&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="zoneddatetime">ZonedDateTime&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">jt/instant&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/zoned-date-time&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">ZoneId/of&lt;/span> &lt;span class="s">&amp;#34;Asia/Seoul&amp;#34;&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">;=&amp;gt; #object[java.time.ZonedDateTime 0x3d29ff04 &amp;#34;2024-12-02T20:40:30.689936+09:00[Asia/Seoul]&amp;#34;]&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="localdatetime">LocalDateTime&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">jt/instant&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/zoned-date-time&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">ZoneId/of&lt;/span> &lt;span class="s">&amp;#34;Asia/Seoul&amp;#34;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/local-date-time&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">;=&amp;gt; #object[java.time.LocalDateTime 0x64f89f56 &amp;#34;2024-12-02T20:42:53.123852&amp;#34;]&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="local--zoned">local ➡️ zoned&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">jt/local-date-time&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/zoned-date-time&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">ZoneId/of&lt;/span> &lt;span class="s">&amp;#34;Asia/Seoul&amp;#34;&lt;/span>&lt;span class="p">)))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">;=&amp;gt; #object[java.time.ZonedDateTime 0x3e36cfa &amp;#34;2024-12-02T11:42:16.804282+09:00[Asia/Seoul]&amp;#34;]&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="instant--epoch">instant ➡️ epoch&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">jt/instant&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/to-millis-from-epoch&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">;=&amp;gt; 1733140306257&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="zoned--epoch">zoned ➡️ epoch&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">jt/zoned-date-time&lt;/span> &lt;span class="mi">1970&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/to-millis-from-epoch&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">;=&amp;gt; 0&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="epoch--zoned">epoch ➡️ zoned&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">jt/to-millis-from-epoch&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/zoned-date-time&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">;=&amp;gt; #object[java.time.ZonedDateTime 0x91f93db &amp;#34;0002-01-01T00:00Z[UTC]&amp;#34;]&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="변경">변경&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">local-date-time&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">data&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">walk/postwalk&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">m&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">if &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">= &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">class &lt;/span>&lt;span class="nv">m&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nv">java.time.ZonedDateTime&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/local-date-time&lt;/span> &lt;span class="nv">m&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">m&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">data&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">zoned-date-time&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">data&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">walk/postwalk&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">m&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">if &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">= &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">class &lt;/span>&lt;span class="nv">m&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="nv">java.time.LocalDateTime&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/zoned-date-time&lt;/span> &lt;span class="nv">m&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">ZoneId/of&lt;/span> &lt;span class="s">&amp;#34;Asia/Seoul&amp;#34;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">m&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">data&lt;/span>&lt;span class="p">))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Advent of Code</title><link>https://blog.moro.kr/pages/advent-of-code/</link><pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/</guid><description>&lt;h2 id="2024">2024&lt;/h2>
+&lt;p>&lt;a href="https://blog.moro.kr/pages/advent-of-code/2024/day01/">Advent of Code/2024/day01&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">advent-of-code.core&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.java.io&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">io&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.string&lt;/span> &lt;span class="ss">:refer&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">split-lines&lt;/span> &lt;span class="nv">trim-newline&lt;/span>&lt;span class="p">]]))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">read-file&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">path&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="nv">path&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">io/resource&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">slurp&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">trim-newline&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">split-lines&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">read-lines&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">year&lt;/span> &lt;span class="nv">day&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">format&lt;/span> &lt;span class="s">&amp;#34;advent_of_code/%d/day_%02d.txt&amp;#34;&lt;/span> &lt;span class="nv">year&lt;/span> &lt;span class="nv">day&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">read-file&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">read-numbers&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">year&lt;/span> &lt;span class="nv">day&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">-&amp;gt;&amp;gt;&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">read-lines&lt;/span> &lt;span class="nv">year&lt;/span> &lt;span class="nv">day&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="nv">parse-long&lt;/span>&lt;span class="p">)))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Json 으로 Dart 클래스 만들기</title><link>https://blog.moro.kr/pages/json-%EC%9C%BC%EB%A1%9C-dart-%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/json-%EC%9C%BC%EB%A1%9C-dart-%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>&lt;h2 id="require">require&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">user&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">camel-snake-kebab.core&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">csk&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">cheshire.core&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">cheshire&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.string&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">string&lt;/span>&lt;span class="p">]))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="edn-변환">edn 변환&lt;/h2>
+&lt;p>먼저 edn 으로 변환한다. 키는 케밥 케이스 키워드로 변환한다.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="k">def &lt;/span>&lt;span class="nv">json&lt;/span> &lt;span class="s">&amp;#34;{ \&amp;#34;name\&amp;#34;: \&amp;#34;Cheshire\&amp;#34;, \&amp;#34;needs\&amp;#34;: \&amp;#34;a string\&amp;#34; }&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nf">cheshire/parse-string&lt;/span> &lt;span class="nv">json&lt;/span> &lt;span class="nv">csk/-&amp;gt;kebab-case-keyword&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="클래스-맵으로-변환">클래스 맵으로 변환&lt;/h2>
+&lt;p>아래와 같은 형태로 만든다.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>&lt;span class="ss">:클래스명1&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">필드들&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:클래스명2&lt;/span> &lt;span class="p">[{&lt;/span>&lt;span class="ss">:type&lt;/span> &lt;span class="nv">타입&lt;/span> &lt;span class="ss">:name&lt;/span> &lt;span class="nv">이름&lt;/span> &lt;span class="ss">:list&lt;/span> &lt;span class="nv">false&lt;/span>&lt;span class="p">}]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">...&lt;/span>&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>기본형태 (아래에서 다시 작성할 예정)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">class-field-map-basic&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">m&lt;/span> &lt;span class="nv">base-name&lt;/span> &lt;span class="nv">part-name&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">class-name&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">keyword &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">str &lt;/span>&lt;span class="nv">base-name&lt;/span> &lt;span class="s">&amp;#34;-&amp;#34;&lt;/span> &lt;span class="nv">part-name&lt;/span>&lt;span class="p">))]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">reduce &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">key &lt;/span>&lt;span class="nv">val&lt;/span>&lt;span class="p">]]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">type&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">cond&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">string? &lt;/span>&lt;span class="nv">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ss">:string&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">int?&lt;/span> &lt;span class="nv">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ss">:int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">boolean?&lt;/span> &lt;span class="nv">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ss">:bool&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">double?&lt;/span> &lt;span class="nv">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ss">:double&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:else&lt;/span> &lt;span class="nv">nil&lt;/span>&lt;span class="p">)]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">update&lt;/span> &lt;span class="nv">acc&lt;/span> &lt;span class="nv">class-name&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">v&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">conj &lt;/span>&lt;span class="nv">v&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="ss">:type&lt;/span> &lt;span class="nv">type&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:name&lt;/span> &lt;span class="nv">key&lt;/span>&lt;span class="p">})))))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">assoc &lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">class-name&lt;/span> &lt;span class="p">[])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">m&lt;/span>&lt;span class="p">)))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>acc 에 모든 정보를 담는다.&lt;/p></description></item><item><title>publish test</title><link>https://blog.moro.kr/pages/publish-test/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/publish-test/</guid><description>&lt;p>public page&lt;/p>
+&lt;p>[[Logseq Schrodinger 플러그인으로 배포하기]]&lt;/p>
+&lt;p>@@html: &lt;img src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png" width=200>@@&lt;/p>
+&lt;p>&lt;a href="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png&lt;/a>&lt;/p>
+&lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/q2wh4yp.png">&lt;/p>
+&lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="assets/screenshot_20241127_102110_karrot_1732714239937_0.png">&lt;/p></description></item><item><title>logseq/publish</title><link>https://blog.moro.kr/pages/logseq/publish/</link><pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/logseq/publish/</guid><description>&lt;h1 id="로크시크-배포하기">로크시크 배포하기&lt;/h1>
+&lt;h2 id="그래프-내보내기">그래프 내보내기&lt;/h2>
+&lt;p>설정 버튼을 눌러서 &amp;gt; 그래프 내보내기 선택 &amp;gt; 공개 페이지 내보내기 선택&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/akhtapz.png">&lt;/p>
+&lt;p>내보내기 위치를 선택하면 다음 폴더들이 생성된다.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">├── 404.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── assets
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── your_assets.png
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── index.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── static
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── fonts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── icons
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── img
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── js&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>#단점&lt;/p>
+&lt;p>페이지들이 모두 index.html 파일에 들어 있다.&lt;/p>
+&lt;p>문서의 수가 많아지면 데이터 전송량이 많아 문제가 될 수 있다.&lt;/p>
+&lt;h2 id="logseq-export-사용해서-배포하기">[[logseq-export 사용해서 배포하기]]&lt;/h2>
+&lt;p>#단점&lt;/p></description></item></channel></rss>
