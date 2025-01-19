@@ -28,7 +28,7 @@
 <aside class="related" style="margin-top: 2rem; margin-bottom: 2rem">
   {{ $related := .Site.RegularPages.Related . | complement $backlinks | first 3 }}
   {{ with $related }}
-  <h3>slightly related</h3>
+  <h3>관련 글</h3>
   <ul style="padding-top: 1rem; padding-left: 2rem;">
     {{ range . }}
     <li class="capitalize"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>

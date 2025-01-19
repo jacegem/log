@@ -5,6 +5,7 @@ tags:
 - someone
 - you
 - loved
+- Lewis Capaldi
 categories:
 - english
 - song
