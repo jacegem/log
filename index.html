@@ -8,13 +8,13 @@ This all or nothing really got a way of driving me crazy
 I need somebody to heal, somebody to know
 ...</p></div><footer class=entry-footer><span title='2025-01-19 00:00:00 +0000 UTC'>January 19, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Jace</footer><a class=entry-link aria-label="post link to Lewis Capaldi/Someone you loved" href=https://blog.moro.kr/pages/lewis-capaldi/someone-you-loved/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>clean architecture</h2></header><div class=entry-content><p>계층을 만들어서 호출 관계를 정한다.
 presentation ➡️ domain ➡️ data
-presentation 계층은, controller, state, view 로 나눈다.
+stateDiagram-v2 direction LR p: presentation do: domain d: data p --> do do --> p do --> d d --> do presentation 계층은, controller, state, view 로 나눈다.
 domain 계층은, entity, flow, repository 로 나눈다.
 data 계층은, access, model 로 나눈다.
 (몇 가지 용어는 파일명을 구분하기 위해 변경해서 사용함)
 간단한 흐름은 다음과 같다.
-Refs https://k-elon.tistory.com/38
-[[mason/clean architecture]]</p></div><footer class=entry-footer><span title='2025-01-18 00:00:00 +0000 UTC'>January 18, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer><a class=entry-link aria-label="post link to clean architecture" href=https://blog.moro.kr/pages/clean-architecture/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>english/song</h2></header><div class=entry-content><p>Lewis Capaldi/Someone you loved
+stateDiagram-v2 direction LR state presentation { v: view c: controller } state domain { f: flow r: repository } state data { a: access } db: DB v --> c c --> v: state c --> f f --> c: entity f --> r r --> f: model r --> a a --> r: model a --> db db --> a Refs https://k-elon.tistory.com/38
+...</p></div><footer class=entry-footer><span title='2025-01-18 00:00:00 +0000 UTC'>January 18, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer><a class=entry-link aria-label="post link to clean architecture" href=https://blog.moro.kr/pages/clean-architecture/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>english/song</h2></header><div class=entry-content><p>Lewis Capaldi/Someone you loved
 Charlie Puth/I don’t Think That I Like Her</p></div><footer class=entry-footer><span title='2025-01-18 00:00:00 +0000 UTC'>January 18, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer><a class=entry-link aria-label="post link to english/song" href=https://blog.moro.kr/pages/english/song/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>mermaid/flowchart</h2></header><div class=entry-content><p>_markup/render 만 활성화
 erDiagram CUSTOMER ||--o{ ORDER : places ORDER ||--|{ LINE-ITEM : contains CUSTOMER }|..|{ DELIVERY-ADDRESS : uses erDiagram CUSTOMER ||--o{ ORDER : places ORDER ||--|{ LINE-ITEM : contains CUSTOMER }|..|{ DELIVERY-ADDRESS : uses graph TD; A-->B; A-->C; B-->D; C-->D; mermaid mardown?
 flowchart LR id shell?

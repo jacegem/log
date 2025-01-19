@@ -7,16 +7,48 @@
 &lt;p>이 전부 아니면 전무인 상황이 정말 나를 미치게 만드는 방식이 있어 ➡️ 날 미치게 만들어.&lt;/p>
 &lt;p>I need somebody to heal, somebody to know&lt;/p></description></item><item><title>clean architecture</title><link>https://blog.moro.kr/pages/clean-architecture/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/clean-architecture/</guid><description>&lt;p>계층을 만들어서 호출 관계를 정한다.&lt;/p>
 &lt;p>presentation ➡️ domain ➡️ data&lt;/p>
-&lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/zyvgxcr.png">&lt;/p>
+&lt;pre class="mermaid">stateDiagram-v2
+direction LR
+p: presentation
+do: domain
+d: data
+p --&amp;gt; do
+do --&amp;gt; p
+do --&amp;gt; d
+d --&amp;gt; do
+&lt;/pre>
 &lt;p>presentation 계층은, controller, state, view 로 나눈다.&lt;/p>
 &lt;p>domain 계층은, entity, flow, repository 로 나눈다.&lt;/p>
 &lt;p>data 계층은, access, model 로 나눈다.&lt;/p>
 &lt;p>(몇 가지 용어는 파일명을 구분하기 위해 변경해서 사용함)&lt;/p>
 &lt;p>간단한 흐름은 다음과 같다.&lt;/p>
-&lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/kvojpop.png">&lt;/p>
+&lt;pre class="mermaid">stateDiagram-v2
+direction LR
+state presentation {
+v: view
+c: controller
+}
+state domain {
+f: flow
+r: repository
+}
+state data {
+a: access
+}
+db: DB
+v --&amp;gt; c
+c --&amp;gt; v: state
+c --&amp;gt; f
+f --&amp;gt; c: entity
+f --&amp;gt; r
+r --&amp;gt; f: model
+r --&amp;gt; a
+a --&amp;gt; r: model
+a --&amp;gt; db
+db --&amp;gt; a
+&lt;/pre>
 &lt;h2 id="refs">Refs&lt;/h2>
-&lt;p>&lt;a href="https://k-elon.tistory.com/38">https://k-elon.tistory.com/38&lt;/a>&lt;/p>
-&lt;p>[[mason/clean architecture]]&lt;/p></description></item><item><title>english/song</title><link>https://blog.moro.kr/pages/english/song/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/english/song/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/lewis-capaldi/someone-you-loved/">Lewis Capaldi/Someone you loved&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://k-elon.tistory.com/38">https://k-elon.tistory.com/38&lt;/a>&lt;/p></description></item><item><title>english/song</title><link>https://blog.moro.kr/pages/english/song/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/english/song/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/lewis-capaldi/someone-you-loved/">Lewis Capaldi/Someone you loved&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/charlie-puth/i-dont-think-that-i-like-her/">Charlie Puth/I don&amp;rsquo;t Think That I Like Her&lt;/a>&lt;/p></description></item><item><title>mermaid/flowchart</title><link>https://blog.moro.kr/pages/mermaid/flowchart/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/mermaid/flowchart/</guid><description>&lt;p>_markup/render 만 활성화&lt;/p>
 &lt;pre class="mermaid">erDiagram
 CUSTOMER ||--o{ ORDER : places
