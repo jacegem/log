@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pages on LPP</title><link>https://blog.moro.kr/pages/</link><description>Recent content in Pages on LPP</description><generator>Hugo -- 0.141.0</generator><language>ko-kr</language><lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>english/song</title><link>https://blog.moro.kr/pages/english/song/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/english/song/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/i-dont-think-that-i-like-her/">I don&amp;rsquo;t Think That I Like Her&lt;/a>&lt;/p></description></item><item><title>mermaid/flowchart</title><link>https://blog.moro.kr/pages/mermaid/flowchart/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/mermaid/flowchart/</guid><description>&lt;p>_markup/render 만 활성화&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pages on LPP</title><link>https://blog.moro.kr/pages/</link><description>Recent content in Pages on LPP</description><generator>Hugo -- 0.141.0</generator><language>ko-kr</language><lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>Lewis Capaldi/Someone you loved</title><link>https://blog.moro.kr/pages/lewis-capaldi/someone-you-loved/</link><pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/lewis-capaldi/someone-you-loved/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/english/song/">english/song&lt;/a>&lt;/p>
+&lt;h1 id="someone-you-loved">Someone you loved&lt;/h1>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/bCuhuePlP8o?si=3LWHROVXOzQ567kq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>&lt;/iframe>
+&lt;p>I&amp;rsquo;m going under, and this time, I fear there&amp;rsquo;s no one to save me&lt;/p>
+&lt;p>나는 점점 무너지고 있어, 이번에는, 나를 구해줄 사람이 없어서 두려워&lt;/p>
+&lt;p>This all or nothing really got a way of driving me crazy&lt;/p>
+&lt;p>이 전부 아니면 전무인 상황이 정말 날 미치게 만들어.&lt;/p>
+&lt;p>I need somebody to heal, somebody to know&lt;/p>
+&lt;p>난 나를 치유해줄 사람, 나를 이해해줄 사람이 필요해.&lt;/p></description></item><item><title>english/song</title><link>https://blog.moro.kr/pages/english/song/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/english/song/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/lewis-capaldi/someone-you-loved/">Lewis Capaldi/Someone you loved&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://blog.moro.kr/pages/charlie-puth/i-dont-think-that-i-like-her/">Charlie Puth/I don&amp;rsquo;t Think That I Like Her&lt;/a>&lt;/p></description></item><item><title>mermaid/flowchart</title><link>https://blog.moro.kr/pages/mermaid/flowchart/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/mermaid/flowchart/</guid><description>&lt;p>_markup/render 만 활성화&lt;/p>
 &lt;pre class="mermaid">erDiagram
 CUSTOMER ||--o{ ORDER : places
 ORDER ||--|{ LINE-ITEM : contains
@@ -21,7 +30,8 @@ id
 &lt;/pre>
 &lt;p>shell?&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">flowchart LR
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> id&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>I don't Think That I Like Her</title><link>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</link><pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/english/song/">english/song&lt;/a>&lt;/p>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> id&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Charlie Puth/I don't Think That I Like Her</title><link>https://blog.moro.kr/pages/charlie-puth/i-dont-think-that-i-like-her/</link><pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/charlie-puth/i-dont-think-that-i-like-her/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/english/song/">english/song&lt;/a>&lt;/p>
+&lt;h1 id="i-dont-think-that-i-like-her">I don&amp;rsquo;t Think That I Like Her&lt;/h1>
 &lt;html> &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/DCzfVeTxoiE?si=Qk6FE95gOG-K69Ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>&lt;/iframe> &lt;/html>
 &lt;h2 id="lyrics">lyrics&lt;/h2>
 &lt;p>Get her name and get her number&lt;/p>
@@ -32,9 +42,7 @@ id
 &lt;p>Like a real relationship, oh, no&lt;/p>
 &lt;hr>
 &lt;p>그녀의 이름을 알고 번호도 알고&lt;/p>
-&lt;p>서로의 공통점을 찾아가기 시작했어&lt;/p>
-&lt;p>차이점은 모두 무시한채&lt;/p>
-&lt;p>그녀의 부모님과 그녀의 오빠도 만나고&lt;/p></description></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>&lt;p>public page&lt;/p>
+&lt;p>서로의 공통점을 찾아가기 시작했어&lt;/p></description></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>&lt;p>public page&lt;/p>
 &lt;div class="tip " style="text-align: center;">
 center test&amp;hellip;. how to change bg?
 &lt;/div></description></item><item><title>public page</title><link>https://blog.moro.kr/pages/public-page/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-page/</guid><description>&lt;p>링크 테스트
@@ -71,7 +79,7 @@ center test&amp;hellip;. how to change bg?
 &lt;p>[[사고]]&lt;/p>
 &lt;p>Why에서 시작하라&lt;/p>
 &lt;p>나는 누구인가&lt;/p></description></item><item><title>Advent of Code/2024/day01</title><link>https://blog.moro.kr/pages/advent-of-code/2024/day01/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/2024/day01/</guid><description>&lt;p>&lt;a href="https://adventofcode.com/2024/day/1">https://adventofcode.com/2024/day/1&lt;/a>&lt;/p>
-&lt;h2 id="advent-of-codehahahugoshortcode13s0hbhb">&lt;a href="https://blog.moro.kr/pages/advent-of-code/">Advent of Code&lt;/a>&lt;/h2>
+&lt;h2 id="advent-of-codehahahugoshortcode12s0hbhb">&lt;a href="https://blog.moro.kr/pages/advent-of-code/">Advent of Code&lt;/a>&lt;/h2>
 &lt;p>왼쪽 목록과 오른쪽 목록을 각각 정렬하고, 순서대로 거리를 구하고 모두 합한다.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="m">3&lt;/span> &lt;span class="m">4&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">4&lt;/span> &lt;span class="m">3&lt;/span>
