@@ -2,8 +2,11 @@
 tags:
 - english
 - song
+- someone
+- you
+- loved
+categories: english, song,
 title: Lewis Capaldi/Someone you loved
-categories:
 date: 2025-01-19
 lastMod: 2025-01-19
 ---
@@ -25,7 +28,7 @@ I'm going under, and this time, I fear there's no one to save me
 
 This all or nothing really got a way of driving me crazy
 
-이 전부 아니면 전무인 상황이 정말 날 미치게 만들어.
+이 전부 아니면 전무인 상황이 정말 나를 미치게 만드는 방식이 있어 ➡️ 날 미치게 만들어.
 
 I need somebody to heal, somebody to know
 
@@ -71,7 +74,7 @@ I'm going under, and this time, I fear there's no one to turn to
 
 This all or nothing way of loving got me sleeping without you
 
-이 전부 아니면 전무인 사랑 방식이 날 너 없이 홀로 잠에 들게 만들어
+이 전부 아니면 전무인 사랑 방식 때문에, 나는 너 없이 잠들게 되었어.
 
 Now, I need somebody to know, somebody to heal
 
@@ -172,5 +175,11 @@ I was getting kinda used to being someone you loved
 
 
 
+
+
+
+## Refs
+
+https://m.blog.naver.com/alswl8636/221624165121
 
 
