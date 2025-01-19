@@ -5,11 +5,15 @@ tags:
 - someone
 - you
 - loved
-categories: english, song,
-title: Lewis Capaldi/Someone you loved
+categories:
+- english
+- song
 date: 2025-01-19
+title: Lewis Capaldi/Someone you loved
 lastMod: 2025-01-19
 ---
+
+
 
 
 [english/song]({{< ref "/pages/english/song" >}})
