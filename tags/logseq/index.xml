@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Logseq on LPP</title><link>https://blog.moro.kr/tags/logseq/</link><description>Recent content in Logseq on LPP</description><generator>Hugo -- 0.142.0</generator><language>ko-kr</language><lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/tags/logseq/index.xml" rel="self" type="application/rss+xml"/><item><title>로그시크 이미지 변경</title><link>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</guid><description>&lt;p>마크다운 이미지 넣기&lt;/p>
+&lt;p>html 이미지 넣기&lt;/p>
+&lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="assets/screenshot_20241127_102110_karrot_1732714239937_0.png">&lt;/p></description></item><item><title>logseq/publish</title><link>https://blog.moro.kr/pages/logseq/publish/</link><pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/logseq/publish/</guid><description>&lt;h1 id="로크시크-배포하기">로크시크 배포하기&lt;/h1>
+&lt;h2 id="그래프-내보내기">그래프 내보내기&lt;/h2>
+&lt;p>설정 버튼을 눌러서 &amp;gt; 그래프 내보내기 선택 &amp;gt; 공개 페이지 내보내기 선택&lt;/p>
+&lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/akhtapz.png">&lt;/p>
+&lt;p>내보내기 위치를 선택하면 다음 폴더들이 생성된다.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">├── 404.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── assets
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── your_assets.png
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── index.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── static
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── fonts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── icons
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── img
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── js&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>#단점&lt;/p>
+&lt;p>페이지들이 모두 index.html 파일에 들어 있다.&lt;/p>
+&lt;p>문서의 수가 많아지면 데이터 전송량이 많아 문제가 될 수 있다.&lt;/p>
+&lt;h2 id="logseq-export-사용해서-배포하기">[[logseq-export 사용해서 배포하기]]&lt;/h2>
+&lt;p>#단점&lt;/p></description></item></channel></rss>
