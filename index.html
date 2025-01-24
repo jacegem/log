@@ -3,15 +3,7 @@
 </a><a href=mailto:jacegem@gmail.com target=_blank rel="noopener noreferrer me" title=Email><svg viewBox="0 0 24 21" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1.0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1.0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a></div></footer></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>page/record_list_page.dart</h2></header><div class=entry-content><p>class RecordListPage extends ConsumerStatefulWidget { const RecordListPage({super.key}); @override ConsumerState&lt;ConsumerStatefulWidget> createState() => _RecordListPageState(); } class _RecordListPageState extends ConsumerState&lt;RecordListPage> { @override Widget build(BuildContext context) { return Scaffold( appBar: AppBar( title: const Text('기록'), ), body: ListView( reverse: true, children: [ Gap(100), RecordByDaySection(), Text('Record Page'), ], ), ); } }</p></div><footer class=entry-footer><span title='2025-01-24 00:00:00 +0000 UTC'>January 24, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer><a class=entry-link aria-label="post link to page/record_list_page.dart" href=https://blog.moro.kr/pages/page/record_list_page.dart/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>TIME/기록 화면 만들기</h2></header><div class=entry-content><p>기록 화면을 만든다. 와이어프레임은 이정도로 하자.
 시간순으로 위에서 아래로 내려오므로, 가장 최근의 기록을 보기 위해서, 밑에서 부터 위로 올리는 스크롤을 한다. 밑에 여백을 둔다.
 ListView( reverse: true, children: [ Gap(100), ... ] ) 위젯 구조는 다음과 같다.
-RecordListPage
-ListView
-RecordByDaySection
-ListView
-Card
-Text(day),
-RecordTimeline
-FixedTimeline
-Source page/record_list_page.dart</p></div><footer class=entry-footer><span title='2025-01-24 00:00:00 +0000 UTC'>January 24, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer><a class=entry-link aria-label="post link to TIME/기록 화면 만들기" href=https://blog.moro.kr/pages/time/%EA%B8%B0%EB%A1%9D-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Lewis Capaldi/Someone you loved</h2></header><div class=entry-content><p>english/song
+RecordListPage └── ListView └── RecordByDaySection └── ListView └── Card └── Text(day), └── RecordTimeline └── FixedTimeline Source page/record_list_page.dart</p></div><footer class=entry-footer><span title='2025-01-24 00:00:00 +0000 UTC'>January 24, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Jace</footer><a class=entry-link aria-label="post link to TIME/기록 화면 만들기" href=https://blog.moro.kr/pages/time/%EA%B8%B0%EB%A1%9D-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Lewis Capaldi/Someone you loved</h2></header><div class=entry-content><p>english/song
 Someone you loved I’m going under, and this time, I fear there’s no one to save me
 나는 점점 무너지고 있어, 이번에는, 나를 구해줄 사람이 없어서 두려워
 This all or nothing really got a way of driving me crazy
