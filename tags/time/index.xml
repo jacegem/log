@@ -5,9 +5,19 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nl">reverse:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nl">children:&lt;/span> &lt;span class="p">[&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Gap&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="m">100&lt;/span>&lt;span class="p">),&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RecordByDaySection&lt;/span>&lt;span class="p">(),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">...&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span> &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>위젯 구조는 다음과 같다.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-dart" data-lang="dart">&lt;span class="line">&lt;span class="cl">&lt;span class="o">-&lt;/span> &lt;span class="n">RecordListPage&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">ListView&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">RecordByDaySection&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">ListView&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">Card&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">Text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">day&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">RecordTimeline&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">FixedTimeline&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="source">Source&lt;/h2>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/page/record_list_page.dart/">page/record_list_page.dart&lt;/a>&lt;/p></description></item><item><title>clojure datetime</title><link>https://blog.moro.kr/pages/clojure-datetime/</link><pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/clojure-datetime/</guid><description>&lt;h2 id="ns">ns&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">user&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
