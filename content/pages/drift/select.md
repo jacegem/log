@@ -30,11 +30,11 @@ Future<List<ActivityData>> getAll() async {
   var query = db.select(db.activity)
     ..orderBy([
       (tbl) => OrderingTerm(
-            expression: db.activity.order,
+            expression: tbl.order,
             mode: OrderingMode.asc,
           ),
       (tbl) => OrderingTerm(
-            expression: db.activity.updatedAt,
+            expression: tbl.updatedAt,
             mode: OrderingMode.desc,
           )
     ]);
@@ -42,7 +42,6 @@ Future<List<ActivityData>> getAll() async {
   var res = await query.get();
   return res;
 }
-
 ```
 
 
