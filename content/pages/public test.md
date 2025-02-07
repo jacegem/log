@@ -6,7 +6,7 @@ title: public test
 tags:
 categories:
 date: 2025-01-03
-lastMod: 2025-01-18
+lastMod: 2025-01-03
 ---
 
 
@@ -18,7 +18,7 @@ public test 페이지
 
 
 
-[[public-test]]
+public-test
 
 [public page]({{< ref "/pages/public page" >}})
 

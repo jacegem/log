@@ -5,7 +5,7 @@ tags:
 date: 2024-08-03
 title: logseq/publish
 categories:
-lastMod: 2025-01-18
+lastMod: 2025-01-03
 ---
 
 
@@ -38,11 +38,11 @@ lastMod: 2025-01-18
 
 페이지들이 모두 index.html 파일에 들어 있다.
 
-문서의 수가 많아지면 데이터 전송량이 많아 문제가 될 수 있다. 
+문서의 수가 많아지면 데이터 전송량이 많아 문제가 될 수 있다.
 
 
 
-## [[logseq-export 사용해서 배포하기]]
+## logseq-export 사용해서 배포하기
 
 #단점
 
@@ -50,7 +50,7 @@ lastMod: 2025-01-18
 
 
 
-## [[logseq schrodinger 플러그인으로 배포하기]]
+## logseq schrodinger 플러그인으로 배포하기
 
 #단점
 

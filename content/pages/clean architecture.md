@@ -5,7 +5,7 @@ tags:
 categories: architecture
 title: clean architecture
 date: 2025-01-18
-lastMod: 2025-01-19
+lastMod: 2025-01-18
 ---
 
 
@@ -14,6 +14,7 @@ lastMod: 2025-01-19
 계층을 만들어서 호출 관계를 정한다.
 
 presentation ➡️ domain ➡️ data
+
 
 
 
@@ -98,7 +99,7 @@ https://k-elon.tistory.com/38
 
 
 
-[[mason/clean architecture]]
+mason/clean architecture
 
 
 
