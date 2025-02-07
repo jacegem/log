@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pages on LPP</title><link>https://blog.moro.kr/pages/</link><description>Recent content in Pages on LPP</description><generator>Hugo -- 0.142.0</generator><language>ko-kr</language><lastBuildDate>Fri, 24 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>page/record_list_page.dart</title><link>https://blog.moro.kr/pages/page/record_list_page.dart/</link><pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/page/record_list_page.dart/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-dart" data-lang="dart">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">class&lt;/span> &lt;span class="nc">RecordListPage&lt;/span> &lt;span class="kd">extends&lt;/span> &lt;span class="n">ConsumerStatefulWidget&lt;/span> &lt;span class="p">{&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pages on LPP</title><link>https://blog.moro.kr/pages/</link><description>Recent content in Pages on LPP</description><generator>Hugo -- 0.143.1</generator><language>ko-kr</language><lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>drift/select</title><link>https://blog.moro.kr/pages/drift/select/</link><pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/drift/select/</guid><description>&lt;h2 id="get">get&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-dart" data-lang="dart">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Future&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">ActivityData&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">getAll&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="kd">async&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">List&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">ActivityData&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kd">await&lt;/span> &lt;span class="n">db&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">select&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">db&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">activity&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="kd">get&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="get-with-order">get with order&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-dart" data-lang="dart">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Future&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">ActivityData&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">getAll&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="kd">async&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="n">query&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">db&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">select&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">db&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">activity&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">..&lt;/span>&lt;span class="n">orderBy&lt;/span>&lt;span class="p">([&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="n">tbl&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">OrderingTerm&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nl">expression:&lt;/span> &lt;span class="n">db&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">activity&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">order&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nl">mode:&lt;/span> &lt;span class="n">OrderingMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">asc&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="n">tbl&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">OrderingTerm&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nl">expression:&lt;/span> &lt;span class="n">db&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">activity&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">updatedAt&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nl">mode:&lt;/span> &lt;span class="n">OrderingMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">desc&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kd">await&lt;/span> &lt;span class="n">query&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="kd">get&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="get-with-where">get with where&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-dart" data-lang="dart">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">final&lt;/span> &lt;span class="n">query&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">db&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">select&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">db&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">record&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">..&lt;/span>&lt;span class="n">where&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="n">table&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">table&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">startedAt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">isBiggerOrEqualValue&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">startDt&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">&amp;amp;&lt;/span> &lt;span class="n">table&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">startedAt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">isSmallerThanValue&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">endDt&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">..&lt;/span>&lt;span class="n">orderBy&lt;/span>&lt;span class="p">([&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="n">table&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">OrderingTerm&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nl">expression:&lt;/span> &lt;span class="n">table&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">startedAt&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nl">mode:&lt;/span> &lt;span class="n">OrderingMode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">asc&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">final&lt;/span> &lt;span class="n">result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kd">await&lt;/span> &lt;span class="n">query&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="kd">get&lt;/span>&lt;span class="p">();&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>drift/code</title><link>https://blog.moro.kr/pages/drift/code/</link><pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/drift/code/</guid><description>&lt;h2 id="drift-예제-코드-모음">Drift 예제 코드 모음&lt;/h2>
+&lt;p>&lt;a href="https://blog.moro.kr/pages/drift/table/">drift/table&lt;/a> 테이블 생성&lt;/p></description></item><item><title>drift/table</title><link>https://blog.moro.kr/pages/drift/table/</link><pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/drift/table/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-dart" data-lang="dart">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">class&lt;/span> &lt;span class="nc">Record&lt;/span> &lt;span class="kd">extends&lt;/span> &lt;span class="n">Table&lt;/span> &lt;span class="kd">with&lt;/span> &lt;span class="n">TableBase&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">IntColumn&lt;/span> &lt;span class="kd">get&lt;/span> &lt;span class="n">activityId&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">integer&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">nullable&lt;/span>&lt;span class="p">()();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">IntColumn&lt;/span> &lt;span class="kd">get&lt;/span> &lt;span class="n">durationSecond&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">integer&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">nullable&lt;/span>&lt;span class="p">()();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DateTimeColumn&lt;/span> &lt;span class="kd">get&lt;/span> &lt;span class="n">startedAt&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">dateTime&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">nullable&lt;/span>&lt;span class="p">()();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DateTimeColumn&lt;/span> &lt;span class="kd">get&lt;/span> &lt;span class="n">endedAt&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">dateTime&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">nullable&lt;/span>&lt;span class="p">()();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">BoolColumn&lt;/span> &lt;span class="kd">get&lt;/span> &lt;span class="n">isDeleted&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">boolean&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">withDefault&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Constant&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="p">))();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>시간 기록 앱 만들기</title><link>https://blog.moro.kr/pages/%EC%8B%9C%EA%B0%84-%EA%B8%B0%EB%A1%9D-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EC%8B%9C%EA%B0%84-%EA%B8%B0%EB%A1%9D-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>&lt;p>flutter로 만들고, 데이터베이스는 sembast를 사용한다.&lt;/p>
+&lt;blockquote class="hint ">
+NoSQL이면서 Web을 지원하기 위해서 sembast를 선택
+&lt;/blockquote>
+&lt;p>sembast&lt;/p>
+&lt;blockquote class="hint ">
+sembast: ^3.8.2 # &lt;a href="https://pub.dev/packages/sembast">https://pub.dev/packages/sembast&lt;/a>
+sembast_web: ^2.4.0+4 # &lt;a href="https://pub.dev/packages/sembast_web">https://pub.dev/packages/sembast_web&lt;/a>
+&lt;/blockquote>
+&lt;p>path&lt;/p>
+&lt;blockquote class="hint ">
+&lt;/blockquote>
+&lt;p>flutter_adaptive_scaffold: ^0.3.1 &lt;a href="https://pub.dev/packages/flutter_adaptive_scaffold">https://pub.dev/packages/flutter_adaptive_scaffold&lt;/a>&lt;/p></description></item><item><title>page/record_list_page.dart</title><link>https://blog.moro.kr/pages/page/record_list_page.dart/</link><pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/page/record_list_page.dart/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-dart" data-lang="dart">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">class&lt;/span> &lt;span class="nc">RecordListPage&lt;/span> &lt;span class="kd">extends&lt;/span> &lt;span class="n">ConsumerStatefulWidget&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">const&lt;/span> &lt;span class="n">RecordListPage&lt;/span>&lt;span class="p">({&lt;/span>&lt;span class="k">super&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">key&lt;/span>&lt;span class="p">});&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="err">@&lt;/span>&lt;span class="n">override&lt;/span>
@@ -128,44 +178,43 @@ id
 &lt;p>Like a real relationship, oh, no&lt;/p>
 &lt;hr>
 &lt;p>그녀의 이름을 알고 번호도 알고&lt;/p>
-&lt;p>서로의 공통점을 찾아가기 시작했어&lt;/p></description></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>&lt;p>public page&lt;/p>
+&lt;p>서로의 공통점을 찾아가기 시작했어&lt;/p></description></item><item><title>I don't Think That I Like Her</title><link>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</link><pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</guid><description/></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>&lt;p>public page&lt;/p>
 &lt;div class="tip " style="text-align: center;">
 center test&amp;hellip;. how to change bg?
 &lt;/div></description></item><item><title>public page</title><link>https://blog.moro.kr/pages/public-page/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-page/</guid><description>&lt;p>링크 테스트
 &lt;a href="https://blog.moro.kr/pages/public-test/">public test&lt;/a>&lt;/p></description></item><item><title>public test</title><link>https://blog.moro.kr/pages/public-test/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-test/</guid><description>&lt;p>public test 페이지&lt;/p>
-&lt;p>[[public-test]]&lt;/p>
+&lt;p>public-test&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/public-page/">public page&lt;/a>&lt;/p>
 &lt;p>embed page&lt;/p>
 &lt;p>block embed&lt;/p>
-&lt;p>링크 테스트&lt;/p></description></item><item><title>python/IndentationError - expected an indented block</title><link>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</guid><description>&lt;p>[[vscode]]에서 [[Python]]: Run Selection/Line in Python Terminal 실행시에&lt;/p>
+&lt;p>링크 테스트&lt;/p></description></item><item><title>python/IndentationError - expected an indented block</title><link>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</guid><description>&lt;p>vscode에서 Python: Run Selection/Line in Python Terminal 실행시에&lt;/p>
 &lt;p>&lt;code>python/IndentationError: expected an indented block&lt;/code> 에러가 발생하면&lt;/p>
 &lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/cqjmrx2.png">&lt;/p>
 &lt;p>&lt;code>Enable REPLSmart Send&lt;/code> 설정을 확인해서 활성화 해야 한다.&lt;/p></description></item><item><title>로그시크 이미지 변경</title><link>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</guid><description>&lt;p>마크다운 이미지 넣기&lt;/p>
 &lt;p>html 이미지 넣기&lt;/p>
 &lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="assets/screenshot_20241127_102110_karrot_1732714239937_0.png">&lt;/p></description></item><item><title>카이젠 저니</title><link>https://blog.moro.kr/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/</guid><description>&lt;blockquote>
-&lt;p>당신은 무엇을 하는 사람인가?&lt;/p>
-&lt;/blockquote>
-&lt;p>3장 [[혼자 시작하는 회고]]&lt;/p>
-&lt;p>4장 [[혼자 시작하는 태스크 가시화]]&lt;/p>
-&lt;p>5장 [[내일을 내 편으로 만들다]]&lt;/p>
-&lt;p>6장 [[경계를 넘나들다]]&lt;/p>
-&lt;p>8장 [[둘이서 경계를 넘다]]&lt;/p>
-&lt;p>10장 [[완료 기준을 팀에서 결정하다]]&lt;/p>
-&lt;p>15장 [[팀과 제품 책임자의 경계]]&lt;/p>
-&lt;p>16장 [[팀과 리더의 경계]]&lt;/p>
-&lt;p>17장 [[팀과 새로운 멤버의 경계]]&lt;/p>
-&lt;p>[[가치와 원칙 그리고 프로세스]]&lt;/p>
-&lt;p>[[다섯 가지 가치]]&lt;/p>
-&lt;p>[[경계 넘기]]&lt;/p>
-&lt;p>[[자신부터 시작하기]]&lt;/p>
-&lt;p>[[피드백]]&lt;/p>
-&lt;p>[[리프레이밍]]&lt;/p>
-&lt;p>[[끌어들이기]], [[함께하기]]&lt;/p>
+&lt;p>당신은 무엇을 하는 사람인가?&lt;/p>&lt;/blockquote>
+&lt;p>3장 혼자 시작하는 회고&lt;/p>
+&lt;p>4장 혼자 시작하는 태스크 가시화&lt;/p>
+&lt;p>5장 내일을 내 편으로 만들다&lt;/p>
+&lt;p>6장 경계를 넘나들다&lt;/p>
+&lt;p>8장 둘이서 경계를 넘다&lt;/p>
+&lt;p>10장 완료 기준을 팀에서 결정하다&lt;/p>
+&lt;p>15장 팀과 제품 책임자의 경계&lt;/p>
+&lt;p>16장 팀과 리더의 경계&lt;/p>
+&lt;p>17장 팀과 새로운 멤버의 경계&lt;/p>
+&lt;p>가치와 원칙 그리고 프로세스&lt;/p>
+&lt;p>다섯 가지 가치&lt;/p>
+&lt;p>경계 넘기&lt;/p>
+&lt;p>자신부터 시작하기&lt;/p>
+&lt;p>피드백&lt;/p>
+&lt;p>리프레이밍&lt;/p>
+&lt;p>끌어들이기, 함께하기&lt;/p>
 &lt;p>다섯 가지 분류에 따른 27가지 원칙&lt;/p>
-&lt;p>[[사고]]&lt;/p>
+&lt;p>사고&lt;/p>
 &lt;p>Why에서 시작하라&lt;/p>
 &lt;p>나는 누구인가&lt;/p></description></item><item><title>Advent of Code/2024/day01</title><link>https://blog.moro.kr/pages/advent-of-code/2024/day01/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/2024/day01/</guid><description>&lt;p>&lt;a href="https://adventofcode.com/2024/day/1">https://adventofcode.com/2024/day/1&lt;/a>&lt;/p>
-&lt;h2 id="advent-of-codehahahugoshortcode13s0hbhb">&lt;a href="https://blog.moro.kr/pages/advent-of-code/">Advent of Code&lt;/a>&lt;/h2>
+&lt;h2 id="advent-of-codehahahugoshortcode15s0hbhb">&lt;a href="https://blog.moro.kr/pages/advent-of-code/">Advent of Code&lt;/a>&lt;/h2>
 &lt;p>왼쪽 목록과 오른쪽 목록을 각각 정렬하고, 순서대로 거리를 구하고 모두 합한다.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="m">3&lt;/span> &lt;span class="m">4&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">4&lt;/span> &lt;span class="m">3&lt;/span>
@@ -182,7 +231,7 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;https://adventofcode.com/2024/day/1
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s"> --- Day 1: Historian Hysteria ---&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">advent-of-code.core&lt;/span> &lt;span class="ss">:refer&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">read-lines&lt;/span>&lt;span class="p">]]))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">advent-of-code.core&lt;/span> &lt;span class="ss">:refer&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">read-lines&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="k">def &lt;/span>&lt;span class="nv">sample&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s">&amp;#34;3 4&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;4 3&amp;#34;&lt;/span>
@@ -193,7 +242,7 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">sort-numbers&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">lines&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">reduce &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">row&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[[&lt;/span>&lt;span class="nb">left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="nv">parse-long&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">re-seq &lt;/span>&lt;span class="o">#&lt;/span>&lt;span class="s">&amp;#34;\d+&amp;#34;&lt;/span> &lt;span class="nv">row&lt;/span>&lt;span class="p">))]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="nb">left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="nv">parse-long&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">re-seq &lt;/span>&lt;span class="o">#&lt;/span>&lt;span class="s">&amp;#34;\d+&amp;#34;&lt;/span> &lt;span class="nv">row&lt;/span>&lt;span class="p">))]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="nv">acc&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">update&lt;/span> &lt;span class="ss">:left&lt;/span> &lt;span class="nb">conj &lt;/span>&lt;span class="nv">left&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">update&lt;/span> &lt;span class="ss">:right&lt;/span> &lt;span class="nb">conj &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">))))&lt;/span>
@@ -207,7 +256,7 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">numbers&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">sort-numbers&lt;/span> &lt;span class="nv">lines&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>&lt;span class="ss">:keys&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">]}&lt;/span> &lt;span class="nv">numbers&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">-&amp;gt;&amp;gt;&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">map vector left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[[&lt;/span>&lt;span class="nv">l&lt;/span> &lt;span class="nv">r&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">abs&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">- &lt;/span>&lt;span class="nv">l&lt;/span> &lt;span class="nv">r&lt;/span>&lt;span class="p">))))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="nv">l&lt;/span> &lt;span class="nv">r&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">abs&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">- &lt;/span>&lt;span class="nv">l&lt;/span> &lt;span class="nv">r&lt;/span>&lt;span class="p">))))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">apply &lt;/span>&lt;span class="nv">+&lt;/span>&lt;span class="p">))))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>clojure datetime</title><link>https://blog.moro.kr/pages/clojure-datetime/</link><pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/clojure-datetime/</guid><description>&lt;h2 id="ns">ns&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">user&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
@@ -267,7 +316,7 @@ center test&amp;hellip;. how to change bg?
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">advent-of-code.core&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.java.io&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">io&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.string&lt;/span> &lt;span class="ss">:refer&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">split-lines&lt;/span> &lt;span class="nv">trim-newline&lt;/span>&lt;span class="p">]]))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.string&lt;/span> &lt;span class="ss">:refer&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">split-lines&lt;/span> &lt;span class="nv">trim-newline&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">read-file&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">path&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="nv">path&lt;/span>
@@ -300,7 +349,7 @@ center test&amp;hellip;. how to change bg?
 &lt;p>기본형태 (아래에서 다시 작성할 예정)&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">class-field-map-basic&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">m&lt;/span> &lt;span class="nv">base-name&lt;/span> &lt;span class="nv">part-name&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">class-name&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">keyword &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">str &lt;/span>&lt;span class="nv">base-name&lt;/span> &lt;span class="s">&amp;#34;-&amp;#34;&lt;/span> &lt;span class="nv">part-name&lt;/span>&lt;span class="p">))]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">reduce &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">key &lt;/span>&lt;span class="nv">val&lt;/span>&lt;span class="p">]]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">reduce &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">key &lt;/span>&lt;span class="nv">val&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">type&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">cond&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">string? &lt;/span>&lt;span class="nv">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ss">:string&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">int?&lt;/span> &lt;span class="nv">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ss">:int&lt;/span>
@@ -312,7 +361,7 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">assoc &lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">class-name&lt;/span> &lt;span class="p">[])&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">m&lt;/span>&lt;span class="p">)))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>acc 에 모든 정보를 담는다.&lt;/p></description></item><item><title>publish test</title><link>https://blog.moro.kr/pages/publish-test/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/publish-test/</guid><description>&lt;p>public page&lt;/p>
-&lt;p>[[Logseq Schrodinger 플러그인으로 배포하기]]&lt;/p>
+&lt;p>Logseq Schrodinger 플러그인으로 배포하기&lt;/p>
 &lt;p>@@html: &lt;img src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png" width=200>@@&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png&lt;/a>&lt;/p>
 &lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">&lt;/p>
@@ -335,5 +384,5 @@ center test&amp;hellip;. how to change bg?
 &lt;p>#단점&lt;/p>
 &lt;p>페이지들이 모두 index.html 파일에 들어 있다.&lt;/p>
 &lt;p>문서의 수가 많아지면 데이터 전송량이 많아 문제가 될 수 있다.&lt;/p>
-&lt;h2 id="logseq-export-사용해서-배포하기">[[logseq-export 사용해서 배포하기]]&lt;/h2>
+&lt;h2 id="logseq-export-사용해서-배포하기">logseq-export 사용해서 배포하기&lt;/h2>
 &lt;p>#단점&lt;/p></description></item></channel></rss>
