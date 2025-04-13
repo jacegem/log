@@ -7,8 +7,8 @@ categories:
 - flutter
 - drift
 title: drift/select
-date: 2025-02-06
-lastMod: 2025-02-07
+date: 2025-03-18
+lastMod: 2025-03-18
 ---
 
 

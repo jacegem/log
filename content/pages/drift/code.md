@@ -6,8 +6,8 @@ categories:
 - flutter
 - drift
 title: drift/code
-date: 2025-02-05
-lastMod: 2025-02-07
+date: 2025-03-18
+lastMod: 2025-03-18
 ---
 
 
