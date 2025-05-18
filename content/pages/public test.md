@@ -18,7 +18,7 @@ public test 페이지
 
 
 
-public-test
+[[public-test]]
 
 [public page]({{< ref "/pages/public page" >}})
 

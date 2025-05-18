@@ -13,11 +13,11 @@ lastMod: 2025-03-18
 
 
 
-## Drift 예제 코드 모음
+## [[Drift]] 예제 코드 모음
 
-[drift/table]({{< ref "/pages/drift/table" >}}) 테이블 생성
+  + [drift/table]({{< ref "/pages/drift/table" >}}) 테이블 생성
 
-[drift/select]({{< ref "/pages/drift/select" >}}) 조회
+  + [drift/select]({{< ref "/pages/drift/select" >}}) 조회
 
 
 
