@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>고차 컴포넌트 on LPP</title><link>https://blog.moro.kr/tags/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/</link><description>Recent content in 고차 컴포넌트 on LPP</description><generator>Hugo -- 0.134.3</generator><language>ko-kr</language><lastBuildDate>Sun, 18 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/tags/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/index.xml" rel="self" type="application/rss+xml"/><item><title>고차 컴포넌트와 훅의 비교</title><link>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80-%ED%9B%85%EC%9D%98-%EB%B9%84%EA%B5%90/</link><pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80-%ED%9B%85%EC%9D%98-%EB%B9%84%EA%B5%90/</guid><description>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">기능&lt;/th>
+&lt;th style="text-align: left">고차 컴포넌트&lt;/th>
+&lt;th style="text-align: left">훅&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">코드 재사용&lt;/td>
+&lt;td style="text-align: left">여러 컴포넌트에서 로직을 공유하는데 탁월합니다.&lt;/td>
+&lt;td style="text-align: left">컴포넌트 내 또는 유사한 컴포넌트 간에 로직을 추출하고 공유하는데 이상적입니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">렌더링 로직&lt;/td>
+&lt;td style="text-align: left">감싸진 컴포넌트의 렌더링을 제어합니다.&lt;/td>
+&lt;td style="text-align: left">렌더링에 직접 영향을 주지는 않지만 함수형 컴포넌트 내에서 렌더링과 관련된 부수적 작용을 관리하는 데 사용합니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">프롭 조작&lt;/td>
+&lt;td style="text-align: left">프롭을 삽입하고 조작해 추가 데이터나 기능을 제공할 수 있습니다.&lt;/td>
+&lt;td style="text-align: left">프롭을 직접 주입하거나 조작할 수 없습니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">상태 관리&lt;/td>
+&lt;td style="text-align: left">감싸진 컴포넌트 외부에서 상태를 관리하고 조작합니다.&lt;/td>
+&lt;td style="text-align: left">함수 컴포넌트 내에서 로컬 상태를 관리하도록 설계되었습니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">수명 주기 방법&lt;/td>
+&lt;td style="text-align: left">감싸진 컴포넌트 관련된 수명 주기 로직을 캡슐화 합니다.&lt;/td>
+&lt;td style="text-align: left">useEffect를 비롯한 훅은 함수 컴포넌트 내에서 수명 주기 이벤트를 처리합니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">합성 용이&lt;/td>
+&lt;td style="text-align: left">합성할 수 있지만 잘 관리하지 않으면 래퍼 지옥이 되기도 합니다.&lt;/td>
+&lt;td style="text-align: left">쉽게 합성할 수 있으며 여러 개의 컴포넌트를 추가하지 않고도 다른 훅과 함께 사용할 수 있습니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">테스트 용이성&lt;/td>
+&lt;td style="text-align: left">추가 래퍼 컴포넌트로 인해 테스트가 더 복잡해 질 수 있습니다.&lt;/td>
+&lt;td style="text-align: left">일반적으로 고차 컴포넌트보다 쉽게 격리할 수 있으므로 테스트하기가 더 쉽습니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">타입 안전&lt;/td>
+&lt;td style="text-align: left">타입스크립트를 사용하면 특히 깊게 중첩된 고차 컴포넌트의 경우 올빠르게 입력하기가 까따로울 수 있습니다.&lt;/td>
+&lt;td style="text-align: left">타입스크립트로 타입 추론이 향상되고 입력이 쉬워 집니다.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>

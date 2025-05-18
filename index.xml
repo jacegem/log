@@ -1,25 +1,148 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>LPP</title><link>https://blog.moro.kr/</link><description>Recent content on LPP</description><generator>Hugo -- 0.134.3</generator><language>ko-kr</language><lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/index.xml" rel="self" type="application/rss+xml"/><item><title>formState</title><link>https://blog.moro.kr/pages/formstate/</link><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/formstate/</guid><description>&lt;p>formState 객체의 주요 멤버&lt;/p>
-&lt;p>isDirty: 사용자가 어떤 요소를 변경했는지&lt;/p>
-&lt;p>dirtyFields: 사용자가 변경한 필드 정보 (&amp;lsquo;필드명:값&amp;rsquo; 형식)&lt;/p>
-&lt;p>touchedFields: 사용자가 조작한 필드 정보 (&amp;lsquo;필드명: true/false&amp;rsquo; 형식)&lt;/p></description></item><item><title>React hook Form</title><link>https://blog.moro.kr/pages/react-hook-form/</link><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/react-hook-form/</guid><description>&lt;p>폼 초기화&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>LPP</title><link>https://blog.moro.kr/</link><description>Recent content on LPP</description><generator>Hugo -- 0.134.3</generator><language>ko-kr</language><lastBuildDate>Sun, 18 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/index.xml" rel="self" type="application/rss+xml"/><item><title>고차 컴포넌트 합성</title><link>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%95%A9%EC%84%B1/</link><pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%95%A9%EC%84%B1/</guid><description>&lt;p>여러 개의 &lt;a href="https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/">고차 컴포넌트&lt;/a>를 하나의 고차 컴포넌트로 합성하는 유틸리티 함수를 작성&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-typescript" data-lang="typescript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">compose&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(...&lt;/span>&lt;span class="nx">hocs&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">WrappedComponent&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="nx">hocs&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">reduceRight&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">acc&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="nx">hoc&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="nx">hoc&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">acc&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="nx">WrappedComponent&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// usage
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">EnhancedComponent&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">compose&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">withLogging&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">withUser&lt;/span>&lt;span class="p">)(&lt;/span>&lt;span class="nx">MyComponent&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>고차 컴포넌트와 훅의 비교</title><link>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80-%ED%9B%85%EC%9D%98-%EB%B9%84%EA%B5%90/</link><pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80-%ED%9B%85%EC%9D%98-%EB%B9%84%EA%B5%90/</guid><description>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">기능&lt;/th>
+&lt;th style="text-align: left">고차 컴포넌트&lt;/th>
+&lt;th style="text-align: left">훅&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">코드 재사용&lt;/td>
+&lt;td style="text-align: left">여러 컴포넌트에서 로직을 공유하는데 탁월합니다.&lt;/td>
+&lt;td style="text-align: left">컴포넌트 내 또는 유사한 컴포넌트 간에 로직을 추출하고 공유하는데 이상적입니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">렌더링 로직&lt;/td>
+&lt;td style="text-align: left">감싸진 컴포넌트의 렌더링을 제어합니다.&lt;/td>
+&lt;td style="text-align: left">렌더링에 직접 영향을 주지는 않지만 함수형 컴포넌트 내에서 렌더링과 관련된 부수적 작용을 관리하는 데 사용합니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">프롭 조작&lt;/td>
+&lt;td style="text-align: left">프롭을 삽입하고 조작해 추가 데이터나 기능을 제공할 수 있습니다.&lt;/td>
+&lt;td style="text-align: left">프롭을 직접 주입하거나 조작할 수 없습니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">상태 관리&lt;/td>
+&lt;td style="text-align: left">감싸진 컴포넌트 외부에서 상태를 관리하고 조작합니다.&lt;/td>
+&lt;td style="text-align: left">함수 컴포넌트 내에서 로컬 상태를 관리하도록 설계되었습니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">수명 주기 방법&lt;/td>
+&lt;td style="text-align: left">감싸진 컴포넌트 관련된 수명 주기 로직을 캡슐화 합니다.&lt;/td>
+&lt;td style="text-align: left">useEffect를 비롯한 훅은 함수 컴포넌트 내에서 수명 주기 이벤트를 처리합니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">합성 용이&lt;/td>
+&lt;td style="text-align: left">합성할 수 있지만 잘 관리하지 않으면 래퍼 지옥이 되기도 합니다.&lt;/td>
+&lt;td style="text-align: left">쉽게 합성할 수 있으며 여러 개의 컴포넌트를 추가하지 않고도 다른 훅과 함께 사용할 수 있습니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">테스트 용이성&lt;/td>
+&lt;td style="text-align: left">추가 래퍼 컴포넌트로 인해 테스트가 더 복잡해 질 수 있습니다.&lt;/td>
+&lt;td style="text-align: left">일반적으로 고차 컴포넌트보다 쉽게 격리할 수 있으므로 테스트하기가 더 쉽습니다.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">타입 안전&lt;/td>
+&lt;td style="text-align: left">타입스크립트를 사용하면 특히 깊게 중첩된 고차 컴포넌트의 경우 올빠르게 입력하기가 까따로울 수 있습니다.&lt;/td>
+&lt;td style="text-align: left">타입스크립트로 타입 추론이 향상되고 입력이 쉬워 집니다.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>formState</title><link>https://blog.moro.kr/pages/formstate/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/formstate/</guid><description>&lt;h2 id="formstate-객체의-주요-멤버">formState 객체의 주요 멤버&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>[[isDirty]]: 사용자가 어떤 요소를 변경했는지&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[dirtyFields]]: 사용자가 변경한 필드 정보 (&amp;lsquo;필드명:값&amp;rsquo; 형식)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[touchedFields]]: 사용자가 조작한 필드 정보 (&amp;lsquo;필드명: true/false&amp;rsquo; 형식)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[defaultValues]]: useForm 함수에서 설정된 기본값&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[isSubmitted]]: 폼이 제출되었는지 확인&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[isSubmitSuccessful]]: 폼이 성공적으로 제출되었는지&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[isSubmitting]]: 폼이 제출 중인지&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[isLoading]]: 폼이 로딩 중인지 (비동기 기본값을 로드하고 있는지)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[submitCount]]: 폼 제출 횟수&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[isValid]]: 폼에 입력한 값이 올바른지&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[isValidating]]: 폼이 검증 중인지&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[errors]]: 검증 시 발생한 오류 정보&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>React hook Form</title><link>https://blog.moro.kr/pages/react-hook-form/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/react-hook-form/</guid><description>&lt;p>폼 초기화&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nx">register&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">handleSubmit&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">formState&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nx">error&lt;/span>&lt;span class="p">}}&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">useForm&lt;/span>&lt;span class="p">({&lt;/span>&lt;span class="nx">defaultValues&lt;/span>&lt;span class="p">})&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>useForm 함수의 주요 동작 옵션(인수 opts)&lt;/p>
+&lt;ul>
+&lt;li>
 &lt;p>defaultValues&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>mode&lt;/p>
-&lt;p>onChange 입력 요소가 변경될 때마다 (성능 저하 가능성 있음)&lt;/p>
-&lt;p>onBlur 입력 요소에서 초점이 벗어났을 때&lt;/p>
-&lt;p>onSubmit 제출 시 (이후 onChange, 기본값)&lt;/p>
-&lt;p>onTouched 첫 번째 onBlur 타이밍 검증 (이후 onChange)&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>[[onChange]] 입력 요소가 변경될 때마다 (성능 저하 가능성 있음)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[onBlur]] 입력 요소에서 초점이 벗어났을 때&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[onSubmit]] 제출 시 (이후 onChange, 기본값)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[onTouched]] 첫 번째 onBlur 타이밍 검증 (이후 onChange)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
 &lt;p>reValidateMode&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>criterialMode&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>shouldUseNativeValidation&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>shouldFocusError&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>delayError&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>resolver&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;p>useForm 함수의 반환값 (객체의 주요 멤버)&lt;/p>
-&lt;p>register 폼 요서에 연결해야 하는 이벤트 핸들러 등을 포함한 객체&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>[[register]] 폼 요서에 연결해야 하는 이벤트 핸들러 등을 포함한 객체&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/formstate/">formState&lt;/a> 폼의 상태를 나타내는 객체&lt;/p>
-&lt;p>watch 지정된 요소 name의 값 가져오기 (변경사항 모니터링)&lt;/p></description></item><item><title>tsconfig.json</title><link>https://blog.moro.kr/pages/tsconfig.json/</link><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/tsconfig.json/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/li>
+&lt;li>
+&lt;p>[[watch]] 지정된 요소 name의 값 가져오기 (변경사항 모니터링)&lt;/p></description></item><item><title>tsconfig.json</title><link>https://blog.moro.kr/pages/tsconfig.json/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/tsconfig.json/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;compilerOptions&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;allowJs&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;checkJs&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
@@ -30,16 +153,147 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;include&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;./src/**/*&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;p>compilerOptions: 타입스크립트로 컴파일 할 때 세부적인 동작을 지정할 수 있는 옵션입니다.&lt;/p>
-&lt;p>allowJs&lt;/p>
-&lt;p>타입스크립트로 프로젝트를 컴파일 할 때 자바스크립트 파일도 컴파일 대상에 포함시킬지 선택하는 옵션입니다.&lt;/p>
-&lt;p>checkJs&lt;/p>
-&lt;p>주로 allowJs 옵션과 같이 사용되며 프로젝트 내 자바스크립트 파일에서 타입스크립트 컴파일 규칙을 적용할지 선택하는 옵션입니다.&lt;/p>
-&lt;p>target&lt;/p>
+&lt;p>[[compilerOptions]]: 타입스크립트로 컴파일 할 때 세부적인 동작을 지정할 수 있는 옵션입니다.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>[[allowJs]]&lt;/p>
+&lt;ul>
+&lt;li>타입스크립트로 프로젝트를 컴파일 할 때 자바스크립트 파일도 컴파일 대상에 포함시킬지 선택하는 옵션입니다.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>[[checkJs]]&lt;/p>
+&lt;ul>
+&lt;li>주로 allowJs 옵션과 같이 사용되며 프로젝트 내 자바스크립트 파일에서 타입스크립트 컴파일 규칙을 적용할지 선택하는 옵션입니다.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>[[target]]&lt;/p>
+&lt;ul>
+&lt;li>
 &lt;p>타입스크립트 코드가 자바스크립트 코드로 컴파일되었을 때 자바스크립트 코드가 실행될 환경을 지정합니다.&lt;/p>
-&lt;p>예를 들어 마이크로소프트의 인터넷 익스플로러는 ES6+ 이상의 최신 자바스크립트 문법을 지원하지 않으므로 ES5 이하로 지정해 주어야 합니다.&lt;/p></description></item><item><title>drift/code</title><link>https://blog.moro.kr/pages/drift/code/</link><pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/drift/code/</guid><description>&lt;h2 id="drift-예제-코드-모음">Drift 예제 코드 모음&lt;/h2>
+&lt;/li>
+&lt;li>
+&lt;p>예를 들어 마이크로소프트의 인터넷 익스플로러는 ES6+ 이상의 최신 자바스크립트 문법을 지원하지 않으므로 ES5 이하로 지정해 주어야 합니다.&lt;/p></description></item><item><title>고차 컴포넌트</title><link>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/</guid><description>&lt;p>JSX 세계에서 고차 컴포넌트는 기본적으로 다른 컴포넌트를 인수로 받아 두 컴포넌트의 합성 결과인 새로운 컴포넌트를 반환하는 컴포넌트입니다.&lt;/p>
+&lt;p>고차 컴포넌트는 여러 컴포넌트에서 공유하는 동작을 반복 작성하고 싶지 않을 때 유용합니다.&lt;/p>
+&lt;p>외부 데이터 소스와 비동기적으로 통신하는 모든 컴포넌트에 대해 로딩, 오류 및 데이터 패턴을 반복하는 대신 고차 컴포넌트 팩토리를 사용해 이러한 상태를 대신 처리할 수 있습니다.&lt;/p>
+&lt;p>이 문제를 해결하는 withAsync라는 고차 컴포넌트 팩토리를 생각해 봅시다&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-typescript" data-lang="typescript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">TodoList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">withAsync&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">BasicTodoList&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-typescript" data-lang="typescript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">withAsync&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">Component&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">props&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">props&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">loading&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="s1">&amp;#39;로딩 중...&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">props&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">error&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nx">error&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">message&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">Component&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// `Component`에 전달할 프롭을 모두 그대로 전달
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="na">...props&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-typescript" data-lang="typescript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">TodoList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">withAsync&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">BasicTodoList&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">App&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nx">isLoading&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">setIsLoading&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">useState&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nx">data&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">setData&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">useState&lt;/span>&lt;span class="p">([])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nx">error&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">setError&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">useState&lt;/span>&lt;span class="p">([])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">useEffect&lt;/span>&lt;span class="p">(()&lt;/span>&lt;span class="o">=&amp;gt;&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fetch&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;https://mytodolist.com/items&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">then&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">res&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">=&amp;gt;&lt;/span>&lt;span class="nx">res&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">json&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">then&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">date&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">=&amp;gt;&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">setIsLoading&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">setData&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">data&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="k">catch&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">setError&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span> &lt;span class="p">[])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">TodoList&lt;/span> &lt;span class="na">loading&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nx">isLoading&lt;/span>&lt;span class="p">}&lt;/span> &lt;span class="na">error&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nx">error&lt;/span>&lt;span class="p">}&lt;/span> &lt;span class="na">data&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nx">data&lt;/span>&lt;span class="p">}&lt;/span> &lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>리액트에서 가장 유명한 고차 컴포넌트는 리액트에서 제공하는 API 중 하나인 React.memo 다.&lt;/p></description></item><item><title>고차 함수를 활용한 리액트 고차 컴포넌트 만들어보기</title><link>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0/</guid><description>&lt;p>고차 컴포넌트를 구현하기에 앞서 구현 시 주의할 점을 살펴보자.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>사용자 정의 훅이 use 로 시작하는 이름을 사용했다면 리액트의 고차 컴포넌트도 마찬가지로 with 로 시작하는 이름을 사용해야 한다는 것이다.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>고차 컴포넌트를 사용할 때 주의할 점 중 하나는 부수 효과를 최소화해야 한다는 것이다.&lt;/p>
+&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">interface&lt;/span> &lt;span class="nx">LoginProps&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">loginRequired&lt;/span>&lt;span class="o">?:&lt;/span> &lt;span class="kr">boolean&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">function&lt;/span> &lt;span class="nx">withLoginComponent&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="nx">T&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">Component&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">ComponentType&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="nx">T&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">props&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">T&lt;/span> &lt;span class="o">&amp;amp;&lt;/span> &lt;span class="nx">LoginProps&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nx">loginRequired&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">...&lt;/span>&lt;span class="nx">restProps&lt;/span>&lt;span class="p">}&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">props&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">loginRequired&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="o">&amp;lt;&amp;gt;&lt;/span>&lt;span class="nx">로그인이&lt;/span> &lt;span class="nx">필요합니다&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="o">&amp;lt;&lt;/span>&lt;span class="nx">Component&lt;/span> &lt;span class="p">{...(&lt;/span>&lt;span class="nx">restProps&lt;/span> &lt;span class="nx">as&lt;/span> &lt;span class="nx">T&lt;/span>&lt;span class="p">)}&lt;/span> &lt;span class="o">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// 원래 구현하고자 하는 컴포넌트를 만들고, withLoginComponent로 감싸기만 하면 끝이다.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// 로그인 여부, 로그인이 안 되면 다른 컴포넌트를 렌더링하는 책임은 모두
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// 고차 컴포넌트인 withLoginComponent에 맡길 수 있어 매우 편리하다
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">Component&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">withLoginComponent&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">props&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nx">value&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="nx">string&lt;/span>&lt;span class="p">})=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="o">&amp;lt;&lt;/span>&lt;span class="nx">h3&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nx">props&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">value&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">/h3&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">export&lt;/span> &lt;span class="k">default&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="nx">App&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 로그인 관련 정보를 가져온다.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kr">const&lt;/span> &lt;span class="nx">isLogin&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="o">&amp;lt;&lt;/span>&lt;span class="nx">Component&lt;/span> &lt;span class="nx">value&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;text&amp;#34;&lt;/span> &lt;span class="nx">loginRequired&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nx">isLogin&lt;/span>&lt;span class="p">}&lt;/span> &lt;span class="o">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>useReducer</title><link>https://blog.moro.kr/pages/usereducer/</link><pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/usereducer/</guid><description>&lt;p>useReducer 는 상태와 상태를 조작하기 위한 수단(함수)을 모두 관리한다.&lt;/p>
+&lt;p>[[useState]]는 단일 상태를 관리하는데 적합하고 &lt;a href="https://blog.moro.kr/pages/usereducer/">useReducer&lt;/a>는 복잡한 상태를 관리한다는 점에서 다릅니다.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-typescript" data-lang="typescript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">import&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">useReducer&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="kr">from&lt;/span> &lt;span class="s1">&amp;#39;react&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">initialState&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">count&lt;/span>: &lt;span class="kt">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;Tejumma&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">age&lt;/span>: &lt;span class="kt">30&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">reducer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">state&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">action&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">switch&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">action&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="kr">type&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="s1">&amp;#39;increment&amp;#39;&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">{...&lt;/span>&lt;span class="nx">state&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">count&lt;/span>: &lt;span class="kt">state.count&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">default&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nx">state&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">MyComponent&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nx">state&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">dispatch&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">useReducer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">reducer&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">initialState&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="err">카운트&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nx">state&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">count&lt;/span>&lt;span class="p">}&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="err">이름&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nx">state&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">name&lt;/span>&lt;span class="p">}&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;span class="err">나이&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nx">state&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">age&lt;/span>&lt;span class="p">}&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">button&lt;/span> &lt;span class="na">onClick&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{()&lt;/span>&lt;span class="o">=&amp;gt;&lt;/span>&lt;span class="nx">dispatch&lt;/span>&lt;span class="p">({&lt;/span>&lt;span class="kr">type&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="s1">&amp;#39;increment&amp;#39;&lt;/span>&lt;span class="p">})}&amp;gt;&lt;/span>&lt;span class="err">증가&lt;/span>&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">button&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>useReducer를 사용할 때 얻는 이점 세 가지&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>상태 업데이트 로직을 컴포넌트에서 분리합니다.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>함께 제공되는 reducer 함수는 단독으로 테스트하고 다른 컴포넌트에서도 재사용이 가능합니다.&lt;/p></description></item><item><title>drift/code</title><link>https://blog.moro.kr/pages/drift/code/</link><pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/drift/code/</guid><description>&lt;h2 id="drift-예제-코드-모음">[[Drift]] 예제 코드 모음&lt;/h2>
+&lt;ul>
+&lt;li>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/drift/table/">drift/table&lt;/a> 테이블 생성&lt;/p>
-&lt;p>&lt;a href="https://blog.moro.kr/pages/drift/select/">drift/select&lt;/a> 조회&lt;/p></description></item><item><title>drift/select</title><link>https://blog.moro.kr/pages/drift/select/</link><pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/drift/select/</guid><description>&lt;h2 id="get">get&lt;/h2>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://blog.moro.kr/pages/drift/select/">drift/select&lt;/a> 조회&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>drift/select</title><link>https://blog.moro.kr/pages/drift/select/</link><pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/drift/select/</guid><description>&lt;h2 id="get">get&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-dart" data-lang="dart">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Future&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">ActivityData&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">getAll&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="kd">async&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">List&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">ActivityData&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">res&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kd">await&lt;/span> &lt;span class="n">db&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">select&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">db&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">activity&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="kd">get&lt;/span>&lt;span class="p">();&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">res&lt;/span>&lt;span class="p">;&lt;/span>
@@ -76,16 +330,16 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DateTimeColumn&lt;/span> &lt;span class="kd">get&lt;/span> &lt;span class="n">startedAt&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">dateTime&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">nullable&lt;/span>&lt;span class="p">()();&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DateTimeColumn&lt;/span> &lt;span class="kd">get&lt;/span> &lt;span class="n">endedAt&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">dateTime&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">nullable&lt;/span>&lt;span class="p">()();&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">BoolColumn&lt;/span> &lt;span class="kd">get&lt;/span> &lt;span class="n">isDeleted&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="n">boolean&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">withDefault&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Constant&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="p">))();&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>시간 기록 앱 만들기</title><link>https://blog.moro.kr/pages/%EC%8B%9C%EA%B0%84-%EA%B8%B0%EB%A1%9D-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EC%8B%9C%EA%B0%84-%EA%B8%B0%EB%A1%9D-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>&lt;p>flutter로 만들고, 데이터베이스는 sembast를 사용한다.&lt;/p>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>시간 기록 앱 만들기</title><link>https://blog.moro.kr/pages/%EC%8B%9C%EA%B0%84-%EA%B8%B0%EB%A1%9D-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link><pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EC%8B%9C%EA%B0%84-%EA%B8%B0%EB%A1%9D-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid><description>&lt;p>[[flutter]]로 만들고, 데이터베이스는 [[sembast]]를 사용한다.&lt;/p>
 &lt;blockquote class="hint ">
-NoSQL이면서 Web을 지원하기 위해서 sembast를 선택
+[[NoSQL]]이면서 [[Web]]을 지원하기 위해서 [[sembast]]를 선택
 &lt;/blockquote>
-&lt;p>sembast&lt;/p>
+&lt;p>[[sembast]]&lt;/p>
 &lt;blockquote class="hint ">
 sembast: ^3.8.2 # &lt;a href="https://pub.dev/packages/sembast">https://pub.dev/packages/sembast&lt;/a>
 sembast_web: ^2.4.0+4 # &lt;a href="https://pub.dev/packages/sembast_web">https://pub.dev/packages/sembast_web&lt;/a>
 &lt;/blockquote>
-&lt;p>path&lt;/p>
+&lt;p>[[path]]&lt;/p>
 &lt;blockquote class="hint ">
 &lt;/blockquote>
 &lt;p>flutter_adaptive_scaffold: ^0.3.1 &lt;a href="https://pub.dev/packages/flutter_adaptive_scaffold">https://pub.dev/packages/flutter_adaptive_scaffold&lt;/a>&lt;/p></description></item><item><title>page/record_list_page.dart</title><link>https://blog.moro.kr/pages/page/record_list_page.dart/</link><pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/page/record_list_page.dart/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-dart" data-lang="dart">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">class&lt;/span> &lt;span class="nc">RecordListPage&lt;/span> &lt;span class="kd">extends&lt;/span> &lt;span class="n">ConsumerStatefulWidget&lt;/span> &lt;span class="p">{&lt;/span>
@@ -181,7 +435,12 @@ a --&amp;gt; r: model
 a --&amp;gt; db
 db --&amp;gt; a
 &lt;/pre>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul>
 &lt;h2 id="refs">Refs&lt;/h2>
+&lt;ul>
+&lt;li>
 &lt;p>&lt;a href="https://k-elon.tistory.com/38">https://k-elon.tistory.com/38&lt;/a>&lt;/p></description></item><item><title>english/song</title><link>https://blog.moro.kr/pages/english/song/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/english/song/</guid><description>&lt;p>&lt;a href="https://blog.moro.kr/pages/lewis-capaldi/someone-you-loved/">Lewis Capaldi/Someone you loved&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/charlie-puth/i-dont-think-that-i-like-her/">Charlie Puth/I don&amp;rsquo;t Think That I Like Her&lt;/a>&lt;/p></description></item><item><title>mermaid/flowchart</title><link>https://blog.moro.kr/pages/mermaid/flowchart/</link><pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/mermaid/flowchart/</guid><description>&lt;p>_markup/render 만 활성화&lt;/p>
 &lt;pre class="mermaid">erDiagram
@@ -210,52 +469,123 @@ id
 &lt;h1 id="i-dont-think-that-i-like-her">I don&amp;rsquo;t Think That I Like Her&lt;/h1>
 &lt;html> &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/DCzfVeTxoiE?si=Qk6FE95gOG-K69Ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>&lt;/iframe> &lt;/html>
 &lt;h2 id="lyrics">lyrics&lt;/h2>
+&lt;ul>
+&lt;li>
 &lt;p>Get her name and get her number&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>Find out all of the things that we have in common&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>Never all the differences, oh, yeah&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>Meet her parents, meet her brother&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>Then she starts sleepin&amp;rsquo; over the crib on weekends&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>Like a real relationship, oh, no&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;hr>
+&lt;/li>
+&lt;li>
 &lt;p>그녀의 이름을 알고 번호도 알고&lt;/p>
-&lt;p>서로의 공통점을 찾아가기 시작했어&lt;/p></description></item><item><title>I don't Think That I Like Her</title><link>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</link><pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</guid><description/></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>&lt;p>public page&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>서로의 공통점을 찾아가기 시작했어&lt;/p></description></item><item><title>I don't Think That I Like Her</title><link>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</link><pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/i-dont-think-that-i-like-her/</guid><description/></item><item><title>immer</title><link>https://blog.moro.kr/pages/immer/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/immer/</guid><description>&lt;p>인기 있는 리액트 라이브러리인 Immer는 애플리케이션에서 복잡한 상태 관리를 처리할 때 특히 유용합니다.&lt;/p>
+&lt;p>상태가 중첩되거나 복잡한 형태라면, 기존에 사용하던 상태 업데이트 방식은 장황하고 오류가 발생하기 쉽습니다.&lt;/p>
+&lt;p>Immer는 변경 가능한 초안 상태로 작업하고, 한 번 생성된 상태는 변경 불가로 만들어서 복잡성을 관리할 수 있도록 도와줍니다.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-typescript" data-lang="typescript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">import&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">useImmerReducer&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="kr">from&lt;/span> &lt;span class="s1">&amp;#39;use-immer&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">initialState&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">user&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;John Doe&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">age&lt;/span>: &lt;span class="kt">28&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">address&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">city&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;New York&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">country&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;USA&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">reducer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">draft&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">action&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">switch&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">action&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="kr">type&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="s1">&amp;#39;updateName&amp;#39;&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">draft&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">user&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">name&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">action&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">payload&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="s1">&amp;#39;updateCity&amp;#39;&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">draft&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">user&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">address&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">city&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">action&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">payload&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">default&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">MyComponent&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="o">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nx">state&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">dispatch&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">useImmerReducer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">reducer&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">initialState&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//...
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>Immer 는 현재 상태와 일련의 명령어를 기반으로 다음 상태를 생성하는 데 사용하는 produce 함수를 제공합니다.&lt;/p></description></item><item><title>public</title><link>https://blog.moro.kr/pages/public/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public/</guid><description>&lt;p>public page&lt;/p>
 &lt;div class="tip " style="text-align: center;">
 center test&amp;hellip;. how to change bg?
-&lt;/div></description></item><item><title>public page</title><link>https://blog.moro.kr/pages/public-page/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-page/</guid><description>&lt;p>링크 테스트
-&lt;a href="https://blog.moro.kr/pages/public-test/">public test&lt;/a>&lt;/p></description></item><item><title>public test</title><link>https://blog.moro.kr/pages/public-test/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-test/</guid><description>&lt;p>public test 페이지&lt;/p>
-&lt;p>public-test&lt;/p>
+&lt;/div></description></item><item><title>public page</title><link>https://blog.moro.kr/pages/public-page/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-page/</guid><description>&lt;p>링크 테스트&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.moro.kr/pages/public-test/">public test&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>public test</title><link>https://blog.moro.kr/pages/public-test/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/public-test/</guid><description>&lt;p>public test 페이지&lt;/p>
+&lt;p>[[public-test]]&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/public-page/">public page&lt;/a>&lt;/p>
 &lt;p>embed page&lt;/p>
 &lt;p>block embed&lt;/p>
-&lt;p>링크 테스트&lt;/p></description></item><item><title>python/IndentationError - expected an indented block</title><link>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</guid><description>&lt;p>vscode에서 Python: Run Selection/Line in Python Terminal 실행시에&lt;/p>
+&lt;p>링크 테스트&lt;/p></description></item><item><title>python/IndentationError - expected an indented block</title><link>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/python/indentationerror---expected-an-indented-block/</guid><description>&lt;p>[[vscode]]에서 [[Python]]: Run Selection/Line in Python Terminal 실행시에&lt;/p>
 &lt;p>&lt;code>python/IndentationError: expected an indented block&lt;/code> 에러가 발생하면&lt;/p>
 &lt;p>&lt;img loading="lazy" src="https://blog.moro.kr/assets/cqjmrx2.png">&lt;/p>
-&lt;p>&lt;code>Enable REPLSmart Send&lt;/code> 설정을 확인해서 활성화 해야 한다.&lt;/p></description></item><item><title>로그시크 이미지 변경</title><link>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</guid><description>&lt;p>마크다운 이미지 넣기&lt;/p>
+&lt;p>&lt;code>Enable REPLSmart Send&lt;/code> 설정을 확인해서 활성화 해야 한다.&lt;/p></description></item><item><title>고차 함수</title><link>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98/</guid><description>&lt;p>고차 함수는 인자로 암수를 받거나 리턴값으로 함수를 리턴할 수 있습니다.&lt;/p></description></item><item><title>로그시크 이미지 변경</title><link>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EB%A1%9C%EA%B7%B8%EC%8B%9C%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%80%EA%B2%BD/</guid><description>&lt;p>마크다운 이미지 넣기&lt;/p>
 &lt;p>html 이미지 넣기&lt;/p>
 &lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="assets/screenshot_20241127_102110_karrot_1732714239937_0.png">&lt;/p></description></item><item><title>카이젠 저니</title><link>https://blog.moro.kr/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/%EC%B9%B4%EC%9D%B4%EC%A0%A0-%EC%A0%80%EB%8B%88/</guid><description>&lt;blockquote>
 &lt;p>당신은 무엇을 하는 사람인가?&lt;/p>
 &lt;/blockquote>
-&lt;p>3장 혼자 시작하는 회고&lt;/p>
-&lt;p>4장 혼자 시작하는 태스크 가시화&lt;/p>
-&lt;p>5장 내일을 내 편으로 만들다&lt;/p>
-&lt;p>6장 경계를 넘나들다&lt;/p>
-&lt;p>8장 둘이서 경계를 넘다&lt;/p>
-&lt;p>10장 완료 기준을 팀에서 결정하다&lt;/p>
-&lt;p>15장 팀과 제품 책임자의 경계&lt;/p>
-&lt;p>16장 팀과 리더의 경계&lt;/p>
-&lt;p>17장 팀과 새로운 멤버의 경계&lt;/p>
-&lt;p>가치와 원칙 그리고 프로세스&lt;/p>
-&lt;p>다섯 가지 가치&lt;/p>
-&lt;p>경계 넘기&lt;/p>
-&lt;p>자신부터 시작하기&lt;/p>
-&lt;p>피드백&lt;/p>
-&lt;p>리프레이밍&lt;/p>
-&lt;p>끌어들이기, 함께하기&lt;/p>
+&lt;p>3장 [[혼자 시작하는 회고]]&lt;/p>
+&lt;p>4장 [[혼자 시작하는 태스크 가시화]]&lt;/p>
+&lt;p>5장 [[내일을 내 편으로 만들다]]&lt;/p>
+&lt;p>6장 [[경계를 넘나들다]]&lt;/p>
+&lt;p>8장 [[둘이서 경계를 넘다]]&lt;/p>
+&lt;p>10장 [[완료 기준을 팀에서 결정하다]]&lt;/p>
+&lt;p>15장 [[팀과 제품 책임자의 경계]]&lt;/p>
+&lt;p>16장 [[팀과 리더의 경계]]&lt;/p>
+&lt;p>17장 [[팀과 새로운 멤버의 경계]]&lt;/p>
+&lt;p>[[가치와 원칙 그리고 프로세스]]&lt;/p>
+&lt;p>[[다섯 가지 가치]]&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>[[경계 넘기]]&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[자신부터 시작하기]]&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[피드백]]&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[리프레이밍]]&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>[[끌어들이기]], [[함께하기]]&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;p>다섯 가지 분류에 따른 27가지 원칙&lt;/p>
-&lt;p>사고&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>[[사고]]&lt;/p>
+&lt;ul>
+&lt;li>
 &lt;p>Why에서 시작하라&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>나는 누구인가&lt;/p></description></item><item><title>Advent of Code/2024/day01</title><link>https://blog.moro.kr/pages/advent-of-code/2024/day01/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/2024/day01/</guid><description>&lt;p>&lt;a href="https://adventofcode.com/2024/day/1">https://adventofcode.com/2024/day/1&lt;/a>&lt;/p>
-&lt;h2 id="advent-of-codehahahugoshortcode18s0hbhb">&lt;a href="https://blog.moro.kr/pages/advent-of-code/">Advent of Code&lt;/a>&lt;/h2>
+&lt;h2 id="advent-of-codehahahugoshortcode25s0hbhb">&lt;a href="https://blog.moro.kr/pages/advent-of-code/">Advent of Code&lt;/a>&lt;/h2>
 &lt;p>왼쪽 목록과 오른쪽 목록을 각각 정렬하고, 순서대로 거리를 구하고 모두 합한다.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="m">3&lt;/span> &lt;span class="m">4&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="m">4&lt;/span> &lt;span class="m">3&lt;/span>
@@ -272,7 +602,7 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;https://adventofcode.com/2024/day/1
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s"> --- Day 1: Historian Hysteria ---&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">advent-of-code.core&lt;/span> &lt;span class="ss">:refer&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">read-lines&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">advent-of-code.core&lt;/span> &lt;span class="ss">:refer&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">read-lines&lt;/span>&lt;span class="p">]]))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="k">def &lt;/span>&lt;span class="nv">sample&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s">&amp;#34;3 4&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;4 3&amp;#34;&lt;/span>
@@ -283,7 +613,7 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">sort-numbers&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">lines&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">reduce &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">row&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="nb">left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="nv">parse-long&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">re-seq &lt;/span>&lt;span class="o">#&lt;/span>&lt;span class="s">&amp;#34;\d+&amp;#34;&lt;/span> &lt;span class="nv">row&lt;/span>&lt;span class="p">))]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[[&lt;/span>&lt;span class="nb">left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="nv">parse-long&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">re-seq &lt;/span>&lt;span class="o">#&lt;/span>&lt;span class="s">&amp;#34;\d+&amp;#34;&lt;/span> &lt;span class="nv">row&lt;/span>&lt;span class="p">))]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="nv">acc&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">update&lt;/span> &lt;span class="ss">:left&lt;/span> &lt;span class="nb">conj &lt;/span>&lt;span class="nv">left&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">update&lt;/span> &lt;span class="ss">:right&lt;/span> &lt;span class="nb">conj &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">))))&lt;/span>
@@ -297,7 +627,7 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">numbers&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">sort-numbers&lt;/span> &lt;span class="nv">lines&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>&lt;span class="ss">:keys&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">]}&lt;/span> &lt;span class="nv">numbers&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">-&amp;gt;&amp;gt;&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">map vector left &lt;/span>&lt;span class="nv">right&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="nv">l&lt;/span> &lt;span class="nv">r&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">abs&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">- &lt;/span>&lt;span class="nv">l&lt;/span> &lt;span class="nv">r&lt;/span>&lt;span class="p">))))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">map &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[[&lt;/span>&lt;span class="nv">l&lt;/span> &lt;span class="nv">r&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">abs&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">- &lt;/span>&lt;span class="nv">l&lt;/span> &lt;span class="nv">r&lt;/span>&lt;span class="p">))))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">apply &lt;/span>&lt;span class="nv">+&lt;/span>&lt;span class="p">))))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>clojure datetime</title><link>https://blog.moro.kr/pages/clojure-datetime/</link><pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/clojure-datetime/</guid><description>&lt;h2 id="ns">ns&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">user&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
@@ -353,11 +683,13 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">jt/zoned-date-time&lt;/span> &lt;span class="nv">m&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">ZoneId/of&lt;/span> &lt;span class="s">&amp;#34;Asia/Seoul&amp;#34;&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">m&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">data&lt;/span>&lt;span class="p">))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Advent of Code</title><link>https://blog.moro.kr/pages/advent-of-code/</link><pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/advent-of-code/</guid><description>&lt;h2 id="2024">2024&lt;/h2>
-&lt;p>&lt;a href="https://blog.moro.kr/pages/advent-of-code/2024/day01/">Advent of Code/2024/day01&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.moro.kr/pages/advent-of-code/2024/day01/">Advent of Code/2024/day01&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">ns &lt;/span>&lt;span class="nv">advent-of-code.core&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="ss">:require&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.java.io&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">io&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.string&lt;/span> &lt;span class="ss">:refer&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">split-lines&lt;/span> &lt;span class="nv">trim-newline&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.string&lt;/span> &lt;span class="ss">:refer&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">split-lines&lt;/span> &lt;span class="nv">trim-newline&lt;/span>&lt;span class="p">]]))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">read-file&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">path&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">-&amp;gt; &lt;/span>&lt;span class="nv">path&lt;/span>
@@ -379,18 +711,22 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">cheshire.core&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">cheshire&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nv">clojure.string&lt;/span> &lt;span class="ss">:as&lt;/span> &lt;span class="nv">string&lt;/span>&lt;span class="p">]))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;h2 id="edn-변환">edn 변환&lt;/h2>
-&lt;p>먼저 edn 으로 변환한다. 키는 케밥 케이스 키워드로 변환한다.&lt;/p>
+&lt;ul>
+&lt;li>먼저 edn 으로 변환한다. 키는 케밥 케이스 키워드로 변환한다.&lt;/li>
+&lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="k">def &lt;/span>&lt;span class="nv">json&lt;/span> &lt;span class="s">&amp;#34;{ \&amp;#34;name\&amp;#34;: \&amp;#34;Cheshire\&amp;#34;, \&amp;#34;needs\&amp;#34;: \&amp;#34;a string\&amp;#34; }&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="nf">cheshire/parse-string&lt;/span> &lt;span class="nv">json&lt;/span> &lt;span class="nv">csk/-&amp;gt;kebab-case-keyword&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;h2 id="클래스-맵으로-변환">클래스 맵으로 변환&lt;/h2>
-&lt;p>아래와 같은 형태로 만든다.&lt;/p>
+&lt;ul>
+&lt;li>아래와 같은 형태로 만든다.&lt;/li>
+&lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>&lt;span class="ss">:클래스명1&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">필드들&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:클래스명2&lt;/span> &lt;span class="p">[{&lt;/span>&lt;span class="ss">:type&lt;/span> &lt;span class="nv">타입&lt;/span> &lt;span class="ss">:name&lt;/span> &lt;span class="nv">이름&lt;/span> &lt;span class="ss">:list&lt;/span> &lt;span class="nv">false&lt;/span>&lt;span class="p">}]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">...&lt;/span>&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>기본형태 (아래에서 다시 작성할 예정)&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-clojure" data-lang="clojure">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="kd">defn &lt;/span>&lt;span class="nv">class-field-map-basic&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">m&lt;/span> &lt;span class="nv">base-name&lt;/span> &lt;span class="nv">part-name&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">class-name&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nb">keyword &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">str &lt;/span>&lt;span class="nv">base-name&lt;/span> &lt;span class="s">&amp;#34;-&amp;#34;&lt;/span> &lt;span class="nv">part-name&lt;/span>&lt;span class="p">))]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">reduce &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">key &lt;/span>&lt;span class="nv">val&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">reduce &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">fn &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">key &lt;/span>&lt;span class="nv">val&lt;/span>&lt;span class="p">]]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="k">let &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nv">type&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nf">cond&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">string? &lt;/span>&lt;span class="nv">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ss">:string&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nf">int?&lt;/span> &lt;span class="nv">val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="ss">:int&lt;/span>
@@ -401,8 +737,10 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="ss">:name&lt;/span> &lt;span class="nv">key&lt;/span>&lt;span class="p">})))))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">(&lt;/span>&lt;span class="nb">assoc &lt;/span>&lt;span class="nv">acc&lt;/span> &lt;span class="nv">class-name&lt;/span> &lt;span class="p">[])&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">m&lt;/span>&lt;span class="p">)))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;ul>
+&lt;li>
 &lt;p>acc 에 모든 정보를 담는다.&lt;/p></description></item><item><title>publish test</title><link>https://blog.moro.kr/pages/publish-test/</link><pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/publish-test/</guid><description>&lt;p>public page&lt;/p>
-&lt;p>Logseq Schrodinger 플러그인으로 배포하기&lt;/p>
+&lt;p>[[Logseq Schrodinger 플러그인으로 배포하기]]&lt;/p>
 &lt;p>@@html: &lt;img src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png" width=200>@@&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png&lt;/a>&lt;/p>
 &lt;p>&lt;img alt="Screenshot_20241127_102110_Karrot.png" loading="lazy" src="https://blog.moro.kr/assets/screenshot_20241127_102110_karrot_1732752799007_0.png">&lt;/p>
@@ -423,7 +761,13 @@ center test&amp;hellip;. how to change bg?
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── img
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── js&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>#단점&lt;/p>
+&lt;ul>
+&lt;li>
 &lt;p>페이지들이 모두 index.html 파일에 들어 있다.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>문서의 수가 많아지면 데이터 전송량이 많아 문제가 될 수 있다.&lt;/p>
-&lt;h2 id="logseq-export-사용해서-배포하기">logseq-export 사용해서 배포하기&lt;/h2>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="logseq-export-사용해서-배포하기">[[logseq-export 사용해서 배포하기]]&lt;/h2>
 &lt;p>#단점&lt;/p></description></item></channel></rss>

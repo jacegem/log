@@ -1,0 +1,158 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>고차 컴포넌트 | LPP</title>
+<meta name=keywords content><meta name=description content="JSX 세계에서 고차 컴포넌트는 기본적으로 다른 컴포넌트를 인수로 받아 두 컴포넌트의 합성 결과인 새로운 컴포넌트를 반환하는 컴포넌트입니다.
+고차 컴포넌트는 여러 컴포넌트에서 공유하는 동작을 반복 작성하고 싶지 않을 때 유용합니다.
+외부 데이터 소스와 비동기적으로 통신하는 모든 컴포넌트에 대해 로딩, 오류 및 데이터 패턴을 반복하는 대신 고차 컴포넌트 팩토리를 사용해 이러한 상태를 대신 처리할 수 있습니다.
+이 문제를 해결하는 withAsync라는 고차 컴포넌트 팩토리를 생각해 봅시다
+
+const TodoList = withAsync(BasicTodoList)
+
+const withAsync = (Component) => (props) => {
+  if (props.loading) {
+    return '로딩 중...'
+  }
+  if (props.error) {
+    return error.message
+  }
+  return (
+  	<Component
+    	// `Component`에 전달할 프롭을 모두 그대로 전달
+    	{...props}
+	/>
+  )
+}
+
+const TodoList = withAsync(BasicTodoList)
+
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true)
+  const [data, setData] = useState([])
+  const [error, setError] = useState([])
+  
+  useEffect(()=>{
+    fetch('https://mytodolist.com/items')
+    	.then((res)=>res.json())
+    	.then((date)=>{
+      		setIsLoading(false)
+      		setData(data)
+	    })
+    	.catch(setError)
+  }, [])
+  return <TodoList loading={isLoading} error={error} data={data} />
+}
+리액트에서 가장 유명한 고차 컴포넌트는 리액트에서 제공하는 API 중 하나인 React.memo 다."><meta name=author content="Jace"><link rel=canonical href=https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/><link crossorigin=anonymous href=/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.moro.kr/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.moro.kr/favicon.ico><link rel=icon type=image/png sizes=32x32 href=https://blog.moro.kr/favicon.ico><link rel=apple-touch-icon href=https://blog.moro.kr/favicon.ico><link rel=mask-icon href=https://blog.moro.kr/favicon.ico><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/"><meta property="og:site_name" content="LPP"><meta property="og:title" content="고차 컴포넌트"><meta property="og:description" content="JSX 세계에서 고차 컴포넌트는 기본적으로 다른 컴포넌트를 인수로 받아 두 컴포넌트의 합성 결과인 새로운 컴포넌트를 반환하는 컴포넌트입니다.
+고차 컴포넌트는 여러 컴포넌트에서 공유하는 동작을 반복 작성하고 싶지 않을 때 유용합니다.
+외부 데이터 소스와 비동기적으로 통신하는 모든 컴포넌트에 대해 로딩, 오류 및 데이터 패턴을 반복하는 대신 고차 컴포넌트 팩토리를 사용해 이러한 상태를 대신 처리할 수 있습니다.
+이 문제를 해결하는 withAsync라는 고차 컴포넌트 팩토리를 생각해 봅시다
+const TodoList = withAsync(BasicTodoList) const withAsync = (Component) => (props) => { if (props.loading) { return '로딩 중...' } if (props.error) { return error.message } return ( <Component // `Component`에 전달할 프롭을 모두 그대로 전달 {...props} /> ) } const TodoList = withAsync(BasicTodoList) const App = () => { const [isLoading, setIsLoading] = useState(true) const [data, setData] = useState([]) const [error, setError] = useState([]) useEffect(()=>{ fetch('https://mytodolist.com/items') .then((res)=>res.json()) .then((date)=>{ setIsLoading(false) setData(data) }) .catch(setError) }, []) return <TodoList loading={isLoading} error={error} data={data} /> } 리액트에서 가장 유명한 고차 컴포넌트는 리액트에서 제공하는 API 중 하나인 React.memo 다."><meta property="og:locale" content="ko-kr"><meta property="og:type" content="article"><meta property="article:section" content="pages"><meta property="article:published_time" content="2025-05-02T00:00:00+00:00"><meta property="article:modified_time" content="2025-05-18T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="고차 컴포넌트"><meta name=twitter:description content="JSX 세계에서 고차 컴포넌트는 기본적으로 다른 컴포넌트를 인수로 받아 두 컴포넌트의 합성 결과인 새로운 컴포넌트를 반환하는 컴포넌트입니다.
+고차 컴포넌트는 여러 컴포넌트에서 공유하는 동작을 반복 작성하고 싶지 않을 때 유용합니다.
+외부 데이터 소스와 비동기적으로 통신하는 모든 컴포넌트에 대해 로딩, 오류 및 데이터 패턴을 반복하는 대신 고차 컴포넌트 팩토리를 사용해 이러한 상태를 대신 처리할 수 있습니다.
+이 문제를 해결하는 withAsync라는 고차 컴포넌트 팩토리를 생각해 봅시다
+
+const TodoList = withAsync(BasicTodoList)
+
+const withAsync = (Component) => (props) => {
+  if (props.loading) {
+    return '로딩 중...'
+  }
+  if (props.error) {
+    return error.message
+  }
+  return (
+  	<Component
+    	// `Component`에 전달할 프롭을 모두 그대로 전달
+    	{...props}
+	/>
+  )
+}
+
+const TodoList = withAsync(BasicTodoList)
+
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true)
+  const [data, setData] = useState([])
+  const [error, setError] = useState([])
+  
+  useEffect(()=>{
+    fetch('https://mytodolist.com/items')
+    	.then((res)=>res.json())
+    	.then((date)=>{
+      		setIsLoading(false)
+      		setData(data)
+	    })
+    	.catch(setError)
+  }, [])
+  return <TodoList loading={isLoading} error={error} data={data} />
+}
+리액트에서 가장 유명한 고차 컴포넌트는 리액트에서 제공하는 API 중 하나인 React.memo 다."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pages","item":"https://blog.moro.kr/pages/"},{"@type":"ListItem","position":2,"name":"고차 컴포넌트","item":"https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"고차 컴포넌트","name":"고차 컴포넌트","description":"JSX 세계에서 고차 컴포넌트는 기본적으로 다른 컴포넌트를 인수로 받아 두 컴포넌트의 합성 결과인 새로운 컴포넌트를 반환하는 컴포넌트입니다.\n고차 컴포넌트는 여러 컴포넌트에서 공유하는 동작을 반복 작성하고 싶지 않을 때 유용합니다.\n외부 데이터 소스와 비동기적으로 통신하는 모든 컴포넌트에 대해 로딩, 오류 및 데이터 패턴을 반복하는 대신 고차 컴포넌트 팩토리를 사용해 이러한 상태를 대신 처리할 수 있습니다.\n이 문제를 해결하는 withAsync라는 고차 컴포넌트 팩토리를 생각해 봅시다\nconst TodoList = withAsync(BasicTodoList) const withAsync = (Component) =\u0026gt; (props) =\u0026gt; { if (props.loading) { return \u0026#39;로딩 중...\u0026#39; } if (props.error) { return error.message } return ( \u0026lt;Component // `Component`에 전달할 프롭을 모두 그대로 전달 {...props} /\u0026gt; ) } const TodoList = withAsync(BasicTodoList) const App = () =\u0026gt; { const [isLoading, setIsLoading] = useState(true) const [data, setData] = useState([]) const [error, setError] = useState([]) useEffect(()=\u0026gt;{ fetch(\u0026#39;https://mytodolist.com/items\u0026#39;) .then((res)=\u0026gt;res.json()) .then((date)=\u0026gt;{ setIsLoading(false) setData(data) }) .catch(setError) }, []) return \u0026lt;TodoList loading={isLoading} error={error} data={data} /\u0026gt; } 리액트에서 가장 유명한 고차 컴포넌트는 리액트에서 제공하는 API 중 하나인 React.memo 다.\n","keywords":[],"articleBody":"JSX 세계에서 고차 컴포넌트는 기본적으로 다른 컴포넌트를 인수로 받아 두 컴포넌트의 합성 결과인 새로운 컴포넌트를 반환하는 컴포넌트입니다.\n고차 컴포넌트는 여러 컴포넌트에서 공유하는 동작을 반복 작성하고 싶지 않을 때 유용합니다.\n외부 데이터 소스와 비동기적으로 통신하는 모든 컴포넌트에 대해 로딩, 오류 및 데이터 패턴을 반복하는 대신 고차 컴포넌트 팩토리를 사용해 이러한 상태를 대신 처리할 수 있습니다.\n이 문제를 해결하는 withAsync라는 고차 컴포넌트 팩토리를 생각해 봅시다\nconst TodoList = withAsync(BasicTodoList) const withAsync = (Component) =\u003e (props) =\u003e { if (props.loading) { return '로딩 중...' } if (props.error) { return error.message } return ( \u003cComponent // `Component`에 전달할 프롭을 모두 그대로 전달 {...props} /\u003e ) } const TodoList = withAsync(BasicTodoList) const App = () =\u003e { const [isLoading, setIsLoading] = useState(true) const [data, setData] = useState([]) const [error, setError] = useState([]) useEffect(()=\u003e{ fetch('https://mytodolist.com/items') .then((res)=\u003eres.json()) .then((date)=\u003e{ setIsLoading(false) setData(data) }) .catch(setError) }, []) return \u003cTodoList loading={isLoading} error={error} data={data} /\u003e } 리액트에서 가장 유명한 고차 컴포넌트는 리액트에서 제공하는 API 중 하나인 React.memo 다.\n[[memo]] 사용\nconst ChildComponent = memo(({value}:{value:string})=\u003e{ useEffect(()=\u003e{ console.log('렌더링!') }) return \u003c\u003e안녕하세요! {value}\u003c/\u003e }) function ParentComponent() { const [state, setState] = useState(1) function handleChange(e: ChangeEvent\u003cHTMLInputElement\u003e) { setState(Number(e.target.value)) } return ( \u003c\u003e \u003cinput type=\"number\" value={state} onChange={handleChange} /\u003e \u003cChildComponent value=\"hello\" /\u003e \u003c/\u003e ) } [[useMemo]] 사용\nuseMemo를 사용할 경우 값을 반환받기 때문에 JSX 함수 방식이 아닌 {} 를 사용한 할당식을 사용한다는 차이점이 있다.\n필요에 따라 이러한 방식으로 구현할 수도 있지만 코드를 작성하고 리뷰하는 입장에서 혼선을 빚을 수 있으므로 목적과 용도가 뚜렷한 memo 를 사용하는 편이 좋다.\nfunction ParentComponent() { const [state, setState] = useState(1) function handleChange(e: ChangeEvent\u003cHTMLInputElement\u003e) { setState(Number(e.target.value)) } const MemoizedChildComponent = useMemo(()=\u003e{ return \u003cChildComponent value=\"hello\" /\u003e }, []) return ( \u003c\u003e \u003cinput type=\"number\" value={state} onChange={handleChange} /\u003e {MemoizedChildComponent} \u003c/\u003e ) } 고차 함수를 활용한 리액트 고차 컴포넌트 만들어보기\n","wordCount":"282","inLanguage":"en","datePublished":"2025-05-02T00:00:00Z","dateModified":"2025-05-18T00:00:00Z","author":{"@type":"Person","name":"Jace"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/"},"publisher":{"@type":"Organization","name":"LPP","logo":{"@type":"ImageObject","url":"https://blog.moro.kr/favicon.ico"}}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-V52SMVT933"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),-gtag("config","G-V52SMVT933")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9184373525576918" crossorigin=anonymous></script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://blog.moro.kr/ accesskey=h title="Portal (Alt + H)"><img src=https://blog.moro.kr/unicorn72x72.png alt aria-label=logo height=35>Portal</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.moro.kr/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://blog.moro.kr/archives/ title=Archive><span>Archive</span></a></li><li><a href=https://blog.moro.kr/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://blog.moro.kr/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class="post-title entry-hint-parent">고차 컴포넌트</h1><div class=post-meta><span title='2025-05-02 00:00:00 +0000 UTC'>May 2, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jace</div></header><div class=post-content><p>JSX 세계에서 고차 컴포넌트는 기본적으로 다른 컴포넌트를 인수로 받아 두 컴포넌트의 합성 결과인 새로운 컴포넌트를 반환하는 컴포넌트입니다.</p><p>고차 컴포넌트는 여러 컴포넌트에서 공유하는 동작을 반복 작성하고 싶지 않을 때 유용합니다.</p><p>외부 데이터 소스와 비동기적으로 통신하는 모든 컴포넌트에 대해 로딩, 오류 및 데이터 패턴을 반복하는 대신 고차 컴포넌트 팩토리를 사용해 이러한 상태를 대신 처리할 수 있습니다.</p><p>이 문제를 해결하는 withAsync라는 고차 컴포넌트 팩토리를 생각해 봅시다</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>TodoList</span> <span class=o>=</span> <span class=nx>withAsync</span><span class=p>(</span><span class=nx>BasicTodoList</span><span class=p>)</span></span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>withAsync</span> <span class=o>=</span> <span class=p>(</span><span class=nx>Component</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>(</span><span class=nx>props</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>props</span><span class=p>.</span><span class=nx>loading</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=s1>&#39;로딩 중...&#39;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>props</span><span class=p>.</span><span class=nx>error</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nx>error</span><span class=p>.</span><span class=nx>message</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>  	<span class=p>&lt;</span><span class=nt>Component</span>
+</span></span><span class=line><span class=cl>    	<span class=c1>// `Component`에 전달할 프롭을 모두 그대로 전달
+</span></span></span><span class=line><span class=cl><span class=c1></span>    	<span class=p>{</span><span class=na>...props</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>TodoList</span> <span class=o>=</span> <span class=nx>withAsync</span><span class=p>(</span><span class=nx>BasicTodoList</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>App</span> <span class=o>=</span> <span class=p>()</span> <span class=o>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>[</span><span class=nx>isLoading</span><span class=p>,</span> <span class=nx>setIsLoading</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useState</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>[</span><span class=nx>data</span><span class=p>,</span> <span class=nx>setData</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useState</span><span class=p>([])</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>[</span><span class=nx>error</span><span class=p>,</span> <span class=nx>setError</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useState</span><span class=p>([])</span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>  <span class=nx>useEffect</span><span class=p>(()</span><span class=o>=&gt;</span><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>fetch</span><span class=p>(</span><span class=s1>&#39;https://mytodolist.com/items&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    	<span class=p>.</span><span class=nx>then</span><span class=p>((</span><span class=nx>res</span><span class=p>)</span><span class=o>=&gt;</span><span class=nx>res</span><span class=p>.</span><span class=nx>json</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>    	<span class=p>.</span><span class=nx>then</span><span class=p>((</span><span class=nx>date</span><span class=p>)</span><span class=o>=&gt;</span><span class=p>{</span>
+</span></span><span class=line><span class=cl>      		<span class=nx>setIsLoading</span><span class=p>(</span><span class=kc>false</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>      		<span class=nx>setData</span><span class=p>(</span><span class=nx>data</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>	    <span class=p>})</span>
+</span></span><span class=line><span class=cl>    	<span class=p>.</span><span class=k>catch</span><span class=p>(</span><span class=nx>setError</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span> <span class=p>[])</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>&lt;</span><span class=nt>TodoList</span> <span class=na>loading</span><span class=o>=</span><span class=p>{</span><span class=nx>isLoading</span><span class=p>}</span> <span class=na>error</span><span class=o>=</span><span class=p>{</span><span class=nx>error</span><span class=p>}</span> <span class=na>data</span><span class=o>=</span><span class=p>{</span><span class=nx>data</span><span class=p>}</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div><p>리액트에서 가장 유명한 고차 컴포넌트는 리액트에서 제공하는 API 중 하나인 React.memo 다.</p><p>[[memo]] 사용</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-javascript data-lang=javascript><span class=line><span class=cl><span class=kr>const</span> <span class=nx>ChildComponent</span> <span class=o>=</span> <span class=nx>memo</span><span class=p>(({</span><span class=nx>value</span><span class=p>}</span><span class=o>:</span><span class=p>{</span><span class=nx>value</span><span class=o>:</span><span class=nx>string</span><span class=p>})=&gt;{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>useEffect</span><span class=p>(()=&gt;{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;렌더링!&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  <span class=p>})</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=o>&lt;&gt;</span><span class=nx>안녕하세요</span><span class=o>!</span> <span class=p>{</span><span class=nx>value</span><span class=p>}</span><span class=o>&lt;</span><span class=err>/&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>})</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>ParentComponent</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>[</span><span class=nx>state</span><span class=p>,</span> <span class=nx>setState</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useState</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>  <span class=kd>function</span> <span class=nx>handleChange</span><span class=p>(</span><span class=nx>e</span><span class=o>:</span> <span class=nx>ChangeEvent</span><span class=o>&lt;</span><span class=nx>HTMLInputElement</span><span class=o>&gt;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>setState</span><span class=p>(</span><span class=nb>Number</span><span class=p>(</span><span class=nx>e</span><span class=p>.</span><span class=nx>target</span><span class=p>.</span><span class=nx>value</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>  	<span class=o>&lt;&gt;</span>
+</span></span><span class=line><span class=cl>    	<span class=o>&lt;</span><span class=nx>input</span> <span class=nx>type</span><span class=o>=</span><span class=s2>&#34;number&#34;</span> <span class=nx>value</span><span class=o>=</span><span class=p>{</span><span class=nx>state</span><span class=p>}</span> <span class=nx>onChange</span><span class=o>=</span><span class=p>{</span><span class=nx>handleChange</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    	<span class=o>&lt;</span><span class=nx>ChildComponent</span> <span class=nx>value</span><span class=o>=</span><span class=s2>&#34;hello&#34;</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div><p>[[useMemo]] 사용</p><ul><li><p>useMemo를 사용할 경우 값을 반환받기 때문에 JSX 함수 방식이 아닌 {} 를 사용한 할당식을 사용한다는 차이점이 있다.</p></li><li><p>필요에 따라 이러한 방식으로 구현할 수도 있지만 코드를 작성하고 리뷰하는 입장에서 혼선을 빚을 수 있으므로 목적과 용도가 뚜렷한 memo 를 사용하는 편이 좋다.</p></li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-javascript data-lang=javascript><span class=line><span class=cl><span class=kd>function</span> <span class=nx>ParentComponent</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>[</span><span class=nx>state</span><span class=p>,</span> <span class=nx>setState</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useState</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>  <span class=kd>function</span> <span class=nx>handleChange</span><span class=p>(</span><span class=nx>e</span><span class=o>:</span> <span class=nx>ChangeEvent</span><span class=o>&lt;</span><span class=nx>HTMLInputElement</span><span class=o>&gt;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>setState</span><span class=p>(</span><span class=nb>Number</span><span class=p>(</span><span class=nx>e</span><span class=p>.</span><span class=nx>target</span><span class=p>.</span><span class=nx>value</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>MemoizedChildComponent</span> <span class=o>=</span> <span class=nx>useMemo</span><span class=p>(()=&gt;{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=o>&lt;</span><span class=nx>ChildComponent</span> <span class=nx>value</span><span class=o>=</span><span class=s2>&#34;hello&#34;</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span> <span class=p>[])</span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>  	<span class=o>&lt;&gt;</span>
+</span></span><span class=line><span class=cl>    	<span class=o>&lt;</span><span class=nx>input</span> <span class=nx>type</span><span class=o>=</span><span class=s2>&#34;number&#34;</span> <span class=nx>value</span><span class=o>=</span><span class=p>{</span><span class=nx>state</span><span class=p>}</span> <span class=nx>onChange</span><span class=o>=</span><span class=p>{</span><span class=nx>handleChange</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=p>{</span><span class=nx>MemoizedChildComponent</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div><p><a href=https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0/>고차 함수를 활용한 리액트 고차 컴포넌트 만들어보기</a></p></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=https://blog.moro.kr/pages/tsconfig.json/><span class=title>« Prev</span><br><span>tsconfig.json</span>
+</a><a class=next href=https://blog.moro.kr/pages/%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B3%A0%EC%B0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0/><span class=title>Next »</span><br><span>고차 함수를 활용한 리액트 고차 컴포넌트 만들어보기</span></a></nav></footer></article><code><aside></aside><aside class=related style=margin-top:2rem;margin-bottom:2rem></aside></code><div id=disqus_thread></div><script>(function(){var e=document,t=e.createElement("script");t.src="https://blog-moro-kr.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(t)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></main><footer class=footer><span>&copy; 2025 <a href=https://blog.moro.kr/>LPP</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
