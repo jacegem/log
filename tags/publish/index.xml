@@ -14,13 +14,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── img
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── js&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;p>#단점&lt;/p>
-&lt;ul>
-&lt;li>
 &lt;p>페이지들이 모두 index.html 파일에 들어 있다.&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>문서의 수가 많아지면 데이터 전송량이 많아 문제가 될 수 있다.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="logseq-export-사용해서-배포하기">[[logseq-export 사용해서 배포하기]]&lt;/h2>
+&lt;h2 id="logseq-export-사용해서-배포하기">logseq-export 사용해서 배포하기&lt;/h2>
 &lt;p>#단점&lt;/p></description></item></channel></rss>

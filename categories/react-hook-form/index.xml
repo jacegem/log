@@ -1,71 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>React, Hook, Form, on LPP</title><link>https://blog.moro.kr/categories/react-hook-form/</link><description>Recent content in React, Hook, Form, on LPP</description><generator>Hugo -- 0.134.3</generator><language>ko-kr</language><lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/categories/react-hook-form/index.xml" rel="self" type="application/rss+xml"/><item><title>formState</title><link>https://blog.moro.kr/pages/formstate/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/formstate/</guid><description>&lt;h2 id="formstate-객체의-주요-멤버">formState 객체의 주요 멤버&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>[[isDirty]]: 사용자가 어떤 요소를 변경했는지&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[dirtyFields]]: 사용자가 변경한 필드 정보 (&amp;lsquo;필드명:값&amp;rsquo; 형식)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[touchedFields]]: 사용자가 조작한 필드 정보 (&amp;lsquo;필드명: true/false&amp;rsquo; 형식)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[defaultValues]]: useForm 함수에서 설정된 기본값&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[isSubmitted]]: 폼이 제출되었는지 확인&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[isSubmitSuccessful]]: 폼이 성공적으로 제출되었는지&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[isSubmitting]]: 폼이 제출 중인지&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[isLoading]]: 폼이 로딩 중인지 (비동기 기본값을 로드하고 있는지)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[submitCount]]: 폼 제출 횟수&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[isValid]]: 폼에 입력한 값이 올바른지&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[isValidating]]: 폼이 검증 중인지&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[errors]]: 검증 시 발생한 오류 정보&lt;/p>
-&lt;/li>
-&lt;/ul></description></item></channel></rss>&lt;p>[[onTouched]] 첫 번째 onBlur 타이밍 검증 (이후 onChange)&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>React, Hook, Form on LPP</title><link>https://blog.moro.kr/categories/react-hook-form/</link><description>Recent content in React, Hook, Form on LPP</description><generator>Hugo -- 0.134.3</generator><language>ko-kr</language><lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.moro.kr/categories/react-hook-form/index.xml" rel="self" type="application/rss+xml"/><item><title>React hook Form</title><link>https://blog.moro.kr/pages/react-hook-form/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>https://blog.moro.kr/pages/react-hook-form/</guid><description>&lt;p>폼 초기화&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nx">register&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">handleSubmit&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">formState&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="nx">error&lt;/span>&lt;span class="p">}}&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">useForm&lt;/span>&lt;span class="p">({&lt;/span>&lt;span class="nx">defaultValues&lt;/span>&lt;span class="p">})&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;p>useForm 함수의 주요 동작 옵션(인수 opts)&lt;/p>
+&lt;p>defaultValues&lt;/p>
+&lt;p>mode&lt;/p>
+&lt;p>onChange 입력 요소가 변경될 때마다 (성능 저하 가능성 있음)&lt;/p>
+&lt;p>onBlur 입력 요소에서 초점이 벗어났을 때&lt;/p>
+&lt;p>onSubmit 제출 시 (이후 onChange, 기본값)&lt;/p>
+&lt;p>onTouched 첫 번째 onBlur 타이밍 검증 (이후 onChange)&lt;/p>
 &lt;p>reValidateMode&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>criterialMode&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>shouldUseNativeValidation&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>shouldFocusError&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>delayError&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>resolver&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;p>useForm 함수의 반환값 (객체의 주요 멤버)&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>[[register]] 폼 요서에 연결해야 하는 이벤트 핸들러 등을 포함한 객체&lt;/p>
-&lt;/li>
-&lt;li>
+&lt;p>register 폼 요서에 연결해야 하는 이벤트 핸들러 등을 포함한 객체&lt;/p>
 &lt;p>&lt;a href="https://blog.moro.kr/pages/formstate/">formState&lt;/a> 폼의 상태를 나타내는 객체&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>[[watch]] 지정된 요소 name의 값 가져오기 (변경사항 모니터링)&lt;/p></description></item></channel></rss>
+&lt;p>watch 지정된 요소 name의 값 가져오기 (변경사항 모니터링)&lt;/p></description></item></channel></rss>
