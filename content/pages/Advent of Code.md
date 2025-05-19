@@ -13,7 +13,7 @@ lastMod: 2025-01-03
 
 ## 2024
 
-  + [Advent of Code/2024/day01]({{< ref "/pages/Advent of Code/2024/day01" >}})
+[Advent of Code/2024/day01]({{< ref "/pages/Advent of Code/2024/day01" >}})
 
 
 
@@ -23,7 +23,7 @@ lastMod: 2025-01-03
 (ns advent-of-code.core
   (:require
    [clojure.java.io :as io]
-   [clojure.string :refer [split-lines trim-newline]]))
+   [clojure.string :refer [split-lines trim-newline))
 
 (defn read-file [path]
   (-> path

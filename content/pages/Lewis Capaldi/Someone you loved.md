@@ -185,6 +185,6 @@ I was getting kinda used to being someone you loved
 
 ## Refs
 
-  + https://m.blog.naver.com/alswl8636/221624165121
+https://m.blog.naver.com/alswl8636/221624165121
 
 

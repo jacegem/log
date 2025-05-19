@@ -34,7 +34,7 @@ lastMod: 2025-01-03
 
 ## edn 변환
 
-  + 먼저 edn 으로 변환한다. 키는 케밥 케이스 키워드로 변환한다.
+먼저 edn 으로 변환한다. 키는 케밥 케이스 키워드로 변환한다.
 
 ```clojure
 (def json "{ \"name\": \"Cheshire\", \"needs\": \"a string\" }")
@@ -45,7 +45,7 @@ lastMod: 2025-01-03
 
 ## 클래스 맵으로 변환
 
-  + 아래와 같은 형태로 만든다.
+아래와 같은 형태로 만든다.
 
 ```clojure
 {:클래스명1 [필드들]
@@ -60,7 +60,7 @@ lastMod: 2025-01-03
 ```clojure
 (defn class-field-map-basic [acc m base-name part-name]
   (let [class-name (keyword (str base-name "-" part-name))]
-    (reduce (fn [acc [key val]]
+    (reduce (fn [acc [key val
               (let [type (cond
                            (string? val) :string
                            (int? val) :int
@@ -73,20 +73,20 @@ lastMod: 2025-01-03
             m)))
 ```
 
-  + acc 에 모든 정보를 담는다.
+acc 에 모든 정보를 담는다.
 
-  + base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용할 이름의 뒷부분을 전달한다.
+base-name 에는 기본 이름을, part-name에는 이번 클래스에서 사용할 이름의 뒷부분을 전달한다.
 
 
 
 여기에, 배열과 맵을 처리할 수 있도록 추가한다.
 
-  + 배열인 경우에는 안에 있는 요소들을 하나로 합쳐서 새로운 클래스를 생성한다.
+배열인 경우에는 안에 있는 요소들을 하나로 합쳐서 새로운 클래스를 생성한다.
 
 ```clojure
 (defn class-field-map [acc m base-name part-name]
   (let [class-name (keyword (str base-name "-" part-name))]
-    (reduce (fn [acc [key val]]
+    (reduce (fn [acc [key val
               (cond
                 (vector? val)  (cond
                                  (map? (first val)) (let [merged (apply merge {} val)]
@@ -116,7 +116,7 @@ lastMod: 2025-01-03
 
 
 
-  + 클래스명이 중복되는 경우에는 뒤에 숫자를 붙여서 생성한다. 1부터 ~ 무한
+클래스명이 중복되는 경우에는 뒤에 숫자를 붙여서 생성한다. 1부터 ~ 무한
 
 ```clojure
 (defn name-with-num [name num]
@@ -172,9 +172,9 @@ lastMod: 2025-01-03
                            int        "int"
                            bool       "bool"
                            double     "double"}} m]
-  (mapcat (fn [[class-name fields]]
+  (mapcat (fn class-name fields
             (reduce into []
-                    [[(str annotation)
+                    (str annotation)
                       (str "class " (csk/->PascalCase (name class-name)) " {")]
                      (->> (mapv (fn [field]
                                   (when-let [field-type (:type field)]
@@ -192,7 +192,7 @@ lastMod: 2025-01-03
                                       (str type postfix " " name ";"))))
                                 fields)
                           (remove nil?))
-                     [(str "}")]]))
+                     [(str "}")))
           m))
 ```
 
